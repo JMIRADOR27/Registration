@@ -1,9 +1,9 @@
 <?php
-use PHPMailer\PHPMailer\PHPMailer;
+// use PHPMailer\PHPMailer\PHPMailer;
 
-require_once "PHPMailer/PHPMailer.php";
-require_once "PHPMailer/SMTP.php";
-require_once "PHPMailer/Exception.php";
+// require_once "PHPMailer/PHPMailer.php";
+// require_once "PHPMailer/SMTP.php";
+// require_once "PHPMailer/Exception.php";
 
 //connection
 include 'connection.php';
@@ -14,16 +14,22 @@ $message = 'Registration Failed';
 function insertRegistrants($fname, $lname,$mname,$age,$cnumber,$email,$address,$RFID) {
     global $status,$conn,$message;
 
-
 	$username = $fname[0].$lname.mt_rand(2000,9000);
+	$alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
+    $pass = array(); //remember to declare $pass as an array
+    $alphaLength = strlen($alphabet) - 1; //put the length -1 in cache
+    for ($i = 0; $i < 8; $i++) {
+        $n = rand(0, $alphaLength);
+        $pass[] = $alphabet[$n];
+    }
+	$password = implode($pass);
 
-	
-	$stmt = $conn->prepare('INSERT INTO registrants (first_name, last_name, middle_name, age, contact_number, email,RFID,address,Username) VALUES (?,?,?,?,?,?,?,?,?)');
+	$stmt = $conn->prepare('INSERT INTO registrants (first_name, last_name, middle_name, age, contact_number, email,RFID,address,Username,Password) VALUES (?,?,?,?,?,?,?,?,?,?)');
 
 	// using prepared statement several times with different variables
 	if (
 		$stmt &&
-		$stmt->bind_param('sssisisss', $fname, $lname,$mname,$age,$cnumber,$email,$RFID,$address,$username) &&
+		$stmt->bind_param('sssiisssss', $fname, $lname,$mname,$age,$cnumber,$email,$RFID,$address,$username,$password) &&
 		$stmt->execute()
 	) {
 		// if(emailer($email)){
@@ -33,6 +39,8 @@ function insertRegistrants($fname, $lname,$mname,$age,$cnumber,$email,$address,$
 		//  $status = 0;
 		//  $message = "Failed to sent email verification.";
 		// }
+	}else{
+		$status = 0;
 	}
 }
 
