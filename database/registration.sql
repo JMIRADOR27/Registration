@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Nov 09, 2021 at 05:21 PM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.3.21
+-- Host: 127.0.0.1
+-- Generation Time: Nov 10, 2021 at 08:30 AM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 7.3.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -35,7 +35,12 @@ CREATE TABLE `registrants` (
   `age` int(11) NOT NULL,
   `birthday` date DEFAULT NULL,
   `contact_number` int(11) NOT NULL,
-  `email` varchar(250) NOT NULL
+  `email` varchar(250) NOT NULL,
+  `RFID` varchar(255) NOT NULL,
+  `address` varchar(250) NOT NULL,
+  `email_verification` int(11) NOT NULL DEFAULT 2 COMMENT '1 - Verfied 2- Unverified',
+  `Username` varchar(250) NOT NULL,
+  `Password` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -56,7 +61,7 @@ ALTER TABLE `registrants`
 -- AUTO_INCREMENT for table `registrants`
 --
 ALTER TABLE `registrants`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

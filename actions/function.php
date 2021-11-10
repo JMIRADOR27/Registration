@@ -11,16 +11,16 @@ include 'connection.php';
 $status = 0;
 $message = 'Registration Failed';
 
-function insertRegistrants($fname, $lname,$mname,$age,$birthday,$cnumber,$email,$address,$RFID) {
+function insertRegistrants($fname, $lname,$mname,$age,$cnumber,$email,$address,$RFID) {
     global $status,$conn,$message;
 
 	
-	$stmt = $conn->prepare('INSERT INTO registrants (first_name, last_name, middle_name, age,birthday, contact_number, email,RFID,address) VALUES (?,?,?,?,?,?,?,?,?)');
+	$stmt = $conn->prepare('INSERT INTO registrants (first_name, last_name, middle_name, age, contact_number, email,RFID,address) VALUES (?,?,?,?,?,?,?,?,?)');
 
 	// using prepared statement several times with different variables
 	if (
 		$stmt &&
-		$stmt->bind_param('sssisisss', $fname, $lname,$mname,$age,$birthday,$cnumber,$email,$RFID,$address) &&
+		$stmt->bind_param('sssisisss', $fname, $lname,$mname,$age,$cnumber,$email,$RFID,$address) &&
 		$stmt->execute()
 	) {
 		if(emailer($email)){
@@ -53,9 +53,9 @@ function emailer($email){
 	$mail->Port = 587; // TLS only
 	$mail->SMTPSecure = 'tls'; // ssl is depracated
 	$mail->SMTPAuth = true;
-	$mail->Username = "aba.jeffrey34@gmail.com";
-	$mail->Password = "Shaddow19";
-	$mail->setFrom("aba.jeffrey34@gmail.com", "jeffrey");
+	$mail->Username = "Email";
+	$mail->Password = "Password";
+	$mail->setFrom("Youremail@gmail.com");
 	$mail->addAddress($email);
 	$mail->Subject = 'PHPMailer GMail SMTP test';
 	$mail->msgHTML("test body"); //$mail->msgHTML(file_get_contents('contents.html'), __DIR__); //Read an HTML message body from an external file, convert referenced images to embedded,

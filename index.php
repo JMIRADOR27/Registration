@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -79,6 +77,15 @@
                                     </div><!--end col-->
                                     <div class="col-md-6">
                                         <div class="mb-3"> 
+                                            <label class="form-label">Age <span class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="calendar" class="fea icon-sm icons"></i>
+                                                <input type="text" maxlength="3" class="form-control ps-5 age" name="age" placeholder="Age" required>
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+                                    <div class="col-md-12">
+                                        <div class="mb-6"> 
                                             <label class="form-label">Contact Number <span class="text-danger">*</span></label>
                                             <div class="form-icon position-relative">
                                                 <i data-feather="phone" class="fea icon-sm icons"></i>
@@ -86,23 +93,15 @@
                                             </div>
                                         </div>
                                     </div><!--end col-->
-                                    <div class="col-md-6">
-                                        <div class="mb-3"> 
-                                            <label class="form-label">Age <span class="text-danger">*</span></label>
-                                            <div class="form-icon position-relative">
-                                                <i data-feather="calendar" class="fea icon-sm icons"></i>
-                                                <input type="text" maxlength="3" class="form-control ps-5 age" name="age" placeholder="Age" readonly required>
-                                            </div>
-                                        </div>
-                                    </div><!--end col-->
-                                    <div class="col-md-6">
+                                   
+                                    <!-- <div class="col-md-6">
                                         <div class="mb-3"> 
                                             <label class="form-label">Birthday <span class="text-danger">*</span></label>
                                             <div class="form-icon position-relative">
                                                 <input type="date" class="form-control start" max="<?php $time=strtotime("-18 year", time()); echo date("Y-m-d", $time); ?>" min="<?php $time=strtotime("-90 year" , time()); echo  date("Y-m-d" , $time); ?>" id="birthday" name="birthday" required>
                                             </div>
                                         </div>
-                                    </div><!--end col-->
+                                    </div>end col -->
                                     <div class="col-md-12">
                                         <div class="mb-3">
                                             <label class="form-label">RFID <span class="text-danger">*</span></label>
@@ -179,16 +178,16 @@
 
     //  ajax submit       
       $(function () {
-        $('#birthday').change(function(){
-            var today = new Date();
-            var birthDate = new Date($('#birthday').val());
-            var age = today.getFullYear() - birthDate.getFullYear();
-            var m = today.getMonth() - birthDate.getMonth();
-            if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-                age;
-            }
-            $('.age').val(age);
-          });
+        // $('#birthday').change(function(){
+        //     var today = new Date();
+        //     var birthDate = new Date($('#birthday').val());
+        //     var age = today.getFullYear() - birthDate.getFullYear();
+        //     var m = today.getMonth() - birthDate.getMonth();
+        //     if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        //         age;
+        //     }
+        //     $('.age').val(age);
+        //   });
 
         $('form').on('submit', function (e) {
 
