@@ -1,3 +1,12 @@
+<?php
+include 'actions/connection.php';
+$sql="SELECT * FROM registrants";
+$stmt = $conn->query($sql);
+if(mysqli_num_rows($stmt) >= 5000){
+    header('location: capacitylimit.php');
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,6 +14,8 @@
     <meta charset="utf-8" />
     <title>Registration</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/logo-1.png">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- Icons -->
@@ -38,7 +49,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-7 col-md-6">
                     <div class="me-lg-5">   
-                        <img src="images/signup.svg" class="img-fluid d-block mx-auto" alt="">
+                        <img src="images/logo-2.png" class="img-fluid d-block mx-auto" alt="">
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-6">
@@ -178,6 +189,7 @@
 
     //  ajax submit       
       $(function () {
+        $('#preloader').hide();
         // $('#birthday').change(function(){
         //     var today = new Date();
         //     var birthDate = new Date($('#birthday').val());
@@ -196,9 +208,13 @@
           $.ajax({
             type: 'post',
             dataType: 'JSON',
-            url: 'actions/registration.php',
+            url: 'actions/action_registration.php',
             data: $('form').serialize(),
+            beforeSend: function(){
+                $('#preloader').show();
+            },
             success: function(data) {
+                $('#preloader').hide();
               if(data.status == 1){
                 alert(data.message);
                   
@@ -208,8 +224,7 @@
                 alert(data.message);
               }
             },
-            error: function(reequest,err){
-                // alert('Error in Registration');
+            error: function(request,err){
                 console.log(err);
             }
           });

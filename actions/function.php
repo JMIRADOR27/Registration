@@ -9,13 +9,13 @@
 include 'connection.php';
 //status 0 default
 $status = 0;
-$message = 'Registration Failed';
+$message = '';
 
 function insertRegistrants($fname, $lname,$mname,$age,$cnumber,$email,$address,$RFID) {
     global $status,$conn,$message;
 
 	$username = $fname[0].$lname.mt_rand(2000,9000);
-	$alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890';
+	$alphabet = 'abcdefghijklmnopqrstuvwxyz1234567890';
     $pass = array(); //remember to declare $pass as an array
     $alphaLength = strlen($alphabet) - 1; //put the length -1 in cache
     for ($i = 0; $i < 8; $i++) {
@@ -41,6 +41,7 @@ function insertRegistrants($fname, $lname,$mname,$age,$cnumber,$email,$address,$
 		// }
 	}else{
 		$status = 0;
+		$message = 'Registration Failed';
 	}
 }
 
@@ -56,6 +57,24 @@ function emailValidation($email){
 		return 0;
 	}
 }
+
+function Login($username,$password){
+	global $conn,$status,$message;
+	session_start();
+	$stmt = $conn->prepare('SELECT id,username FROM admin WHERE username=? AND password=?');
+	$stmt->bind_param('ss', $username,$password);
+	$stmt->execute();
+    $result = $stmt->get_result();
+	if($row = $result->fetch_assoc()){
+		$_SESSION['id'] = $row['id'];
+		$_SESSION['uname'] = $row['username'];
+		return $status = 1;
+	}else{
+		return $message = "Incorrect username and password";
+	}
+
+}
+
 
 function emailer($email){
 	// $mail = new PHPMailer;

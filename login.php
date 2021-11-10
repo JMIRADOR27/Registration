@@ -1,3 +1,11 @@
+<?php 
+error_reporting(0);
+session_start();
+if($_SESSION['uname']){
+    header('location: dashboard.php');
+    // session_destroy();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,6 +15,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/logo-1.png">
     <!-- Icons -->
     <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
@@ -37,7 +47,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-7 col-md-6">
                     <div class="me-lg-5">   
-                        <img src="images/login.svg" class="img-fluid d-block mx-auto" alt="">
+                        <img src="images/logo-2.png" class="img-fluid d-block mx-auto" alt="">
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-6">
@@ -48,10 +58,10 @@
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <div class="mb-3">
-                                            <label class="form-label">Your Email <span class="text-danger">*</span></label>
+                                            <label class="form-label">Username <span class="text-danger">*</span></label>
                                             <div class="form-icon position-relative">
                                                 <i data-feather="user" class="fea icon-sm icons"></i>
-                                                <input type="email" class="form-control ps-5" placeholder="Email" name="email" required="">
+                                                <input type="text" class="form-control ps-5" autocomplete="off" placeholder="Username" name="username" required="">
                                             </div>
                                         </div>
                                     </div><!--end col-->
@@ -61,7 +71,7 @@
                                             <label class="form-label">Password <span class="text-danger">*</span></label>
                                             <div class="form-icon position-relative">
                                                 <i data-feather="key" class="fea icon-sm icons"></i>
-                                                <input type="password" class="form-control ps-5" placeholder="Password" required="">
+                                                <input type="password" class="form-control ps-5" autocomplete="off" placeholder="Password" name="password" required="">
                                             </div>
                                         </div>
                                     </div><!--end col-->
@@ -71,7 +81,7 @@
                                             <div class="mb-3">
                                               
                                             </div>
-                                            <p class="forgot-pass mb-0"><a href="forgotPassword.html" class="text-dark fw-bold">Forgot password ?</a></p>
+                                            <p class="forgot-pass mb-0"><a href="index.php" class="text-dark fw-bold">Forgot password ?</a></p>
                                         </div>
                                     </div><!--end col-->
 
@@ -82,7 +92,7 @@
                                     </div><!--end col-->
 
                                     <div class="col-12 text-center">
-                                        <p class="mb-0 mt-3"><small class="text-dark me-2">Don't have an account ?</small> <a href="register.html" class="text-dark fw-bold">Register</a></p>
+                                        <p class="mb-0 mt-3"><small class="text-dark me-2">Don't have an account ?</small> <a href="index.php" class="text-dark fw-bold">Register</a></p>
                                     </div><!--end col-->
                                 </div><!--end row-->
                             </form>
@@ -99,6 +109,35 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- Icons -->
     <script src="js/feather.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+         //  ajax submit       
+      $(function () {
+        $('form').on('submit', function (e) {
+
+          e.preventDefault();
+
+          $.ajax({
+            type: 'post',
+            dataType: 'JSON',
+            url: 'actions/action_login.php',
+            data: $('form').serialize(),
+            success: function(data) {
+              if(data.status == 1){
+                window.location.href = "dashboard.php";
+              }else{
+                alert(data.message);
+              }
+            },
+            error: function(request,err){
+                console.log(err);
+            }
+          });
+
+        });
+
+      });
+    </script>
     <!-- Main Js -->
     <script src="js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
     <script src="js/app.js"></script><!--Note: All important javascript like page loader, menu, sticky menu, menu-toggler, one page menu etc. -->
