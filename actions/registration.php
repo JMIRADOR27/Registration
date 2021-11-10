@@ -6,11 +6,19 @@ $mname = $conn->real_escape_string($_POST['mname']);
 $cnumber = $_POST['cnumber'];
 $age = $_POST['age'];
 $email = $conn->real_escape_string($_POST['email']);
+$birthday = $_POST['birthday'];
+$address = $conn->real_escape_string($_POST['address']);
+$RFID = $conn->real_escape_string($_POST['rfid']);
 
-insertRegistrants($fname, $lname,$mname,$age,$cnumber,$email);
 
+if(emailValidation($email)){
+insertRegistrants($fname, $lname,$mname,$age,$birthday,$cnumber,$email,$address,$RFID);
+}else{
+    $status = 3;
+    $message = "Email Already Exist";
+}
 
-$arrayData = array("status" => $status);
+$arrayData = array("status" => $status, "message" => $message);
 
 echo json_encode($arrayData);
 

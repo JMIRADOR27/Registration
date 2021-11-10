@@ -12,8 +12,7 @@
     <!-- Icons -->
     <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
-    <!-- Date picker -->
-    <link rel="stylesheet" href="css/datepicker.min.css">
+
     <!-- Main css -->
     <link href="css/style.min.css" rel="stylesheet" type="text/css" id="theme-opt" />
 
@@ -32,7 +31,7 @@
     </div>
     <!-- Loader -->
     <div class="back-to-home rounded d-sm-block">
-        <a href="#" class="btn btn-icon btn-soft-primary"><i data-feather="home" class="icons"></i></a>
+        <a href="login.php" class="btn btn-icon btn-soft-primary"><i data-feather="home" class="icons"></i></a>
     </div>
 
     <!-- Hero Start -->
@@ -47,7 +46,7 @@
                 <div class="col-lg-5 col-md-6">
                     <div class="card shadow rounded border-0">
                         <div class="card-body">
-                            <h4 class="card-title text-center">Signup</h4>  
+                            <h4 class="card-title text-center">Register</h4>  
                             <form class="login-form mt-4">
                                 <div class="row">
                                     <div class="col-md-6">
@@ -65,12 +64,12 @@
                                             <label class="form-label">Last Name <span class="text-danger">*</span></label>
                                             <div class="form-icon position-relative">
                                                 <i data-feather="user-check" class="fea icon-sm icons"></i>
-                                                <input type="text" class="form-control ps-5" placeholder="Last Name" name="lname" >
+                                                <input type="text" class="form-control ps-5" placeholder="Last Name" name="lname" required>
                                             </div>
                                         </div>
                                     </div><!--end col-->
-                                    <div class="col-md-12">
-                                        <div class="mb-6"> 
+                                    <div class="col-md-6">
+                                        <div class="mb-3"> 
                                             <label class="form-label">Middle Name</label>
                                             <div class="form-icon position-relative">
                                                 <i data-feather="user-check" class="fea icon-sm icons"></i>
@@ -83,7 +82,7 @@
                                             <label class="form-label">Contact Number <span class="text-danger">*</span></label>
                                             <div class="form-icon position-relative">
                                                 <i data-feather="phone" class="fea icon-sm icons"></i>
-                                                <input type="text" class="form-control ps-5 cnumber" name="cnumber" minlength="11" maxlength="11" >
+                                                <input type="text" class="form-control ps-5 cnumber" name="cnumber" minlength="11" maxlength="11" required>
                                             </div>
                                         </div>
                                     </div><!--end col-->
@@ -92,7 +91,33 @@
                                             <label class="form-label">Age <span class="text-danger">*</span></label>
                                             <div class="form-icon position-relative">
                                                 <i data-feather="calendar" class="fea icon-sm icons"></i>
-                                                <input type="text" maxlength="3" class="form-control ps-5 age" placeholder="Age" name="age" >
+                                                <input type="text" maxlength="3" class="form-control ps-5 age" name="age" placeholder="Age" readonly required>
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+                                    <div class="col-md-6">
+                                        <div class="mb-3"> 
+                                            <label class="form-label">Birthday <span class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                                <input type="date" class="form-control start" max="<?php $time=strtotime("-18 year", time()); echo date("Y-m-d", $time); ?>" min="<?php $time=strtotime("-90 year" , time()); echo  date("Y-m-d" , $time); ?>" id="birthday" name="birthday" required>
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label class="form-label">RFID <span class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="credit-card" class="fea icon-sm icons"></i>
+                                                <input type="text" class="form-control ps-5" placeholder="RFID" name="rfid" required>
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label class="form-label">Address <span class="text-danger">*</span></label>
+                                            <div class="form-icon position-relative">
+                                                <i data-feather="map-pin" class="fea icon-sm icons"></i>
+                                                <input type="text" class="form-control ps-5" placeholder="Address" name="address" required>
                                             </div>
                                         </div>
                                     </div><!--end col-->
@@ -103,7 +128,7 @@
                                             <label class="form-label">Your Email <span class="text-danger">*</span></label>
                                             <div class="form-icon position-relative">
                                                 <i data-feather="mail" class="fea icon-sm icons"></i>
-                                                <input type="email" class="form-control ps-5" placeholder="Email" name="email" >
+                                                <input type="email" class="form-control ps-5" placeholder="Email" name="email" required>
                                             </div>
                                         </div>
                                     </div><!--end col-->
@@ -150,8 +175,20 @@
             prefix: '09',
             });
 
+
+
     //  ajax submit       
       $(function () {
+        $('#birthday').change(function(){
+            var today = new Date();
+            var birthDate = new Date($('#birthday').val());
+            var age = today.getFullYear() - birthDate.getFullYear();
+            var m = today.getMonth() - birthDate.getMonth();
+            if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                age;
+            }
+            $('.age').val(age);
+          });
 
         $('form').on('submit', function (e) {
 
@@ -163,20 +200,26 @@
             url: 'actions/registration.php',
             data: $('form').serialize(),
             success: function(data) {
-              if(data.status == 0){
-                  alert('Registration Failed');
+              if(data.status == 1){
+                alert(data.message);
+                  
+              }else if(data.status == 3){
+                alert(data.message);
               }else{
-                alert('Successfully Registered')
+                alert(data.message);
               }
             },
-            error: function(err){
-                alert('form was submitted');
+            error: function(reequest,err){
+                // alert('Error in Registration');
+                console.log(err);
             }
           });
 
         });
 
       });
+
+
     </script>
     <!-- Main Js -->
     <script src="js/plugins.init.js"></script><!--Note: All init js like tiny slider, counter, countdown, maintenance, lightbox, gallery, swiper slider, aos animation etc.-->
