@@ -11,25 +11,25 @@ include 'connection.php';
 $status = 0;
 $message = '';
 
-function insertRegistrants($fname, $lname,$mname,$age,$cnumber,$email,$address,$RFID) {
+function insertRegistrants($fname, $lname,$mname,$age,$cnumber,$email,$address,$RFID,$device) {
     global $status,$conn,$message;
 
-	$username = $fname[0].$lname.mt_rand(2000,9000);
-	$alphabet = 'abcdefghijklmnopqrstuvwxyz1234567890';
-    $pass = array(); //remember to declare $pass as an array
-    $alphaLength = strlen($alphabet) - 1; //put the length -1 in cache
-    for ($i = 0; $i < 8; $i++) {
-        $n = rand(0, $alphaLength);
-        $pass[] = $alphabet[$n];
-    }
-	$password = implode($pass);
+	// $username = $fname[0].$lname.mt_rand(2000,9000);
+	// $alphabet = 'abcdefghijklmnopqrstuvwxyz1234567890';
+    // $pass = array(); //remember to declare $pass as an array
+    // $alphaLength = strlen($alphabet) - 1; //put the length -1 in cache
+    // for ($i = 0; $i < 8; $i++) {
+    //     $n = rand(0, $alphaLength);
+    //     $pass[] = $alphabet[$n];
+    // }
+	// $password = implode($pass);
 
-	$stmt = $conn->prepare('INSERT INTO registrants (first_name, last_name, middle_name, age, contact_number, email,RFID,address,Username,Password) VALUES (?,?,?,?,?,?,?,?,?,?)');
+	$stmt = $conn->prepare('INSERT INTO registrants (first_name, last_name, middle_name, age, contact_number, email,RFID,address,device) VALUES (?,?,?,?,?,?,?,?,?)');
 
 	// using prepared statement several times with different variables
 	if (
 		$stmt &&
-		$stmt->bind_param('sssiisssss', $fname, $lname,$mname,$age,$cnumber,$email,$RFID,$address,$username,$password) &&
+		$stmt->bind_param('sssiissss', $fname, $lname,$mname,$age,$cnumber,$email,$RFID,$address,$device) &&
 		$stmt->execute()
 	) {
 		// if(emailer($email)){

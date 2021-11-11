@@ -95,8 +95,8 @@ if(mysqli_num_rows($stmt) >= 5000){
                                             </div>
                                         </div>
                                     </div><!--end col-->
-                                    <div class="col-md-12">
-                                        <div class="mb-6"> 
+                                    <div class="col-md-6">
+                                        <div class="mb-3"> 
                                             <label class="form-label">Contact Number <span class="text-danger">*</span></label>
                                             <div class="form-icon position-relative">
                                                 <i data-feather="phone" class="fea icon-sm icons"></i>
@@ -104,6 +104,18 @@ if(mysqli_num_rows($stmt) >= 5000){
                                             </div>
                                         </div>
                                     </div><!--end col-->
+                                    <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Choose a device <span class="text-danger">*</span></label>
+                                                <div class="form-icon position-relative">
+                                                    <i data-feather="smartphone" class="fea icon-sm icons"></i>
+                                                    <select class="form-control ps-5" name="device" required>
+                                                        <option value="Android">Android</option>
+                                                        <option value="Iphone">Iphone</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                    </div>
                                    
                                     <!-- <div class="col-md-6">
                                         <div class="mb-3"> 
@@ -171,6 +183,23 @@ if(mysqli_num_rows($stmt) >= 5000){
     </section><!--end section-->
     <!-- Hero End -->
 
+    <!-- Modal -->
+<div class="modal fade" id="modalView" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" onclick="modalclose();">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     <!-- javascript -->
     
     <script src="js/bootstrap.bundle.min.js"></script>
@@ -184,12 +213,14 @@ if(mysqli_num_rows($stmt) >= 5000){
             numericOnly: true,
             prefix: '09',
             });
-
-
+        function modalclose(){
+            $('#modalView').modal('hide');
+        }
 
     //  ajax submit       
       $(function () {
         $('#preloader').hide();
+        $('#modalView').modal('show');
         // $('#birthday').change(function(){
         //     var today = new Date();
         //     var birthDate = new Date($('#birthday').val());

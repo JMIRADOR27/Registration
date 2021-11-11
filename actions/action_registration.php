@@ -8,10 +8,11 @@ $age = $_POST['age'];
 $email = $conn->real_escape_string($_POST['email']);
 $address = $conn->real_escape_string($_POST['address']);
 $RFID = $conn->real_escape_string($_POST['rfid']);
+$device = $conn->real_escape_string($_POST['device']);
 
 
 if(emailValidation($email)){
-insertRegistrants($fname, $lname,$mname,$age,$cnumber,$email,$address,$RFID);
+insertRegistrants($fname, $lname,$mname,$age,$cnumber,$email,$address,$RFID,$device);
 }else{
     $status = 3;
     $message = "Email Already Exist";
