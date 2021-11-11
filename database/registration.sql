@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 10, 2021 at 02:56 PM
+-- Generation Time: Nov 11, 2021 at 01:47 PM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.3.21
 
@@ -58,8 +58,9 @@ CREATE TABLE `registrants` (
   `RFID` varchar(255) NOT NULL,
   `address` varchar(250) NOT NULL,
   `email_verification` int(11) NOT NULL DEFAULT 2 COMMENT '1 - Verfied 2- Unverified',
-  `Username` varchar(250) NOT NULL,
-  `Password` varchar(250) NOT NULL
+  `Username` varchar(250) DEFAULT NULL,
+  `Password` varchar(250) DEFAULT NULL,
+  `device` varchar(250) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -92,7 +93,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `registrants`
 --
 ALTER TABLE `registrants`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
