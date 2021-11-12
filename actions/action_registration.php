@@ -11,9 +11,9 @@ $RFID = $conn->real_escape_string($_POST['rfid']);
 $device = $conn->real_escape_string($_POST['device']);
 
 
-if(emailValidation($email)){
-insertRegistrants($fname, $lname,$mname,$age,$cnumber,$email,$address,$RFID,$device);
-}else{
+if (emailValidation($email)) {
+    insertRegistrants($fname, $lname, $mname, $age, $cnumber, $email, $address, $RFID, $device);
+} else {
     $status = 3;
     $message = "Email Already Exist";
 }
@@ -21,6 +21,3 @@ insertRegistrants($fname, $lname,$mname,$age,$cnumber,$email,$address,$RFID,$dev
 $arrayData = array("status" => $status, "message" => $message);
 
 echo json_encode($arrayData);
-
-
-?>
