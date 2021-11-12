@@ -1,8 +1,8 @@
 <?php
 $serverip = "localhost";
-$username = "root";
-$password = "";
-$dbname = "registration";
+$username = "mkadmin";
+$password = "M@int@N@nc3";
+$dbname = "register_db";
 
 // Create connection
 global $conn;
