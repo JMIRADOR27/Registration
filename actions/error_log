@@ -1,0 +1,257 @@
+[13-Nov-2021 03:25:53 UTC] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 03:25:53 UTC] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 03:25:53 UTC] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 03:26:06 UTC] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 03:26:06 UTC] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 03:26:06 UTC] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 03:26:43 UTC] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 03:26:43 UTC] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 03:26:43 UTC] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 03:29:30 UTC] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 03:29:30 UTC] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 03:29:30 UTC] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 03:29:53 UTC] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 03:29:53 UTC] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 03:29:53 UTC] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 03:29:54 UTC] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 03:29:54 UTC] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 03:29:54 UTC] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 03:30:51 UTC] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 03:30:51 UTC] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 03:30:51 UTC] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 03:30:53 UTC] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 03:30:53 UTC] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 03:30:53 UTC] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 03:34:39 UTC] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 03:34:39 UTC] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 03:34:39 UTC] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 03:36:02 UTC] PHP Notice:  Undefined variable: conn in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 3
+[13-Nov-2021 03:36:02 UTC] PHP Fatal error:  Uncaught Error: Call to a member function real_escape_string() on null in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 3
+[13-Nov-2021 03:36:04 UTC] PHP Notice:  Undefined variable: conn in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 3
+[13-Nov-2021 03:36:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function real_escape_string() on null in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 3
+[13-Nov-2021 03:36:15 UTC] PHP Notice:  Undefined variable: conn in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 3
+[13-Nov-2021 03:36:15 UTC] PHP Fatal error:  Uncaught Error: Call to a member function real_escape_string() on null in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 3
+[13-Nov-2021 04:00:11 UTC] PHP Notice:  Undefined variable: conn in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 3
+[13-Nov-2021 04:00:11 UTC] PHP Fatal error:  Uncaught Error: Call to a member function real_escape_string() on null in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 3
+[13-Nov-2021 04:00:12 UTC] PHP Notice:  Undefined variable: conn in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 3
+[13-Nov-2021 04:00:12 UTC] PHP Fatal error:  Uncaught Error: Call to a member function real_escape_string() on null in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 3
+[13-Nov-2021 04:00:13 UTC] PHP Notice:  Undefined variable: conn in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 3
+[13-Nov-2021 04:00:13 UTC] PHP Fatal error:  Uncaught Error: Call to a member function real_escape_string() on null in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 3
+[13-Nov-2021 04:02:53 UTC] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 04:02:53 UTC] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 04:02:53 UTC] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 04:02:57 UTC] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 04:02:57 UTC] PHP Warning:  require(vendor/autoload.php): failed to open stream: No such file or directory in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 04:02:57 UTC] PHP Fatal error:  require(): Failed opening required 'vendor/autoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 04:04:18 UTC] PHP Warning:  require(vendor/PHPMailerAutoload.php): failed to open stream: No such file or directory in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 04:04:18 UTC] PHP Warning:  require(vendor/PHPMailerAutoload.php): failed to open stream: No such file or directory in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 04:04:18 UTC] PHP Fatal error:  require(): Failed opening required 'vendor/PHPMailerAutoload.php' (include_path='.:/opt/alt/php74/usr/share/pear') in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 5
+[13-Nov-2021 04:06:55 UTC] PHP Notice:  Undefined index: fname in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 3
+[13-Nov-2021 04:06:55 UTC] PHP Notice:  Undefined index: lname in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 4
+[13-Nov-2021 04:06:55 UTC] PHP Notice:  Undefined index: mname in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 5
+[13-Nov-2021 04:06:55 UTC] PHP Notice:  Undefined index: cnumber in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 6
+[13-Nov-2021 04:06:55 UTC] PHP Notice:  Undefined index: age in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 7
+[13-Nov-2021 04:06:55 UTC] PHP Notice:  Undefined index: email in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 8
+[13-Nov-2021 04:06:55 UTC] PHP Notice:  Undefined index: address in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 9
+[13-Nov-2021 04:06:55 UTC] PHP Notice:  Undefined index: rfid in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 10
+[13-Nov-2021 04:06:55 UTC] PHP Notice:  Undefined index: device in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 11
+[13-Nov-2021 04:12:20 UTC] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pilcvifxxk6c/public_html/register/actions/PHPMailer/PHPMailerAutoload.php on line 45
+[13-Nov-2021 04:12:20 UTC] PHP Notice:  Undefined index: fname in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 3
+[13-Nov-2021 04:12:20 UTC] PHP Notice:  Undefined index: lname in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 4
+[13-Nov-2021 04:12:20 UTC] PHP Notice:  Undefined index: mname in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 5
+[13-Nov-2021 04:12:20 UTC] PHP Notice:  Undefined index: cnumber in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 6
+[13-Nov-2021 04:12:20 UTC] PHP Notice:  Undefined index: age in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 7
+[13-Nov-2021 04:12:20 UTC] PHP Notice:  Undefined index: email in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 8
+[13-Nov-2021 04:12:20 UTC] PHP Notice:  Undefined index: address in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 9
+[13-Nov-2021 04:12:20 UTC] PHP Notice:  Undefined index: rfid in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 10
+[13-Nov-2021 04:12:20 UTC] PHP Notice:  Undefined index: device in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 11
+[13-Nov-2021 04:14:42 UTC] PHP Notice:  Undefined index: fname in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 3
+[13-Nov-2021 04:14:42 UTC] PHP Notice:  Undefined index: lname in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 4
+[13-Nov-2021 04:14:42 UTC] PHP Notice:  Undefined index: mname in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 5
+[13-Nov-2021 04:14:42 UTC] PHP Notice:  Undefined index: cnumber in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 6
+[13-Nov-2021 04:14:42 UTC] PHP Notice:  Undefined index: age in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 7
+[13-Nov-2021 04:14:42 UTC] PHP Notice:  Undefined index: email in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 8
+[13-Nov-2021 04:14:42 UTC] PHP Notice:  Undefined index: address in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 9
+[13-Nov-2021 04:14:42 UTC] PHP Notice:  Undefined index: rfid in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 10
+[13-Nov-2021 04:14:42 UTC] PHP Notice:  Undefined index: device in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 11
+[13-Nov-2021 04:14:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/pilcvifxxk6c/public_html/register/actions/function.php:52
+Stack trace:
+#0 /home/pilcvifxxk6c/public_html/register/actions/action_registration.php(14): emailValidation('')
+#1 {main}
+  thrown in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 52
+[13-Nov-2021 04:16:16 UTC] PHP Notice:  Undefined index: fname in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 3
+[13-Nov-2021 04:16:16 UTC] PHP Notice:  Undefined index: lname in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 4
+[13-Nov-2021 04:16:16 UTC] PHP Notice:  Undefined index: mname in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 5
+[13-Nov-2021 04:16:16 UTC] PHP Notice:  Undefined index: cnumber in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 6
+[13-Nov-2021 04:16:16 UTC] PHP Notice:  Undefined index: age in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 7
+[13-Nov-2021 04:16:16 UTC] PHP Notice:  Undefined index: email in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 8
+[13-Nov-2021 04:16:16 UTC] PHP Notice:  Undefined index: address in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 9
+[13-Nov-2021 04:16:16 UTC] PHP Notice:  Undefined index: rfid in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 10
+[13-Nov-2021 04:16:16 UTC] PHP Notice:  Undefined index: device in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 11
+[13-Nov-2021 04:16:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/pilcvifxxk6c/public_html/register/actions/function.php:52
+Stack trace:
+#0 /home/pilcvifxxk6c/public_html/register/actions/action_registration.php(14): emailValidation('')
+#1 {main}
+  thrown in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 52
+[13-Nov-2021 04:22:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/pilcvifxxk6c/public_html/register/actions/function.php:52
+Stack trace:
+#0 /home/pilcvifxxk6c/public_html/register/actions/action_registration.php(14): emailValidation('awdawd!@adawdwa')
+#1 {main}
+  thrown in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 52
+[13-Nov-2021 04:24:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/pilcvifxxk6c/public_html/register/actions/function.php:52
+Stack trace:
+#0 /home/pilcvifxxk6c/public_html/register/actions/action_registration.php(14): emailValidation('wadaw@awdawd')
+#1 {main}
+  thrown in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 52
+[13-Nov-2021 04:26:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/pilcvifxxk6c/public_html/register/actions/function.php:52
+Stack trace:
+#0 /home/pilcvifxxk6c/public_html/register/actions/action_registration.php(14): emailValidation('awdaw@awdawdwa')
+#1 {main}
+  thrown in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 52
+[13-Nov-2021 04:29:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/pilcvifxxk6c/public_html/register/actions/function.php:51
+Stack trace:
+#0 /home/pilcvifxxk6c/public_html/register/actions/action_registration.php(14): emailValidation('asdawd@wdawdaw')
+#1 {main}
+  thrown in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 51
+[13-Nov-2021 04:32:42 UTC] PHP Notice:  Undefined index: fname in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 3
+[13-Nov-2021 04:32:42 UTC] PHP Notice:  Undefined index: lname in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 4
+[13-Nov-2021 04:32:42 UTC] PHP Notice:  Undefined index: mname in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 5
+[13-Nov-2021 04:32:42 UTC] PHP Notice:  Undefined index: cnumber in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 6
+[13-Nov-2021 04:32:42 UTC] PHP Notice:  Undefined index: age in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 7
+[13-Nov-2021 04:32:42 UTC] PHP Notice:  Undefined index: email in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 8
+[13-Nov-2021 04:32:42 UTC] PHP Notice:  Undefined index: address in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 9
+[13-Nov-2021 04:32:42 UTC] PHP Notice:  Undefined index: rfid in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 10
+[13-Nov-2021 04:32:42 UTC] PHP Notice:  Undefined index: device in /home/pilcvifxxk6c/public_html/register/actions/action_registration.php on line 11
+[13-Nov-2021 04:32:42 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/pilcvifxxk6c/public_html/register/actions/function.php:51
+Stack trace:
+#0 /home/pilcvifxxk6c/public_html/register/actions/action_registration.php(14): emailValidation('')
+#1 {main}
+  thrown in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 51
+[13-Nov-2021 04:33:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/pilcvifxxk6c/public_html/register/actions/function.php:51
+Stack trace:
+#0 /home/pilcvifxxk6c/public_html/register/actions/action_registration.php(14): emailValidation('1212awd@eqqwdwa')
+#1 {main}
+  thrown in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 51
+[13-Nov-2021 04:48:44 UTC] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/pilcvifxxk6c/public_html/register/actions/PHPMailer/PHPMailerAutoload.php on line 45
+[13-Nov-2021 04:48:44 UTC] PHP Fatal error:  Uncaught Error: Class 'PHPMailer\PHPMailer\PHPMailer' not found in /home/pilcvifxxk6c/public_html/register/actions/function.php:82
+Stack trace:
+#0 /home/pilcvifxxk6c/public_html/register/actions/function.php(36): emailer('wadawd@awdawdaw...')
+#1 /home/pilcvifxxk6c/public_html/register/actions/action_registration.php(15): insertRegistrants('awdxwaw', 'asdawd', 'asdasd', 121, 91121, 'wadawd@awdawdaw...', 'dawdwa', 'awdawdw', 'Android')
+#2 {main}
+  thrown in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 82
+[13-Nov-2021 05:50:00 UTC] PHP Notice:  Undefined variable: conn in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 138
+[13-Nov-2021 05:50:00 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/pilcvifxxk6c/public_html/register/actions/function.php:138
+Stack trace:
+#0 /home/pilcvifxxk6c/public_html/register/actions/function.php(131): verificationEmail('"jeffreybolivar...', '""')
+#1 {main}
+  thrown in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 138
+[13-Nov-2021 05:50:56 UTC] PHP Notice:  Undefined variable: conn in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 138
+[13-Nov-2021 05:50:56 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/pilcvifxxk6c/public_html/register/actions/function.php:138
+Stack trace:
+#0 /home/pilcvifxxk6c/public_html/register/actions/function.php(131): verificationEmail('jeffreybolivar3...', '1')
+#1 {main}
+  thrown in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 138
+[13-Nov-2021 06:05:30 UTC] PHP Parse error:  syntax error, unexpected '?>' in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 110
+[13-Nov-2021 06:14:03 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 110
+[13-Nov-2021 06:34:29 UTC] PHP Parse error:  syntax error, unexpected 'width' (T_STRING) in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 115
+[13-Nov-2021 06:35:05 UTC] PHP Parse error:  syntax error, unexpected 'width' (T_STRING) in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 115
+[14-Nov-2021 10:33:33 UTC] PHP Notice:  Undefined variable: twilioAccountId in /home/pilcvifxxk6c/public_html/register/actions/sms.php on line 13
+[14-Nov-2021 10:33:33 UTC] PHP Fatal error:  Uncaught Twilio\Exceptions\ConfigurationException: Credentials are required to create a Client in /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Rest/Client.php:172
+Stack trace:
+#0 /home/pilcvifxxk6c/public_html/register/actions/sms.php(13): Twilio\Rest\Client->__construct(NULL, '3601b792ade6248...')
+#1 {main}
+  thrown in /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Rest/Client.php on line 172
+[14-Nov-2021 10:33:48 UTC] PHP Notice:  Undefined variable: twilioAccountId in /home/pilcvifxxk6c/public_html/register/actions/sms.php on line 13
+[14-Nov-2021 10:33:48 UTC] PHP Fatal error:  Uncaught Twilio\Exceptions\ConfigurationException: Credentials are required to create a Client in /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Rest/Client.php:172
+Stack trace:
+#0 /home/pilcvifxxk6c/public_html/register/actions/sms.php(13): Twilio\Rest\Client->__construct(NULL, '3601b792ade6248...')
+#1 {main}
+  thrown in /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Rest/Client.php on line 172
+[14-Nov-2021 11:01:25 UTC] PHP Fatal error:  Uncaught Twilio\Exceptions\RestException: [HTTP 401] Unable to create record: Authenticate in /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php:88
+Stack trace:
+#0 /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php(223): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Rest/Api/V2010/Account/MessageList.php(66): Twilio\Version->create('POST', '/Accounts/ACabf...', Array, Array)
+#2 /home/pilcvifxxk6c/public_html/register/actions/sms.php(20): Twilio\Rest\Api\V2010\Account\MessageList->create('+639662158058', Object(Twilio\Values))
+#3 {main}
+  thrown in /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php on line 88
+[14-Nov-2021 11:01:58 UTC] PHP Fatal error:  Uncaught Twilio\Exceptions\RestException: [HTTP 401] Unable to create record: Authenticate in /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php:88
+Stack trace:
+#0 /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php(223): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Rest/Api/V2010/Account/MessageList.php(66): Twilio\Version->create('POST', '/Accounts/ACabf...', Array, Array)
+#2 /home/pilcvifxxk6c/public_html/register/actions/sms.php(20): Twilio\Rest\Api\V2010\Account\MessageList->create('+639662158058', Object(Twilio\Values))
+#3 {main}
+  thrown in /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php on line 88
+[14-Nov-2021 11:14:09 UTC] PHP Fatal error:  Uncaught Twilio\Exceptions\RestException: [HTTP 401] Unable to create record: Authenticate in /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php:88
+Stack trace:
+#0 /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php(223): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Rest/Api/V2010/Account/MessageList.php(66): Twilio\Version->create('POST', '/Accounts/ACabf...', Array, Array)
+#2 /home/pilcvifxxk6c/public_html/register/actions/sms.php(21): Twilio\Rest\Api\V2010\Account\MessageList->create('+639662158058', Object(Twilio\Values))
+#3 {main}
+  thrown in /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php on line 88
+[14-Nov-2021 11:54:25 UTC] PHP Fatal error:  Uncaught Twilio\Exceptions\RestException: [HTTP 401] Unable to create record: Authenticate in /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php:88
+Stack trace:
+#0 /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php(223): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Rest/Api/V2010/Account/MessageList.php(66): Twilio\Version->create('POST', '/Accounts/ACabf...', Array, Array)
+#2 /home/pilcvifxxk6c/public_html/register/actions/sms.php(16): Twilio\Rest\Api\V2010\Account\MessageList->create('+639662158058', Object(Twilio\Values))
+#3 {main}
+  thrown in /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php on line 88
+[14-Nov-2021 11:56:55 UTC] PHP Fatal error:  Uncaught Twilio\Exceptions\RestException: [HTTP 400] Unable to create record: A 'From' phone number is required. in /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php:88
+Stack trace:
+#0 /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php(223): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Rest/Api/V2010/Account/MessageList.php(66): Twilio\Version->create('POST', '/Accounts/ACabf...', Array, Array)
+#2 /home/pilcvifxxk6c/public_html/register/actions/sms.php(16): Twilio\Rest\Api\V2010\Account\MessageList->create('+639662158058', Object(Twilio\Values))
+#3 {main}
+  thrown in /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php on line 88
+[14-Nov-2021 12:11:05 UTC] PHP Fatal error:  Uncaught Twilio\Exceptions\RestException: [HTTP 400] Unable to create record: The 'To' number 639662158058 is not a valid phone number. in /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php:88
+Stack trace:
+#0 /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php(223): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Rest/Api/V2010/Account/MessageList.php(66): Twilio\Version->create('POST', '/Accounts/ACabf...', Array, Array)
+#2 /home/pilcvifxxk6c/public_html/register/actions/function.php(186): Twilio\Rest\Api\V2010\Account\MessageList->create('639662158058', Object(Twilio\Values))
+#3 /home/pilcvifxxk6c/public_html/register/actions/function.php(43): sms(639662158058)
+#4 /home/pilcvifxxk6c/public_html/register/actions/action_registration.php(21): insertRegistrants('jeffrey', 'mirador', 12, 639662158058, 'jeffreybolivar3...', 'Androi in /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php on line 88
+[14-Nov-2021 12:13:04 UTC] PHP Fatal error:  Uncaught Twilio\Exceptions\RestException: [HTTP 400] Unable to create record: The 'To' number 639662158058 is not a valid phone number. in /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php:88
+Stack trace:
+#0 /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php(223): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Rest/Api/V2010/Account/MessageList.php(66): Twilio\Version->create('POST', '/Accounts/ACabf...', Array, Array)
+#2 /home/pilcvifxxk6c/public_html/register/actions/function.php(186): Twilio\Rest\Api\V2010\Account\MessageList->create('639662158058', Object(Twilio\Values))
+#3 /home/pilcvifxxk6c/public_html/register/actions/function.php(43): sms(639662158058)
+#4 /home/pilcvifxxk6c/public_html/register/actions/action_registration.php(21): insertRegistrants('jeffrey', 'mirador', 12, 639662158058, 'jeffreybolivar3...', 'Androi in /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php on line 88
+[14-Nov-2021 12:28:08 UTC] PHP Fatal error:  Uncaught Twilio\Exceptions\RestException: [HTTP 400] Unable to create record: The 'To' number 639662158058 is not a valid phone number. in /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php:88
+Stack trace:
+#0 /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php(223): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Rest/Api/V2010/Account/MessageList.php(66): Twilio\Version->create('POST', '/Accounts/ACabf...', Array, Array)
+#2 /home/pilcvifxxk6c/public_html/register/actions/function.php(187): Twilio\Rest\Api\V2010\Account\MessageList->create('639662158058', Object(Twilio\Values))
+#3 /home/pilcvifxxk6c/public_html/register/actions/function.php(44): sms(639662158058)
+#4 /home/pilcvifxxk6c/public_html/register/actions/action_registration.php(21): insertRegistrants('jeffrey', 'mirador', 12, 639662158058, 'jeffreybolivar3...', 'Androi in /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php on line 88
+[14-Nov-2021 12:29:03 UTC] PHP Fatal error:  Uncaught Twilio\Exceptions\RestException: [HTTP 400] Unable to create record: The 'To' number 639662158058 is not a valid phone number. in /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php:88
+Stack trace:
+#0 /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php(223): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Rest/Api/V2010/Account/MessageList.php(66): Twilio\Version->create('POST', '/Accounts/ACabf...', Array, Array)
+#2 /home/pilcvifxxk6c/public_html/register/actions/function.php(187): Twilio\Rest\Api\V2010\Account\MessageList->create('639662158058', Object(Twilio\Values))
+#3 /home/pilcvifxxk6c/public_html/register/actions/function.php(44): sms(639662158058)
+#4 /home/pilcvifxxk6c/public_html/register/actions/action_registration.php(21): insertRegistrants('jeffrey', 'mirador', 121, 639662158058, 'jeffreybolivar3...', 'Andro in /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php on line 88
+[14-Nov-2021 13:03:49 UTC] PHP Fatal error:  Uncaught Twilio\Exceptions\RestException: [HTTP 400] Unable to create record: The From phone number +19088609757 is not a valid, SMS-capable inbound phone number or short code for your account. in /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php:88
+Stack trace:
+#0 /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php(223): Twilio\Version->exception(Object(Twilio\Http\Response), 'Unable to creat...')
+#1 /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Rest/Api/V2010/Account/MessageList.php(66): Twilio\Version->create('POST', '/Accounts/ACabf...', Array, Array)
+#2 /home/pilcvifxxk6c/public_html/register/actions/sms.php(22): Twilio\Rest\Api\V2010\Account\MessageList->create('+639662158058', Object(Twilio\Values))
+#3 {main}
+  thrown in /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php on line 88

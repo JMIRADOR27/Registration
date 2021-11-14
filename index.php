@@ -46,10 +46,17 @@ if (mysqli_num_rows($stmt) >= 5000) {
     <!-- Hero Start -->
     <section class="bg-auth-home d-table w-100" style="margin-top: -100px">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center" >
                 <div class="col-lg-6 col-md-6">
                     <div class="me-lg-5">
-                        <img src="images/logo-2.png" class="img-fluid d-block mx-auto" alt="">
+                        <img src="images/logo-2.png" class="img-fluid d-block mx-auto" style="width:180px;height:160px" alt="">
+                        <div style="text-align:justify">
+                        <h5><i class="uil uil-calculator"></i> Toll fee calculator</h5>
+                        <h5><i class="uil uil-capture"></i> RFID balance inquiry and reloading</h5>
+                        <h5><i class="uil uil-traffic-light"></i> Travel and traffic advisories</h5>
+                        <h5><i class="uil uil-no-entry"></i>Roadside assistance</h5>
+                        <h5><i class="uil uil-location-arrow"></i> Facilities locator</h5>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
@@ -63,7 +70,7 @@ if (mysqli_num_rows($stmt) >= 5000) {
                                             <label class="form-label">First Name <span class="text-danger">*</span></label>
                                             <div class="form-icon position-relative">
                                                 <i data-feather="user" class="fea icon-sm icons"></i>
-                                                <input type="text" class="form-control ps-5" placeholder="First Name" name="fname">
+                                                <input type="text" class="form-control ps-5" placeholder="First Name" name="fname" required>
                                             </div>
                                         </div>
                                     </div>
@@ -78,17 +85,7 @@ if (mysqli_num_rows($stmt) >= 5000) {
                                             </div>
                                         </div>
                                     </div>
-                                    <!--end col-->
-                                    <div class="col-md-6">
-                                        <div class="mb-3">
-                                            <label class="form-label">Middle Name</label>
-                                            <div class="form-icon position-relative">
-                                                <i data-feather="user-check" class="fea icon-sm icons"></i>
-                                                <input type="text" class="form-control ps-5" placeholder="Middle Name (optional)" name="mname">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--end col-->
+                                  
                                     <div class="col-md-6">
                                         <div class="mb-3">
                                             <label class="form-label">Age <span class="text-danger">*</span></label>
@@ -98,70 +95,38 @@ if (mysqli_num_rows($stmt) >= 5000) {
                                             </div>
                                         </div>
                                     </div>
-                                    <!--end col-->
-                                    <div class="col-md-6">
-                                        <div class="mb-3">
-                                            <label class="form-label">Contact Number <span class="text-danger">*</span></label>
-                                            <div class="form-icon position-relative">
-                                                <i data-feather="phone" class="fea icon-sm icons"></i>
-                                                <input type="text" class="form-control ps-5 cnumber" name="cnumber" minlength="11" maxlength="11" required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--end col-->
-                                    <div class="col-md-6">
+                                   <div class="col-md-6" style="display: none;">
                                         <div class="mb-3">
                                             <label class="form-label">Choose a device you'll install to<span class="text-danger">*</span></label>
                                             <div class="form-icon position-relative">
                                                 <i data-feather="smartphone" class="fea icon-sm icons"></i>
                                                 <select class="form-control ps-5" name="device" required>
                                                     <option value="" selected disabled>--Select a Device--</option>
-                                                    <option value="Android">Android</option>
+                                                    <option value="Android" selected>Android</option>
                                                     <option value="Iphone">iPhone / iOS</option>
                                                 </select>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <!-- <div class="col-md-6">
-                                        <div class="mb-3"> 
-                                            <label class="form-label">Birthday <span class="text-danger">*</span></label>
-                                            <div class="form-icon position-relative">
-                                                <input type="date" class="form-control start" max="<?php $time = strtotime("-18 year", time());
-                                                                                                    echo date("Y-m-d", $time); ?>" min="<?php $time = strtotime("-90 year", time());
-                                                                                                                                        echo  date("Y-m-d", $time); ?>" id="birthday" name="birthday" required>
-                                            </div>
-                                        </div>
-                                    </div>end col -->
-                                    <div class="col-md-12">
+                                    <!--end col-->
+                                    <div class="col-md-6">
                                         <div class="mb-3">
-                                            <label class="form-label">RFID <span class="text-danger">*</span></label>
+                                            <label class="form-label">Contact Number <span class="text-danger">*</span></label>
                                             <div class="form-icon position-relative">
-                                                <i data-feather="credit-card" class="fea icon-sm icons"></i>
-                                                <input type="text" class="form-control ps-5" placeholder="RFID" name="rfid" required>
+                                                <i data-feather="phone" class="fea icon-sm icons"></i>
+                                                <input type="text" class="form-control ps-5 cnumber" name="cnumber" minlength="13" maxlength="13" required>
                                             </div>
                                         </div>
                                     </div>
                                     <!--end col-->
-                                    <div class="col-md-12">
-                                        <div class="mb-3">
-                                            <label class="form-label">Address <span class="text-danger">*</span></label>
-                                            <div class="form-icon position-relative">
-                                                <i data-feather="map-pin" class="fea icon-sm icons"></i>
-                                                <input type="text" class="form-control ps-5" placeholder="Address" name="address" required>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--end col-->
-
-
+ 
                                     <div class="col-md-12">
                                         <div class="mb-3">
                                             <label class="form-label">Your Email <span class="text-danger">*</span></label>
                                             <div class="form-icon position-relative">
                                                 <i data-feather="mail" class="fea icon-sm icons"></i>
                                                 <input type="email" class="form-control ps-5" placeholder="Email" name="email" required>
-                                                <p style="font-size: 12px">Make sure this email is registered to Google Play Store of App Store.</p>
+                                                <p style="font-size: 12px">Make sure this email is registered to Google Play Store.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -176,7 +141,7 @@ if (mysqli_num_rows($stmt) >= 5000) {
                                         </div>
                                     </div>
                                     <!--end col-->
-
+                                    <div class="g-recaptcha" data-sitekey="6LeGJjMdAAAAAKQ-w5XKGslK1VXmKmRC9vnfAPaI"></div>
                                     <div class="col-md-12">
                                         <div class="d-grid">
                                             <button class="btn btn-primary">Register</button>
@@ -210,10 +175,10 @@ if (mysqli_num_rows($stmt) >= 5000) {
                     <h5 class="modal-title">Notice</h5>
                 </div>
                 <div class="modal-body">
-                    Please make sure that the email you will use to register is registered to the Google Play Store if you're using Android, or the App Store if you are using iPhone
+                    Drive Hub app is currently available among Android users only. In order to successfuly download the app, your email address  must be registered with Google Play Store.
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" onclick="modalclose();">I Understand</button>
+                    <button type="button" class="btn btn-secondary" onclick="modalclose();">Continue</button>
                 </div>
             </div>
         </div>
@@ -227,10 +192,11 @@ if (mysqli_num_rows($stmt) >= 5000) {
     <!-- cleave -->
     <script src="js/cleave.min.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
     <script>
         new Cleave('.cnumber', {
             numericOnly: true,
-            prefix: '09',
+            prefix: '+63',
         });
 
         function modalclose() {

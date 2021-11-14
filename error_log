@@ -1,0 +1,1 @@
+[12-Nov-2021 09:42:50 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/pilcvifxxk6c/public_html/register/actions/connection.php on line 9

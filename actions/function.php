@@ -1,9 +1,14 @@
 <?php
-// use PHPMailer\PHPMailer\PHPMailer;
+ini_set('display_errors', 1);
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+// use Twilio\Rest\Client;
 
-// require_once "PHPMailer/PHPMailer.php";
-// require_once "PHPMailer/SMTP.php";
-// require_once "PHPMailer/Exception.php";
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
+// require 'vendor/autoload.php';
+
 
 //connection
 include 'connection.php';
@@ -11,7 +16,7 @@ include 'connection.php';
 $status = 0;
 $message = '';
 
-function insertRegistrants($fname, $lname, $mname, $age, $cnumber, $email, $address, $RFID, $device)
+function insertRegistrants($fname, $lname, $age, $cnumber, $email, $device)
 {
 	global $status, $conn, $message;
 
@@ -24,40 +29,47 @@ function insertRegistrants($fname, $lname, $mname, $age, $cnumber, $email, $addr
 	//     $pass[] = $alphabet[$n];
 	// }
 	// $password = implode($pass);
+	
+	$verification_token = password_hash($email, PASSWORD_DEFAULT);
 
-	$stmt = $conn->prepare('INSERT INTO registrants (first_name, last_name, middle_name, age, contact_number, email,RFID,address,device) VALUES (?,?,?,?,?,?,?,?,?)');
+	$stmt = $conn->prepare('INSERT INTO registrants (first_name, last_name, age, contact_number, email,device,verification_token) VALUES (?,?,?,?,?,?,?)');
 
 	// using prepared statement several times with different variables
 	if (
 		$stmt &&
-		$stmt->bind_param('sssiissss', $fname, $lname, $mname, $age, $cnumber, $email, $RFID, $address, $device) &&
+		$stmt->bind_param('ssiisss', $fname, $lname, $age, $cnumber, $email, $device,$verification_token) &&
 		$stmt->execute()
 	) {
-		// if(emailer($email)){
+		if(emailer($email)){
+// 		if(sms($cnumber)){
 		$status = 1;
 		$message = "Successfully Registered";
-		// }else{
-		//  $status = 0;
-		//  $message = "Failed to sent email verification.";
-		// }
+// 		}else{
+// 		 $status = 0;
+// 		 $message = "Failed to sent sms notification.";
+// 		}
+		}
+		else{
+		 $status = 0;
+		 $message = "Failed to sent email verification.";
+		}
 	} else {
 		$status = 0;
 		$message = 'Registration Failed';
 	}
 }
 
-function emailValidation($email)
-{
+function emailValidation($email){
 	global $conn;
-	$stmtresult = $conn->prepare('SELECT email FROM registrants WHERE email= ?');
-	$stmtresult->bind_param('s', $email);
-	$stmtresult->execute();
-	$arr = $stmtresult->get_result()->fetch_all(MYSQLI_ASSOC);
-	if (!$arr) {
+	$stmtresult = 'SELECT email FROM registrants WHERE email="'.$email.'"';
+	$result=mysqli_query($conn,$stmtresult);
+	
+	if(mysqli_num_rows($result) <= 0){
 		return 1;
-	} else {
+	}else{
 		return 0;
 	}
+	
 }
 
 function Login($username, $password)
@@ -80,24 +92,101 @@ function Login($username, $password)
 
 function emailer($email)
 {
-	// $mail = new PHPMailer;
-	// $mail->isSMTP();
-	// $mail->Host = "smtp.gmail.com"; // use $mail->Host = gethostbyname('smtp.gmail.com'); // if your network does not support SMTP over IPv6
-	// $mail->Port = 587; // TLS only
-	// $mail->SMTPSecure = 'tls'; // ssl is depracated
-	// $mail->SMTPAuth = true;
-	// $mail->Username = "Email";
-	// $mail->Password = "Password";
-	// $mail->setFrom("Youremail@gmail.com");
-	// $mail->addAddress($email);
-	// $mail->Subject = 'PHPMailer GMail SMTP test';
-	// $mail->msgHTML("test body"); //$mail->msgHTML(file_get_contents('contents.html'), __DIR__); //Read an HTML message body from an external file, convert referenced images to embedded,
-	// $mail->AltBody = 'HTML messaging not supported';
-	// // $mail->addAttachment('images/phpmailer_mini.png'); //Attach an image file
+	$mail = new PHPMailer();
+	try{
+ //Server settings
+    // $mail->SMTPDebug = 3;                                       // Enable verbose debug output
+    // $mail->isSMTP();                                            // Set mailer to use SMTP
+    $mail->Host       = 'smtp.gmail.com';                       // Specify main and backup SMTP servers
+    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+    $mail->Username   = 'drivehub001@gmail.com';                // SMTP username
+    $mail->Password   = 'Justice#928110..';                     // SMTP password
+    $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, [ICODE]ssl[/ICODE] also accepted
+    $mail->Port       = 587;                                    // TCP port to connect to
+ 
+    //Recipients
+    $mail->setFrom('drivehub@mptc.com.ph', 'noreply-drivehub.com.ph');
+    $mail->addReplyTo('drivehub001@gmail.com');
+    $mail->addAddress($email);     // Add a recipient
 
-	// if(!$mail->send()){
-	// 	echo "Mailer Error: " . $mail->ErrorInfo;
-	// }else{
-	// 	echo "Message sent!";
-	// }
+ 
+    // Attachments
+    // $mail->addAttachment('/home/cpanelusername/attachment.txt');         // Add attachments
+    // $mail->addAttachment('/home/cpanelusername/image.jpg', 'new.jpg');    // Optional name
+ 
+    // Content
+    $mail->isHTML(true);                                  // Set email format to HTML
+    $mail->Subject = 'Here is the subject';
+    $mail->Body    = 'This is the HTML message body <a href="https://drivehub.mptc.com.ph/register/actions/function.php?email='.$email.'&code='.password_hash($email, PASSWORD_DEFAULT).'">
+    <b>Click this link to verify</b></a>';
+    // $mail->send();
+	if(!$mail->send()){
+		$status = 0;
+        $message = "Verification could not be sent.";
+	}else{
+	    return true;
+	}
+ 
+    } catch (Exception $e) {
+        $status = 0;
+        $message = "Verification could not be sent.";
+    }
+
+
 }
+
+ //check if the get variable exists
+    if (isset($_GET['email']) && isset($_GET['code']))
+    {
+        verificationEmail($_GET['email'] , $_GET['code']);
+    }
+
+function verificationEmail($email,$hash){
+    global $conn;
+    
+    if(password_verify($email, $hash)){
+        $sql = "UPDATE registrants SET email_verification='1' WHERE email='".$email."'";
+
+        if ($conn->query($sql) === TRUE) {
+                echo '<script type="text/javascript">'; 
+                echo 'alert("Email Successfully Verified");'; 
+                echo 'window.location.href = "https://drivehub.mptc.com.ph/register";';
+                echo '</script>';
+        } else {
+          echo '<script type="text/javascript">'; 
+                echo 'alert("Expired");'; 
+                echo 'window.location.href = "https://drivehub.mptc.com.ph/register";';
+                echo '</script>';
+        }
+    }else{
+         echo '<script type="text/javascript">'; 
+                echo 'alert("Invalid Verification");'; 
+                echo 'window.location.href = "https://drivehub.mptc.com.ph/register";';
+                echo '</script>';
+    }
+    
+    
+}
+
+function sms($cnumber){
+        // Your Account SID and Auth Token from twilio.com/console
+    $account_sid = 'ACabfb494c940cbe660d441f4d4a95c7e5';
+    $auth_token = 'e24136c00a6ab2477890660ce311163c';
+    // In production, these should be environment variables. E.g.:
+    // $auth_token = $_ENV["TWILIO_AUTH_TOKEN"]
+    
+    // A Twilio number you own with SMS capabilities
+    $twilio_number = "+19088609757";
+    
+    $client = new Client($account_sid, $auth_token);
+    $client->messages->create(
+        // Where to send a text message (your cell phone?)
+        '+'.$cnumber,
+        array(
+            'from' => $twilio_number,
+            'body' => 'I sent this message for notification of registeration'
+        )
+    );
+    return true;
+}
+
