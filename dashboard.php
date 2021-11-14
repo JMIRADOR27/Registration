@@ -167,13 +167,10 @@ $countVerified = mysqli_num_rows($statements);
             <tr>
                 <th>First Name</th>
                 <th>Last Name</th>
-                <th>Middle Name</th>
                 <th>Email</th>
-                <th>Address</th>
                 <th>Contact Number</th>
                 <th>Device</th>
                 <th>Age</th>
-                <th>RFID</th>
             </tr>
         </thead>
         <tbody>
@@ -183,13 +180,10 @@ $countVerified = mysqli_num_rows($statements);
             <tr>
                 <td><?php echo $row['first_name']; ?></td>
                 <td><?php echo $row['last_name']; ?></td>
-                <td><?php echo $row['middle_name']; ?></td>
                 <td><?php echo $row['email']; ?></td>
-                <td><?php echo $row['address']; ?></td>
                 <td><?php echo $row['contact_number']; ?></td>
                 <td><?php echo $row['device']; ?></td>
                 <td><?php echo $row['age']; ?></td>
-                <td><?php echo $row['RFID']; ?></td>
             </tr>
             <?php } ?>
         </tbody>
