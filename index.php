@@ -46,17 +46,27 @@ if (mysqli_num_rows($stmt) >= 5000) {
     <!-- Hero Start -->
     <section class="bg-auth-home d-table w-100" style="margin-top: -100px">
         <div class="container">
-            <div class="row align-items-center" >
-                <div class="col-lg-6 col-md-6">
-                    <div class="me-lg-5">
-                        <img src="images/logo-2.png" class="img-fluid d-block mx-auto" style="width:180px;height:160px" alt="">
-                        <div style="text-align:justify">
-                        <h5><i class="uil uil-calculator"></i> Toll fee calculator</h5>
-                        <h5><i class="uil uil-capture"></i> RFID balance inquiry and reloading</h5>
-                        <h5><i class="uil uil-traffic-light"></i> Travel and traffic advisories</h5>
-                        <h5><i class="uil uil-no-entry"></i>Roadside assistance</h5>
-                        <h5><i class="uil uil-location-arrow"></i> Facilities locator</h5>
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6" style="margin-top: -30px">
+                    <div class="me-lg-5" style="font-size: 15px;">
+                        <img src="images/logo-2.png" class="img-fluid d-block mx-auto" width="180" alt="">
+                        <div class="text-center" style="margin-bottom: 12px;">A swifter and smoother expressway journey now within reach.</div>
+                        <p align="justify">
+                            Welcome to DriveHub, your new mobile travel companion brought to you by the Metro Pacific Tollways! With this app, you’ll be able to do the following features and services with just a few clicks:
+                        </p>
+                        <div style="margin-bottom: 12px">
+                            <i class="uil uil-calculator"></i> Calculate toll fees<br>
+                            <i class="uil uil-capture"></i> Inquire for your RFID balance and easily reload<br>
+                            <i class="uil uil-traffic-light"></i> Take the best route with travel and traffic advisories<br>
+                            <i class="uil uil-no-entry"></i> Request for Roadside Assistance<br>
+                            <i class="uil uil-location-arrow"></i> Locate the nearest facilities en route to your destination<br>
                         </div>
+                        <p align="justify">
+                            Register and download the app on the Play Store today!
+                        </p>
+                        <img src="images/google-play-badge.png" class="d-block mx-auto" width="250" alt="">
+                        <BR>
+                        <p align="center">Note: This mobile app is in Beta testing phase and is only available to Android OS users as of the moment.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
@@ -85,7 +95,7 @@ if (mysqli_num_rows($stmt) >= 5000) {
                                             </div>
                                         </div>
                                     </div>
-                                  
+
                                     <div class="col-md-6">
                                         <div class="mb-3">
                                             <label class="form-label">Age <span class="text-danger">*</span></label>
@@ -95,7 +105,7 @@ if (mysqli_num_rows($stmt) >= 5000) {
                                             </div>
                                         </div>
                                     </div>
-                                   <div class="col-md-6" style="display: none;">
+                                    <div class="col-md-6" style="display: none;">
                                         <div class="mb-3">
                                             <label class="form-label">Choose a device you'll install to<span class="text-danger">*</span></label>
                                             <div class="form-icon position-relative">
@@ -119,7 +129,7 @@ if (mysqli_num_rows($stmt) >= 5000) {
                                         </div>
                                     </div>
                                     <!--end col-->
- 
+
                                     <div class="col-md-12">
                                         <div class="mb-3">
                                             <label class="form-label">Your Email <span class="text-danger">*</span></label>
@@ -141,7 +151,10 @@ if (mysqli_num_rows($stmt) >= 5000) {
                                         </div>
                                     </div>
                                     <!--end col-->
-                                    <div class="g-recaptcha" data-sitekey="6LeGJjMdAAAAAKQ-w5XKGslK1VXmKmRC9vnfAPaI"></div>
+                                    <div class="col-md-12 form-group" style="display: block; margin-bottom: 12px;">
+                                        <div class="g-recaptcha" data-sitekey="6LeGJjMdAAAAAKQ-w5XKGslK1VXmKmRC9vnfAPaI"></div>
+                                    </div>
+
                                     <div class="col-md-12">
                                         <div class="d-grid">
                                             <button class="btn btn-primary">Register</button>
@@ -175,7 +188,7 @@ if (mysqli_num_rows($stmt) >= 5000) {
                     <h5 class="modal-title">Notice</h5>
                 </div>
                 <div class="modal-body">
-                    Drive Hub app is currently available among Android users only. In order to successfuly download the app, your email address  must be registered with Google Play Store.
+                    Drive Hub app is currently available among Android users only. In order to successfuly download the app, your email address must be registered with Google Play Store.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" onclick="modalclose();">Continue</button>
