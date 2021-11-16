@@ -62,10 +62,10 @@ if (mysqli_num_rows($stmt) >= 5000) {
                             <i class="uil uil-location-arrow"></i> Locate the nearest facilities en route to your destination<br>
                         </div>
                         <p align="justify">
-                            Register and download the app on the Play Store today!
+                            Register here now to access the exclusive download link and give the DriveHub app a try.
                         </p>
-                        <img src="images/google-play-badge.png" class="d-block mx-auto" width="250" alt="">
-                        <BR>
+                       
+                      
                         <p align="center">Note: This mobile app is in Beta testing phase and is only available to Android OS users as of the moment.</p>
                     </div>
                 </div>
@@ -188,7 +188,7 @@ if (mysqli_num_rows($stmt) >= 5000) {
                     <h5 class="modal-title">Notice</h5>
                 </div>
                 <div class="modal-body">
-                    Drive Hub app is currently available among Android users only. In order to successfuly download the app, your email address must be registered with Google Play Store.
+                    Drive Hub app is currently available among Android users only. In order to successfully download the app, your email address must be registered with Google Play Store.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" onclick="modalclose();">Continue</button>

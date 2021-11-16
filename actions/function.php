@@ -40,7 +40,7 @@ function insertRegistrants($fname, $lname, $age, $cnumber, $email, $device)
 		$stmt->bind_param('ssiisss', $fname, $lname, $age, $cnumber, $email, $device,$verification_token) &&
 		$stmt->execute()
 	) {
-		if(emailer($email)){
+		if(emailer($email,$fname)){
 // 		if(sms($cnumber)){
 		$status = 1;
 		$message = "Successfully Registered";
@@ -90,7 +90,7 @@ function Login($username, $password)
 }
 
 
-function emailer($email)
+function emailer($email,$fname)
 {
 	$mail = new PHPMailer();
 	try{
@@ -116,9 +116,9 @@ function emailer($email)
  
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Here is the subject';
-    $mail->Body    = 'This is the HTML message body <a href="https://drivehub.mptc.com.ph/register/actions/function.php?email='.$email.'&code='.password_hash($email, PASSWORD_DEFAULT).'">
-    <b>Click this link to verify</b></a>';
+    $mail->Subject = 'Welcome to DriveHub';
+    $mail->Body    = 'Dear '.ucfirst($fname).', <br><br> Welcome to DriveHub, your travel companion app, In order to get started, you need to confirm your email address <br><br> <a href="https://drivehub.mptc.com.ph/register/actions/function.php?email='.$email.'&code='.password_hash($email, PASSWORD_DEFAULT).'">
+    <b>CLICK TO CONFIRM EMAIL</b></a><br><br>Thanks,<br>DriveHub Team';
     // $mail->send();
 	if(!$mail->send()){
 		$status = 0;
