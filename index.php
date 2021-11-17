@@ -54,23 +54,25 @@ if (mysqli_num_rows($stmt) >= 5000) {
                         <p align="justify">
                             Welcome to DriveHub, your new mobile travel companion brought to you by the Metro Pacific Tollways! With this app, you’ll be able to do the following features and services with just a few clicks:
                         </p>
-                        <div class="row">
-                       <div class="col-lg-2 col-md-2"></div>
-                        <div class="col-lg-10 col-md-10">
-                        <div style="margin-bottom: 12px">
-                            <i class="uil uil-calculator"></i>&nbsp; Calculate toll fees<br>
-                            <i class="uil uil-capture"></i>&nbsp; Inquire for your RFID balance and easily reload<br>
-                            <i class="uil uil-traffic-light"></i>&nbsp; Take the best route with travel and traffic advisories<br>
-                            <i class="uil uil-no-entry"></i>&nbsp; Request for Roadside Assistance<br>
-                            <i class="uil uil-location-arrow"></i>&nbsp; Locate the nearest facilities en route to your destination<br>
-                        </div>
-                        </div>
+
+
+                        <div class="row" style="margin-bottom: 12px; margin-left: 12px">
+                            <div class="col-1"><i class="uil uil-calculator"></i></div>
+                            <div class="col-11">Calculate toll fees</div>
+                            <div class="col-1"><i class="uil uil-capture"></i></div>
+                            <div class="col-11">Inquire for your RFID balance and easily reload</div>
+                            <div class="col-1"><i class="uil uil-traffic-light"></i></div>
+                            <div class="col-11">Take the best route with travel and traffic advisories</div>
+                            <div class="col-1"><i class="uil uil-no-entry"></i></div>
+                            <div class="col-11">Request for Roadside Assistance</div>
+                            <div class="col-1"><i class="uil uil-location-arrow"></i></div>
+                            <div class="col-11">Locate the nearest facilities en route to your destination</div>
                         </div>
                         <p align="justify">
                             Register here now to access the exclusive download link and give the DriveHub app a try.
                         </p>
-                       
-                      
+
+
                         <p align="center">Note: This mobile app is in Beta testing phase and is only available to Android OS users as of the moment.</p>
                     </div>
                 </div>
