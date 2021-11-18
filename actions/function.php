@@ -143,29 +143,84 @@ function emailer($email,$fname)
 
 function verificationEmail($email,$hash){
     global $conn;
-    
+    $email = $conn->real_escape_string($email);
     if(password_verify($email, $hash)){
-        $sql = "UPDATE registrants SET email_verification='1' WHERE email='".$email."'";
+        $sql = "SELECT first_name FROM registrants WHERE email='".$email."'";
+        $result = $conn->query($sql);
+    	if ($result->num_rows > 0) {
+    	 while($row = $result->fetch_assoc()) {
+        $fname = $row['first_name'];
+         }
+    	$sql = "UPDATE registrants SET email_verification='1' WHERE email='".$email."'";
 
         if ($conn->query($sql) === TRUE) {
-                echo '<script type="text/javascript">'; 
-                echo 'alert("Email Successfully Verified");'; 
-                echo 'window.location.href = "https://drivehub.mptc.com.ph/register";';
-                echo '</script>';
+            
+                EmailForDownloadApp($email,$fname);
         } else {
           echo '<script type="text/javascript">'; 
                 echo 'alert("Expired");'; 
                 echo 'window.location.href = "https://drivehub.mptc.com.ph/register";';
                 echo '</script>';
         }
-    }else{
-         echo '<script type="text/javascript">'; 
+    	} else {
+        	 echo '<script type="text/javascript">'; 
                 echo 'alert("Invalid Verification");'; 
                 echo 'window.location.href = "https://drivehub.mptc.com.ph/register";';
                 echo '</script>';
+    	}
+        }else{
+             echo '<script type="text/javascript">'; 
+                    echo 'alert("Invalid Verification");'; 
+                    echo 'window.location.href = "https://drivehub.mptc.com.ph/register";';
+                    echo '</script>';
+        }
+}
+
+function EmailForDownloadApp($email,$fname){
+    	$mail = new PHPMailer();
+	try{
+     //Server settings
+    // $mail->SMTPDebug = 3;                                       // Enable verbose debug output
+    // $mail->isSMTP();                                            // Set mailer to use SMTP
+    $mail->Host       = 'smtp.gmail.com';                       // Specify main and backup SMTP servers
+    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+    $mail->Username   = 'drivehub001@gmail.com';                // SMTP username
+    $mail->Password   = 'Justice#928110..';                     // SMTP password
+    $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, [ICODE]ssl[/ICODE] also accepted
+    $mail->Port       = 587;                                    // TCP port to connect to
+ 
+    //Recipients
+    $mail->setFrom('drivehub@mptc.com.ph', 'noreply-drivehub.com.ph');
+    $mail->addReplyTo('drivehub001@gmail.com');
+    $mail->addAddress($email);     // Add a recipient
+
+ 
+    // Attachments
+    // $mail->addAttachment('/home/cpanelusername/attachment.txt');         // Add attachments
+    // $mail->addAttachment('/home/cpanelusername/image.jpg', 'new.jpg');    // Optional name
+ 
+    // Content
+    $mail->isHTML(true);                                  // Set email format to HTML
+    $mail->Subject = 'You\'re In. You can download DriveHub now';
+    $mail->Body    = 'Dear '.ucfirst($fname).', <br>You’re In!<br><br>
+    Welcome to the exclusive group of first-generation users of DriveHub, your Travel Companion App. We aim to make your travel hassle-free and safe and your experiences memorable. <br><br>
+    To get things started, download DriveHub HERE <a href="https://play.google.com/store/apps/details?id=com.outsystemsenterprise.mptc.DriveHub"><b>CLICK TO DOWNLOAD</b></a>, When exploring DriveHub, don’t forget to check your RFID balance, navigate the the Reload RFID Balance feature, test the traffic advisory service, calculate your toll fee and discover rest and facility areas en route to your destination.
+    <br><br>And last but not the least, tell us what you think about the app. In the next few days, you will receive an email from us containing a link to survey about DriveHub. Remember, P300 worth of RFID load awaits the FIRST 100 people to download DriveHub and complete this survey.<br><br>Download DriveHub now<br><br>Thanks,<br>DriveHub Team';
+    // $mail->send();
+	if(!$mail->send()){
+		$status = 0;
+        $message = "Error!.";
+	}else{
+	            echo '<script type="text/javascript">'; 
+                echo 'alert("Email Successfully Verified");'; 
+                echo 'window.location.href = "https://drivehub.mptc.com.ph/register";';
+                echo '</script>';
+	}
+ 
+    } catch (Exception $e) {
+        $status = 0;
+        $message = "Error!";
     }
-    
-    
 }
 
 function sms($cnumber){

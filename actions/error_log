@@ -255,3 +255,10 @@ Stack trace:
 #2 /home/pilcvifxxk6c/public_html/register/actions/sms.php(22): Twilio\Rest\Api\V2010\Account\MessageList->create('+639662158058', Object(Twilio\Values))
 #3 {main}
   thrown in /home/pilcvifxxk6c/public_html/register/actions/vendor/twilio/sdk/src/Twilio/Version.php on line 88
+[18-Nov-2021 00:30:39 UTC] PHP Notice:  Undefined variable: fname in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 198
+[18-Nov-2021 00:40:22 UTC] PHP Notice:  Undefined variable: fname in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 194
+[18-Nov-2021 00:52:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/pilcvifxxk6c/public_html/register/actions/function.php:151
+Stack trace:
+#0 /home/pilcvifxxk6c/public_html/register/actions/function.php(141): verificationEmail('jeffreybolivar3...', '$2y$10$BkQn9I6I...')
+#1 {main}
+  thrown in /home/pilcvifxxk6c/public_html/register/actions/function.php on line 151
