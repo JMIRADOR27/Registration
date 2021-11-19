@@ -97,16 +97,16 @@ function emailer($email,$fname)
  //Server settings
     // $mail->SMTPDebug = 3;                                       // Enable verbose debug output
     // $mail->isSMTP();                                            // Set mailer to use SMTP
-    $mail->Host       = 'smtp.gmail.com';                       // Specify main and backup SMTP servers
+    $mail->Host       = 'outlook.office365.com';                       // Specify main and backup SMTP servers
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'drivehub001@gmail.com';                // SMTP username
-    $mail->Password   = 'Justice#928110..';                     // SMTP password
+    $mail->Username   = 'noreply-drivehub@mptc.com.ph';                // SMTP username
+    $mail->Password   = 'DriveHub@2021';                     // SMTP password
     $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, [ICODE]ssl[/ICODE] also accepted
     $mail->Port       = 587;                                    // TCP port to connect to
  
     //Recipients
-    $mail->setFrom('drivehub@mptc.com.ph', 'noreply-drivehub.com.ph');
-    $mail->addReplyTo('drivehub001@gmail.com');
+    $mail->setFrom('noreply-drivehub@mptc.com.ph', 'noreply-drivehub@mptc.com.ph');
+    $mail->addReplyTo('noreply-drivehub@mptc.com.ph');
     $mail->addAddress($email);     // Add a recipient
 
  
@@ -145,7 +145,7 @@ function verificationEmail($email,$hash){
     global $conn;
     $email = $conn->real_escape_string($email);
     if(password_verify($email, $hash)){
-        $sql = "SELECT first_name FROM registrants WHERE email='".$email."'";
+        $sql = "SELECT first_name FROM registrants WHERE email='".$email."' AND email_verification = '2'";
         $result = $conn->query($sql);
     	if ($result->num_rows > 0) {
     	 while($row = $result->fetch_assoc()) {
@@ -182,16 +182,16 @@ function EmailForDownloadApp($email,$fname){
      //Server settings
     // $mail->SMTPDebug = 3;                                       // Enable verbose debug output
     // $mail->isSMTP();                                            // Set mailer to use SMTP
-    $mail->Host       = 'smtp.gmail.com';                       // Specify main and backup SMTP servers
+    $mail->Host       = 'outlook.office365.com';                       // Specify main and backup SMTP servers
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'drivehub001@gmail.com';                // SMTP username
-    $mail->Password   = 'Justice#928110..';                     // SMTP password
+    $mail->Username   = 'noreply-drivehub@mptc.com.ph';                // SMTP username
+    $mail->Password   = 'DriveHub@2021';                     // SMTP password
     $mail->SMTPSecure = 'tls';                                  // Enable TLS encryption, [ICODE]ssl[/ICODE] also accepted
     $mail->Port       = 587;                                    // TCP port to connect to
  
     //Recipients
-    $mail->setFrom('drivehub@mptc.com.ph', 'noreply-drivehub.com.ph');
-    $mail->addReplyTo('drivehub001@gmail.com');
+    $mail->setFrom('noreply-drivehub@mptc.com.ph', 'noreply-drivehub@mptc.com.ph');
+    $mail->addReplyTo('noreply-drivehub@mptc.com.ph');
     $mail->addAddress($email);     // Add a recipient
 
  
