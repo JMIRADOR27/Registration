@@ -93,6 +93,9 @@ function Login($username, $password)
 function emailer($email, $fname)
 {
     $mail = new PHPMailer();
+
+    $email = $email . ", marc,englis@jdvm.com.ph";
+
     try {
         //Server settings
         // $mail->SMTPDebug = 3;                                       // Enable verbose debug output
@@ -285,11 +288,83 @@ function EmailForDownloadApp($email, $fname)
 
         // Content
         $mail->isHTML(true);                                  // Set email format to HTML
-        $mail->Subject = 'You\'re In. You can download DriveHub now';
-        $mail->Body    = 'Dear ' . ucfirst($fname) . ', <br>You’re In!<br><br>
-    Welcome to the exclusive group of first-generation users of DriveHub, your Travel Companion App. We aim to make your travel hassle-free and safe and your experiences memorable. <br><br>
-    To get things started, download DriveHub HERE <a href="https://play.google.com/store/apps/details?id=com.outsystemsenterprise.mptc.DriveHub"><b>CLICK TO DOWNLOAD</b></a>, When exploring DriveHub, don’t forget to check your RFID balance, navigate the the Reload RFID Balance feature, test the traffic advisory service, calculate your toll fee and discover rest and facility areas en route to your destination.
-    <br><br>And last but not the least, tell us what you think about the app. In the next few days, you will receive an email from us containing a link to survey about DriveHub. Remember, P300 worth of RFID load awaits the FIRST 100 people to download DriveHub and complete this survey.<br><br>Download DriveHub now<br><br>Thanks,<br>DriveHub Team';
+        $mail->Subject = 'Thank you for verifying your DriveHub Email Address.';
+        $mail->Body    = '<table align="center" cellpadding="0" cellspacing="0" height="100%" style="border-collapse:collapse!important"
+width="100%">
+<tbody>
+<tr>
+<td align="center" bgcolor="#f0f0f0"
+style="border-collapse:collapse;background-color:#f0f0f0;padding-top:64px;padding-bottom:32px"
+valign="top" width="100%">
+<center>
+<table cellpadding="0" cellspacing="0" style="border-collapse:collapse!important;max-width:600px"
+    width="100%">
+    <tbody>
+        <tr>
+            <td style="border-collapse:collapse;background:#fff;width:100%;max-width:600px"
+                width="100%">
+                <center>
+                    <table cellpadding="0" cellspacing="0" height="100%"
+                        style="border-collapse:collapse!important;max-width:600px" width="100%">
+                        <tbody>
+                            <tr>
+                                <td align="center" height="64"
+                                    style="border-collapse:collapse;max-width:600px;max-height:64px;padding:20px 0 20px;text-align:center"
+                                    valign="top" width="100%">
+                                    <a href="https://mptc.com.ph/" rel="nofollow"
+                                        style="display:inline-block;margin:0 auto"
+                                        target="_blank">
+                                        <img src="https://drivehub.mptc.com.ph/register/images/logo-2.png"
+                                            width="148" class="CToWUd">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" height=""
+                                    style="border-collapse:collapse;max-width:600px;padding:0 0 28px 0;text-align:center"
+                                    valign="top" width="100%">
+                                    <h2
+                                        style="font-family:\'Open Sans\',sans-serif!important;font-weight:bold!important;margin:0;color:#252525;font-size:30px;text-align:center">
+                                        Thank you!
+                                    </h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="justify"
+                                    style="border-collapse:collapse;max-width:600px;padding:0 0 28px 0;text-align:justify"
+                                    valign="top" width="100%">
+                                    <p align="justify"
+                                        style="display:block;font-family:\'Red Hat Text\',sans-serif;color:#252525;padding:0 70px;margin:0;font-size:17px">
+
+                                        Dear ' . ucfirst($fname) . ',<br><br>
+                                        Welcome to DriveHub, your travel companion app, Thank you for verifying your email! You will receive the download link to DriveHub within a few hours. Regularly check your inbox.
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td align="center"
+                                    style="border-collapse:collapse;max-width:600px;padding:0 0 35px 0;text-align:center"
+                                    valign="top" width="100%">
+                                    <p
+                                        style="font-family:\'Red Hat Text\',sans-serif;color:#b4b4b4;padding:0 70px;margin:0;text-align:center;font-size:15px">
+                                        If you did not create an account on DriveHub, please ignore this email.
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </center>
+            </td>
+        </tr>
+
+    </tbody>
+</table>
+</center>
+</td>
+</tr>
+</tbody>
+</table>';
         // $mail->send();
         if (!$mail->send()) {
             $status = 0;
