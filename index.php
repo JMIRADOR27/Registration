@@ -287,6 +287,7 @@ if (mysqli_num_rows($stmt) >= 5000) {
                         $('#preloader').hide();
                         if (data.status == 1) {
                             alert(data.message);
+                            window.location.href = "https://www.mptc.com.ph/";
 
                         } else if (data.status == 3) {
                             alert(data.message);
