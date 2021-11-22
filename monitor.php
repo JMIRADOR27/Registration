@@ -12,7 +12,7 @@ if (mysqli_num_rows($stmt) >= 5000) {
 
 <head>
     <meta charset="utf-8" />
-    <title>Registration</title>
+    <title>Registration Monitoring</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Refresh" content="5">
     <!-- favicon -->
