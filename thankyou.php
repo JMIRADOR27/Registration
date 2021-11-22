@@ -44,7 +44,7 @@ if (mysqli_num_rows($stmt) >= 5000) {
     </div>
 
     <!-- Hero Start -->
-    <section class="bg-auth-home d-table w-100" style="margin-top: -100px">
+    <section class="bg-auth-home d-table w-100" style="margin-top: -100px; padding-left: 60px">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12 col-md-12 text-center" style="margin-top: -30px">
