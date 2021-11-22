@@ -149,11 +149,11 @@ if (mysqli_num_rows($stmt) >= 5000) {
                                     </div>
                                     <!--end col-->
 
-                                    <div class="col-md-12" style="display: none">
+                                    <div class="col-md-12" style="display: block">
                                         <div class="mb-3">
                                             <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
-                                                <label class="form-check-label" for="flexCheckDefault">I Accept <a href="#" class="text-primary">Terms And Condition</a></label>
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                                                <label class="form-check-label" for="flexCheckDefault">I Accept <a href="#" class="text-primary" data-toggle="modal" data-target="#termsmodal">Terms And Conditions</a></label>
                                             </div>
                                         </div>
                                     </div>
@@ -195,7 +195,7 @@ if (mysqli_num_rows($stmt) >= 5000) {
                     <h5 class="modal-title">Notice</h5>
                 </div>
                 <div class="modal-body">
-                    Drive Hub app is currently available among Android users only. In order to successfully download the app, your email address must be registered with Google Play Store.
+                    The DriveHub app is currently available among Android users only. In order to successfully download the app, your email address must be registered with Google Play Store.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" onclick="modalclose();">Continue</button>
@@ -203,6 +203,32 @@ if (mysqli_num_rows($stmt) >= 5000) {
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="termsmodal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Notice</h5>
+                </div>
+                <div class="modal-body">
+                    <h5 class="text-center">Terms of Use of Personal Information</h5>
+                    <div style="height: 300px; overflow-y: scroll">
+                        <p> DriveHub, hereinafter referred to as The App, is collecting personal information of the user for the purpose of creating a unique account that will allow exclusive access for the user to be a Member of the Service. The App is also collecting personal information of the user for the purpose of marketing any promotional announcements as part of the Member Benefits whereas the promotional announcements is a default service benefit service of DriveHub being it as a service provider for Members, and the the The App authenticates such information (by verifying the Member’s e-mail address).</p>
+                        <p align="justify">In accordance to Data Privacy Act of the Philippines Republic Act No. 10173, DriveHub is a registered entity in National Privacy Commission and authorized to store and process any personal data collected from the general public.</p>
+
+                        <p align="justify">By clicking, you allow DriveHub to collect my information as part of my voluntary Membership registration to Hey Roomie service. Learn More</p>
+
+                        <p align="justify">I allow DriveHub to collect my information and authorize it as an entity to send me service, marketing, and promotional announcements that will benefit me as a registered Member of the Service.</p>
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" onclick="modalclose1();">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- javascript -->
 
@@ -221,6 +247,10 @@ if (mysqli_num_rows($stmt) >= 5000) {
 
         function modalclose() {
             $('#modalView').modal('hide');
+        }
+
+        function modalclose1() {
+            $('#termsmodal').modal('hide');
         }
 
         //  ajax submit       
