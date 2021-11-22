@@ -164,7 +164,7 @@ valign="top" width="100%">
                                     <p align="justify"
                                         style="display:block;font-family:\'Red Hat Text\',sans-serif;color:#252525;padding:0 70px;margin:0;font-size:17px">
 
-                                        Dear '.ucfirst($fname).',<br><br>
+                                        Dear ' . ucfirst($fname) . ',<br><br>
                                         Welcome to DriveHub, your travel companion app, In order to get started, you need to confirm your email address.  Once email address is confirmed, you will receive the download link to DriveHub within a few hours.
                                     </p>
                                 </td>
@@ -238,7 +238,7 @@ function verificationEmail($email, $hash)
 
             if ($conn->query($sql) === TRUE) {
 
-                // EmailForDownloadApp($email, $fname);
+                EmailForDownloadApp($email, $fname);
             } else {
                 echo '<script type="text/javascript">';
                 echo 'alert("Expired");';
