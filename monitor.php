@@ -14,7 +14,7 @@ if (mysqli_num_rows($stmt) >= 5000) {
     <meta charset="utf-8" />
     <title>Registration Monitoring</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Refresh" content="5">
+    <meta http-equiv="Refresh" content="10">
     <!-- favicon -->
     <link rel="shortcut icon" href="images/logo-1.png">
     <!-- Bootstrap -->
@@ -242,7 +242,7 @@ if (mysqli_num_rows($stmt) >= 5000) {
             </div>
         </div>
     </div>
-    <center>This page refreshes every 5 seconds</center>
+    <center>This page refreshes every 10 seconds</center>
 
 
     <!-- javascript -->
