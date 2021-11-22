@@ -116,9 +116,97 @@ function emailer($email, $fname)
 
         // Content
         $mail->isHTML(true);                                  // Set email format to HTML
-        $mail->Subject = 'DriveHub - Email Verification';
-        $mail->Body    = 'Dear ' . ucfirst($fname) . ', <br><br> Welcome to DriveHub, your travel companion app, In order to get started, you need to confirm your email address.  Once email address is confirmed, you will receive the download link to DriveHub within a few hours. <br><br> <a href="https://drivehub.mptc.com.ph/register/actions/function.php?email=' . $email . '&code=' . password_hash($email, PASSWORD_DEFAULT) . '">
-    <b>CONFIRM EMAIL NOW</b></a><br><br>Thanks,<br>DriveHub Team';
+        $mail->Subject = 'Verify your email address to begin your registration with DriveHub';
+        $mail->Body    = '<table align="center" cellpadding="0" cellspacing="0" height="100%" style="border-collapse:collapse!important"
+width="100%">
+<tbody>
+<tr>
+<td align="center" bgcolor="#f0f0f0"
+style="border-collapse:collapse;background-color:#f0f0f0;padding-top:64px;padding-bottom:32px"
+valign="top" width="100%">
+<center>
+<table cellpadding="0" cellspacing="0" style="border-collapse:collapse!important;max-width:600px"
+    width="100%">
+    <tbody>
+        <tr>
+            <td style="border-collapse:collapse;background:#fff;width:100%;max-width:600px"
+                width="100%">
+                <center>
+                    <table cellpadding="0" cellspacing="0" height="100%"
+                        style="border-collapse:collapse!important;max-width:600px" width="100%">
+                        <tbody>
+                            <tr>
+                                <td align="center" height="64"
+                                    style="border-collapse:collapse;max-width:600px;max-height:64px;padding:20px 0 20px;text-align:center"
+                                    valign="top" width="100%">
+                                    <a href="https://lemiapp.com/" rel="nofollow"
+                                        style="display:inline-block;margin:0 auto"
+                                        title="Lemi - Inspired Travel Recommendations"
+                                        target="_blank"
+                                        data-saferedirecturl="https://www.google.com/url?q=https://lemiapp.com/&amp;source=gmail&amp;ust=1637655826531000&amp;usg=AOvVaw0PRHn26vQ5ihLm-f3kyiO6">
+                                        <img src="https://drivehub.mptc.com.ph/register/images/logo-2.png"
+                                            width="148" class="CToWUd">
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center" height=""
+                                    style="border-collapse:collapse;max-width:600px;padding:0 0 28px 0;text-align:center"
+                                    valign="top" width="100%">
+                                    <h2
+                                        style="font-family:\'Open Sans\',sans-serif!important;font-weight:bold!important;margin:0;color:#252525;font-size:30px;text-align:center">
+                                        We need to verify your email address
+                                    </h2>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="justify"
+                                    style="border-collapse:collapse;max-width:600px;padding:0 0 28px 0;text-align:justify"
+                                    valign="top" width="100%">
+                                    <p
+                                        style="display:block;font-family:\'Red Hat Text\',sans-serif;color:#252525;padding:0 70px;margin:0;text-align:center;font-size:17px">
+
+                                        Dear '.ucfirst($fname).',<br><br>
+                                        Welcome to DriveHub, your travel companion app, In order to get started, you need to confirm your email address.  Once email address is confirmed, you will receive the download link to DriveHub within a few hours.
+                                    </p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td align="center"
+                                    style="border-collapse:collapse;max-width:600px;text-align:center;padding:0 0 28px 0"
+                                    valign="top">
+                                    <a href="https://drivehub.mptc.com.ph/register/actions/function.php?email=' . $email . '&code=' . password_hash($email, PASSWORD_DEFAULT) . '"
+                                        style="border-radius:12px;background-color:#0b4b88;display:inline-block;text-align:center;padding:14px 0;min-width:200px;text-decoration:none;color:#fff;font-family:\'Red Hat Display\',sans-serif!important;font-weight:500!important;font-size:15px!important"
+                                        target="_blank">
+                                        Verify email address
+                                    </a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td align="center"
+                                    style="border-collapse:collapse;max-width:600px;padding:0 0 35px 0;text-align:center"
+                                    valign="top" width="100%">
+                                    <p
+                                        style="font-family:\'Red Hat Text\',sans-serif;color:#b4b4b4;padding:0 70px;margin:0;text-align:center;font-size:15px">
+                                        If you did not create an account on DriveHub, please ignore this email.
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </center>
+            </td>
+        </tr>
+
+    </tbody>
+</table>
+</center>
+</td>
+</tr>
+</tbody>
+</table>';
         // $mail->send();
         if (!$mail->send()) {
             $status = 0;
