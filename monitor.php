@@ -14,6 +14,7 @@ if (mysqli_num_rows($stmt) >= 5000) {
     <meta charset="utf-8" />
     <title>Registration</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Refresh" content="5">
     <!-- favicon -->
     <link rel="shortcut icon" href="images/logo-1.png">
     <!-- Bootstrap -->
@@ -50,6 +51,7 @@ if (mysqli_num_rows($stmt) >= 5000) {
                 <div class="col-lg-12 col-md-12 text-center" style="margin-top: -30px">
                     <div class="me-lg-6" style="font-size: 15px;">
                         <img src="images/logo-2.png" class="img-fluid d-block mx-auto" width="280" alt="">
+                        
                         <hr>
                         <div class="row text center">
                             <div class="col-md-4">
@@ -193,6 +195,7 @@ if (mysqli_num_rows($stmt) >= 5000) {
             <!--end row-->
         </div>
         <!--end container-->
+        
     </section>
     <!--end section-->
     <!-- Hero End -->
@@ -239,6 +242,7 @@ if (mysqli_num_rows($stmt) >= 5000) {
             </div>
         </div>
     </div>
+    <center>This page refreshes every 5 seconds</center>
 
 
     <!-- javascript -->
