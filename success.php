@@ -50,7 +50,6 @@ if (mysqli_num_rows($stmt) >= 5000) {
                 <div class="col-lg-12 col-md-12 text-center" style="margin-top: -30px">
                     <div class="me-lg-5" style="font-size: 15px;">
                         <img src="images/logo-2.png" class="img-fluid d-block mx-auto" width="280" alt="">
-                        <div class="text-center" style="margin-bottom: 12px;">A swifter and smoother expressway journey now within reach.</div>
                         <br>
                         <h4 align="center" style="font-weight: bold; color: #124479">
                             Email Verification completed!<br>Thank you for registering to DriveHub!
