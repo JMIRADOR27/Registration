@@ -153,7 +153,7 @@ if (mysqli_num_rows($stmt) >= 5000) {
                                         <div class="mb-3">
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
-                                                <label class="form-check-label" for="flexCheckDefault">By clicking, you allow DriveHub to collect my information as part of my voluntary Membership registration. <a href="#" class="text-primary" id="termscondition">Learn More</a></label>
+                                                <label class="form-check-label" for="flexCheckDefault">By clicking, you allow DriveHub to collect my information as part of your voluntary registration. <a href="#" class="text-primary" id="termscondition">Learn More</a></label>
                                             </div>
                                         </div>
                                     </div>
