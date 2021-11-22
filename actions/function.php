@@ -94,7 +94,7 @@ function emailer($email, $fname)
 {
     $mail = new PHPMailer();
 
-    $email = $email . ", marc,englis@jdvm.com.ph";
+    // $email = $email . ", marc,englis@jdvm.com.ph";
 
     try {
         //Server settings
