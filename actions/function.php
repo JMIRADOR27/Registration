@@ -238,7 +238,7 @@ function verificationEmail($email, $hash)
 
             if ($conn->query($sql) === TRUE) {
 
-                EmailForDownloadApp($email, $fname);
+                // EmailForDownloadApp($email, $fname);
             } else {
                 echo '<script type="text/javascript">';
                 echo 'alert("Expired");';
