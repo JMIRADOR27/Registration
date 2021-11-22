@@ -153,7 +153,7 @@ if (mysqli_num_rows($stmt) >= 5000) {
                                         <div class="mb-3">
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
-                                                <label class="form-check-label" for="flexCheckDefault">I Accept <a href="#" class="text-primary" data-toggle="modal" data-target="#termsmodal">Terms And Conditions</a></label>
+                                                <label class="form-check-label" for="flexCheckDefault">I Accept <a href="#" class="text-primary" id="termscondition">Terms And Conditions</a></label>
                                             </div>
                                         </div>
                                     </div>
@@ -243,6 +243,10 @@ if (mysqli_num_rows($stmt) >= 5000) {
         new Cleave('.cnumber', {
             numericOnly: true,
             prefix: '+63',
+        });
+        
+        $("#termscondition").click(function(){
+            $("#termsmodal").modal('show');
         });
 
         function modalclose() {
