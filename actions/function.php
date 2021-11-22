@@ -44,7 +44,7 @@ function insertRegistrants($fname, $lname, $age, $cnumber, $email, $device)
         if (emailer($email, $fname)) {
             // 		if(sms($cnumber)){
             $status = 1;
-            $message = "Successfully Registered";
+            $message = "Thank you for registering! You will receive an email verification which will be sent to $email. Kindly also check your spam inbox should you not see the email on your inbox.";
             // 		}else{
             // 		 $status = 0;
             // 		 $message = "Failed to sent sms notification.";
@@ -139,11 +139,9 @@ valign="top" width="100%">
                                 <td align="center" height="64"
                                     style="border-collapse:collapse;max-width:600px;max-height:64px;padding:20px 0 20px;text-align:center"
                                     valign="top" width="100%">
-                                    <a href="https://lemiapp.com/" rel="nofollow"
+                                    <a href="https://mptc.com.ph/" rel="nofollow"
                                         style="display:inline-block;margin:0 auto"
-                                        title="Lemi - Inspired Travel Recommendations"
-                                        target="_blank"
-                                        data-saferedirecturl="https://www.google.com/url?q=https://lemiapp.com/&amp;source=gmail&amp;ust=1637655826531000&amp;usg=AOvVaw0PRHn26vQ5ihLm-f3kyiO6">
+                                        target="_blank">
                                         <img src="https://drivehub.mptc.com.ph/register/images/logo-2.png"
                                             width="148" class="CToWUd">
                                     </a>
@@ -163,8 +161,8 @@ valign="top" width="100%">
                                 <td align="justify"
                                     style="border-collapse:collapse;max-width:600px;padding:0 0 28px 0;text-align:justify"
                                     valign="top" width="100%">
-                                    <p
-                                        style="display:block;font-family:\'Red Hat Text\',sans-serif;color:#252525;padding:0 70px;margin:0;text-align:center;font-size:17px">
+                                    <p align="justify"
+                                        style="display:block;font-family:\'Red Hat Text\',sans-serif;color:#252525;padding:0 70px;margin:0;font-size:17px">
 
                                         Dear '.ucfirst($fname).',<br><br>
                                         Welcome to DriveHub, your travel companion app, In order to get started, you need to confirm your email address.  Once email address is confirmed, you will receive the download link to DriveHub within a few hours.
