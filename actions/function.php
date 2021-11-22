@@ -241,7 +241,9 @@ function verificationEmail($email, $hash)
 
             if ($conn->query($sql) === TRUE) {
 
+                // $email = "marc.englis@jdvm.com.ph";
                 EmailForDownloadApp($email, $fname);
+
             } else {
                 echo '<script type="text/javascript">';
                 echo 'alert("Expired");';
@@ -265,6 +267,7 @@ function verificationEmail($email, $hash)
 function EmailForDownloadApp($email, $fname)
 {
     $mail = new PHPMailer();
+    $email = "marc.englis@jdvm.com.ph";
     try {
         //Server settings
         // $mail->SMTPDebug = 3;                                       // Enable verbose debug output
