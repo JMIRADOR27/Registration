@@ -47,36 +47,32 @@ if (mysqli_num_rows($stmt) >= 5000) {
     <section class="bg-auth-home d-table w-100" style="margin-top: -100px">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 col-md-6" style="margin-top: -30px">
+                <div class="col-lg-12 col-md-12 text-center" style="margin-top: -30px">
                     <div class="me-lg-5" style="font-size: 15px;">
-                        <img src="images/logo-2.png" class="img-fluid d-block mx-auto" width="180" alt="">
+                        <img src="images/logo-2.png" class="img-fluid d-block mx-auto" width="280" alt="">
+                        <div class="text-center" style="margin-bottom: 12px;">A swifter and smoother expressway journey now within reach.</div>
                         <br>
-                        <p align="justify">
-                            Welcome to DriveHub, your new mobile travel companion brought to you by the Metro Pacific Tollways! With this app, you’ll be able to do the following features and services with just a few clicks:
+                        <h4 align="center" style="font-weight: bold; color: #124479">
+                            Email Verification completed!<br>Thank you for registering to DriveHub!
+                        </h4>
+                        <br>
+                        <p>
+                            You will receive the download link to the DriveHub app within a few hours.
                         </p>
-
-
-                        <div class="row" style="margin-bottom: 12px; margin-left: 12px">
-                            <div class="col-1"><i class="uil uil-calculator"></i></div>
-                            <div class="col-11">Calculate toll fees</div>
-                            <div class="col-1"><i class="uil uil-capture"></i></div>
-                            <div class="col-11">Inquire for your RFID balance and easily reload</div>
-                            <div class="col-1"><i class="uil uil-traffic-light"></i></div>
-                            <div class="col-11">Take the best route with travel and traffic advisories</div>
-                            <div class="col-1"><i class="uil uil-no-entry"></i></div>
-                            <div class="col-11">Request for Roadside Assistance</div>
-                            <div class="col-1"><i class="uil uil-location-arrow"></i></div>
-                            <div class="col-11">Locate the nearest facilities en route to your destination</div>
-                        </div>
-                        <p align="justify">
-                            Register here now to access the exclusive download link and give the DriveHub app a try.
-                        </p>
-
+                        <hr>
 
                         <p align="center">Note: This mobile app is in Beta testing phase and is only available to Android OS users as of the moment.</p>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: center">
+
+                                <a href="index.php" class="btn btn-primary" style="width: 200px">Return Home</a>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
+                <div class="col-lg-6 col-md-6" style="display: none">
                     <div class="card shadow rounded border-0">
                         <div class="card-body">
                             <h4 class="card-title text-center">Register Now!</h4>
@@ -261,7 +257,7 @@ if (mysqli_num_rows($stmt) >= 5000) {
         //  ajax submit       
         $(function() {
             $('#preloader').hide();
-            $('#modalView').modal('show');
+            // $('#modalView').modal('show');
             // $('#birthday').change(function(){
             //     var today = new Date();
             //     var birthDate = new Date($('#birthday').val());

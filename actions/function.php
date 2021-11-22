@@ -211,7 +211,7 @@ function EmailForDownloadApp($email, $fname)
         } else {
             echo '<script type="text/javascript">';
             echo 'alert("Email Successfully Verified");';
-            echo 'window.location.href = "https://drivehub.mptc.com.ph/register";';
+            echo 'window.location.href = "https://drivehub.mptc.com.ph/register/success.php";';
             echo '</script>';
         }
     } catch (Exception $e) {
