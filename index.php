@@ -153,7 +153,7 @@ if (mysqli_num_rows($stmt) >= 5000) {
                                         <div class="mb-3">
                                             <div class="form-check">
                                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
-                                                <label class="form-check-label" for="flexCheckDefault">I Accept <a href="#" class="text-primary" id="termscondition">Terms And Conditions</a></label>
+                                                <label class="form-check-label" for="flexCheckDefault">By clicking, you allow DriveHub to collect my information as part of my voluntary Membership registration to Hey Roomie service. <a href="#" class="text-primary" id="termscondition">Learn More</a></label>
                                             </div>
                                         </div>
                                     </div>
@@ -216,7 +216,7 @@ if (mysqli_num_rows($stmt) >= 5000) {
                         <p> DriveHub, hereinafter referred to as The App, is collecting personal information of the user for the purpose of creating a unique account that will allow exclusive access for the user to be a Member of the Service. The App is also collecting personal information of the user for the purpose of marketing any promotional announcements as part of the Member Benefits whereas the promotional announcements is a default service benefit service of DriveHub being it as a service provider for Members, and the the The App authenticates such information (by verifying the Member’s e-mail address).</p>
                         <p align="justify">In accordance to Data Privacy Act of the Philippines Republic Act No. 10173, DriveHub is a registered entity in National Privacy Commission and authorized to store and process any personal data collected from the general public.</p>
 
-                        <p align="justify">By clicking, you allow DriveHub to collect my information as part of my voluntary Membership registration to Hey Roomie service. Learn More</p>
+                        <p align="justify">By agreeing, you allow DriveHub to collect my information as part of my voluntary Membership registration to Hey Roomie service.</p>
 
                         <p align="justify">I allow DriveHub to collect my information and authorize it as an entity to send me service, marketing, and promotional announcements that will benefit me as a registered Member of the Service.</p>
                         </p>
@@ -244,8 +244,8 @@ if (mysqli_num_rows($stmt) >= 5000) {
             numericOnly: true,
             prefix: '+63',
         });
-        
-        $("#termscondition").click(function(){
+
+        $("#termscondition").click(function() {
             $("#termsmodal").modal('show');
         });
 
