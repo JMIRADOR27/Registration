@@ -76,13 +76,16 @@ function Login($username, $password)
 {
     global $conn, $status, $message;
     session_start();
-    $stmt = $conn->prepare('SELECT id,username FROM admin WHERE username=? AND password=?');
-    $stmt->bind_param('ss', $username, $password);
-    $stmt->execute();
-    $result = $stmt->get_result();
-    if ($row = $result->fetch_assoc()) {
-        $_SESSION['id'] = $row['id'];
-        $_SESSION['uname'] = $row['username'];
+    
+    
+    $sql="SELECT id,username FROM admin WHERE username='".$username."' AND password='".$password."'";
+    $statements = $conn->query($sql);
+    $countVerified = mysqli_num_rows($statements);
+    if($countVerified >= 1) {
+    while ($row = $statements -> fetch_array(MYSQLI_ASSOC)) {
+    $_SESSION['id'] = $row['id'];
+    $_SESSION['uname'] = $row['username'];
+    }
         return $status = 1;
     } else {
         return $message = "Incorrect username and password";

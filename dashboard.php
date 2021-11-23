@@ -7,6 +7,10 @@ include 'actions/connection.php';
 $sql="SELECT * FROM registrants";
 $stmt = $conn->query($sql);
 $totalRegistrants = mysqli_num_rows($stmt);
+
+$sql2="SELECT *,CASE WHEN email_verification = 1 THEN 'Verified User' ELSE 'Unverified User' END as email_verification  FROM registrants WHERE email_verification = 1 AND extracted_data IS NULL";
+$stmt1 = $conn->query($sql2);
+
 $sql="SELECT * FROM registrants WHERE email_verification = 1";
 $statements = $conn->query($sql);
 $countVerified = mysqli_num_rows($statements);
@@ -86,8 +90,8 @@ $countVerified = mysqli_num_rows($statements);
                     <img src="images/logo-1.png" width="48" height="48" alt="User" />
                 </div>
                 <div class="info-container">
-                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">John Doe</div>
-                    <div class="email">john.doe@example.com</div>
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DriveHub</div>
+                    <div class="email">DriveHub@mptc.com.ph</div>
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                         <ul class="dropdown-menu pull-right">
@@ -161,40 +165,93 @@ $countVerified = mysqli_num_rows($statements);
                     <div class="card">
 
                         <div class="body">
-                            <div class="table-responsive">
-                            <table id="example" class="display" style="width:100%">
-        <thead>
-            <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Middle Name</th>
-                <th>Email</th>
-                <th>Address</th>
-                <th>Contact Number</th>
-                <th>Device</th>
-                <th>Age</th>
-                <th>RFID</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php
-            while ($row = $stmt -> fetch_array(MYSQLI_ASSOC)) {
-            ?>
-            <tr>
-                <td><?php echo $row['first_name']; ?></td>
-                <td><?php echo $row['last_name']; ?></td>
-                <td><?php echo $row['middle_name']; ?></td>
-                <td><?php echo $row['email']; ?></td>
-                <td><?php echo $row['address']; ?></td>
-                <td><?php echo $row['contact_number']; ?></td>
-                <td><?php echo $row['device']; ?></td>
-                <td><?php echo $row['age']; ?></td>
-                <td><?php echo $row['RFID']; ?></td>
-            </tr>
-            <?php } ?>
-        </tbody>
-    </table>
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs tab-nav-right" role="tablist">
+                                <li role="presentation" class="active"><a href="#All_Registrant" data-toggle="tab" aria-expanded="true">All Registrants</a></li>
+                                <li role="presentation" class=""><a href="#Extracted_data" data-toggle="tab" aria-expanded="false">Unextracted data</a></li>
+                                <!--<li role="presentation" class=""><a href="#Unextracted_data" data-toggle="tab" aria-expanded="false">Unextracted data</a></li>-->
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane fade active in" id="All_Registrant">
+                                <div class="table-responsive">
+                                   <table id="example1" class="display" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Middle Name</th>
+                                            <th>Email</th>
+                                            <th>Contact Number</th>
+                                            <th>Age</th>
+                                            <th>Email Verification</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php
+                                        while ($row = $stmt -> fetch_array(MYSQLI_ASSOC)) {
+                                        ?>
+                                        <tr>
+                                            <td><?php echo $row['first_name']; ?></td>
+                                            <td><?php echo $row['last_name']; ?></td>
+                                            <td><?php echo $row['middle_name']; ?></td>
+                                            <td><?php echo $row['email']; ?></td>
+                                            <td><?php echo $row['contact_number']; ?></td>
+                                            <td><?php echo $row['age']; ?></td>
+                                            <td><?php if($row['email_verification'] == 1){ echo "Verified User"; }else{ echo "Unverified"; } ?></td>
+                                        </tr>
+                                        <?php } ?>
+                                    </tbody>
+                                </table>
                             </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="Extracted_data">
+                                    <div class="table-responsive">
+                                         <Button class="btn btn-default" id="Downloadall">Download Excel</Button><br><br>
+                                   <table id="example" class="display" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Middle Name</th>
+                                            <th>Email</th>
+                                            <th>Contact Number</th>
+                                            <th>Age</th>
+                                            <th>Email Verification</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php
+                                        while ($row1 = $stmt1 -> fetch_array(MYSQLI_ASSOC)) {
+                                        ?>
+                                        <tr>
+                                            <td><?php echo $row1['first_name']; ?></td>
+                                            <td><?php echo $row1['last_name']; ?></td>
+                                            <td><?php echo $row1['middle_name']; ?></td>
+                                            <td><?php echo $row1['email']; ?></td>
+                                            <td><?php echo $row1['contact_number']; ?></td>
+                                            <td><?php echo $row1['age']; ?></td>
+                                            <td><?php echo $row1['email_verification']; ?></td>
+                                        </tr>
+                                        <?php } ?>
+                                    </tbody>
+                                </table>
+                            </div>
+                                </div>
+                                <!--<div role="tabpanel" class="tab-pane fade" id="Unextracted_data">-->
+                                <!--    <b>Unextracted data</b>-->
+                                <!--    <p>-->
+                                <!--        Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.-->
+                                <!--        Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent aliquid-->
+                                <!--        pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere gubergren-->
+                                <!--        sadipscing mel.-->
+                                <!--    </p>-->
+                                <!--</div>-->
+                            </div>
+                        </div>
+                    </div>
+                       
                         </div>
                     </div>
                 </div>
@@ -225,17 +282,26 @@ $countVerified = mysqli_num_rows($statements);
         <script src="js/pdfmake.min.js"></script>
         <script src="js/vfs_fonts.js"></script>
         <script src="js/buttons.html5.min.js"></script>
+        <script src="js/jquery.table2excel.js"></script>
         
     <script>
 $(document).ready(function() {
     $('#example').DataTable( {
-        dom: 'Bfrtip',
+       
+    } );
+     $('#example1').DataTable( {
+       dom: 'Bfrtip',
         buttons: [
             'excelHtml5',
             'pdfHtml5'
         ]
     } );
+
+ $('#Downloadall').on('click', function() {
+    window.location.href='actions/Excel_extract.php'; 
+     });
 } );
+           
     </script>
     <!-- Custom Js -->
     <script src="js/admin.js"></script>
