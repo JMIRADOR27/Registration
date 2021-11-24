@@ -5493,3 +5493,4 @@
 [23-Nov-2021 04:00:12 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/pilcvifxxk6c/public_html/register/dashboard.php on line 233
 [23-Nov-2021 04:32:12 UTC] PHP Notice:  Undefined index: uname in /home/pilcvifxxk6c/public_html/register/dashboard.php on line 3
 [23-Nov-2021 04:54:57 UTC] PHP Notice:  Undefined index: uname in /home/pilcvifxxk6c/public_html/register/dashboard.php on line 3
+[24-Nov-2021 02:06:15 UTC] PHP Notice:  Undefined index: uname in /home/pilcvifxxk6c/public_html/register/dashboard.php on line 3

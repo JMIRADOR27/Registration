@@ -5,6 +5,8 @@ include 'connection.php';
 $sql2="SELECT *,CASE WHEN email_verification = 1 THEN 'Verified User' ELSE 'Unverified User' END as email_verification  FROM registrants WHERE email_verification = 1 AND extracted_data IS NULL";
 $stmt1 = $conn->query($sql2);
 
+$sql= $conn->query("UPDATE registrants set extracted_data = 1 where email_verificaition = 1 and extracted_data is null");
+$conn->query($sql);
 ?>
 
 <!DOCTYPE html>
@@ -28,6 +30,8 @@ $stmt1 = $conn->query($sql2);
 			</tr>
 			<?php
             while ($row1 = $stmt1 -> fetch_array(MYSQLI_ASSOC)) {
+                
+                
             ?>
 			<tr>
 				<td><?php echo $row1['first_name']; ?></td>
