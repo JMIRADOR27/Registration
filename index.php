@@ -241,7 +241,7 @@ if (mysqli_num_rows($stmt) >= 5000) {
     <script>
         new Cleave('.cnumber', {
             numericOnly: true,
-            prefix: '+63',
+            prefix: '63',
         });
 
         $("#termscondition").click(function() {
