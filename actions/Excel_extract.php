@@ -5,9 +5,11 @@ include 'connection.php';
 $sql2 = "SELECT *,CASE WHEN email_verification = 1 THEN 'Verified User' ELSE 'Unverified User' END as email_verification  FROM registrants WHERE email_verification = 1 AND extracted_data IS NULL";
 $stmt1 = $conn->query($sql2);
 
-$sql = $conn->query("UPDATE registrants set extracted_data = 1 where email_verificaition = 1 and extracted_data is null");
+$sqlupdate = "UPDATE registrants set extracted_data = 1 where email_verification = 1 and extracted_data is null";
 
+$sql = $conn->query($sqlupdate);
 $conn->query($sql);
+
 ?>
 
 <!DOCTYPE html>
