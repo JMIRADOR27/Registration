@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 </head>
@@ -70,7 +71,7 @@
         .masthead {
             margin-top: 10px;
         }
-    } 
+    }
 
     @media (max-width: 1024px) {
         #biyahe-container {
@@ -80,7 +81,7 @@
         .looping-video {
             margin-top: 500px;
         }
-    } 
+    }
 
     @media (max-width: 414px) {
         #biyahe-container {
@@ -109,6 +110,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Download</a></li>
                 </ul>
                 <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal" style="display: none">
@@ -183,7 +185,7 @@
 
     <!-- Quote/testimonial aside-->
     <aside class="text-center bg-gradient-primary-to-secondary">
-        <div class="container px-5">
+        <div class="container px-5"data-aos="fade-up">
             <div class="row gx-5 justify-content-center">
                 <div class="col-xl-12">
                     <div class="h2 fs-1 text-white mb-4">DriveHub is a new, easy, and convenient travel companion app with valuable info, features, and services to help you while traveling through Metro Pacific tollways.</div>
@@ -194,11 +196,30 @@
 
     <!-- App features section-->
     <section id="features">
-        <div class="container px-5">
+        <div class="container px-12">
             <div class="row gx-5 align-items-center">
                 <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0">
-                    <div class="container-fluid px-5">
-                        <div class="row gx-5">
+                    <div class="container-fluid">
+
+                        <div class="h3 row" style="margin-bottom: 12px;">
+                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="100"><i class="uil uil-calculator"></i></div>
+                            <div class="col-md-11 col-10 blue-font" data-aos="fade-left" data-aos-delay="100">Calculate toll fees</div>
+                            <div class="col-12"><br></div>
+                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="150"><i class="uil uil-capture"></i></div>
+                            <div class="col-md-11 col-10 blue-font" data-aos="fade-left" data-aos-delay="150">Inquire for your RFID balance and easily reload</div>
+                            <div class="col-12"><br></div>
+                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="200"><i class="uil uil-traffic-light"></i></div>
+                            <div class="col-md-11 col-10 blue-font" data-aos="fade-left" data-aos-delay="200">Take the best route with travel and traffic advisories</div>
+                            <div class="col-12"><br></div>
+                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="250"><i class="uil uil-no-entry"></i></div>
+                            <div class="col-md-11 col-10 blue-font" data-aos="fade-left" data-aos-delay="250">Request for Roadside Assistance</div>
+                            <div class="col-12"><br></div>
+                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="300"><i class="uil uil-location-arrow"></i></div>
+                            <div class="col-md-11 col-10 blue-font" data-aos="fade-left" data-aos-delay="300">Locate the nearest facilities en route to your destination</div>
+                            <div class="col-12"><br></div>
+                        </div>
+
+                        <div class="row gx-5" style="display: none">
                             <div class="col-md-6 mb-5">
                                 <!-- Feature item-->
                                 <div class="text-center">
@@ -216,7 +237,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row" style="display: none">
                             <div class="col-md-6 mb-5 mb-md-0">
                                 <!-- Feature item-->
                                 <div class="text-center">
@@ -273,14 +294,14 @@
         </div>
     </section>
     <!-- Basic features section-->
-    <section class="bg-light">
+    <section id="about" class="bg-light">
         <div class="container px-5">
             <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                <div class="col-12 col-lg-5">
-                    <h2 class="display-4 lh-1 mb-4">Enter a new age of web design</h2>
+                <div class="col-12 col-lg-5" data-aos="fade-right">
+                    <div class="h1 lh-1 mb-4 blue-font">About DriveHub</div>
                     <p class="lead fw-normal text-muted mb-5 mb-lg-0">This section is perfect for featuring some information about your application, why it was built, the problem it solves, or anything else! There's plenty of space for text here, so don't worry about writing too much.</p>
                 </div>
-                <div class="col-sm-8 col-md-6">
+                <div class="col-sm-8 col-md-6" data-aos="fade-left" data-aos-delay="150">
                     <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="https://source.unsplash.com/u8Jn2rzYIps/900x900" alt="..." /></div>
                 </div>
             </div>
