@@ -84,13 +84,47 @@
         }
     }
 
-    @media (max-width: 414px) {
+    @media (max-width: 834px) {
         #biyahe-container {
-            margin-top: 0px;
+            margin-top: -340px;
+            margin-bottom: -60px;
         }
 
-        .looping-video {
-            display: none;
+        #desktop-download {
+            display: none!important;
+        }
+
+        #mobile-download {
+            visibility: visible!important;
+        }
+    }
+
+    @media (max-width: 768px) {
+        #biyahe-container {
+            margin-top: -330px;
+            margin-bottom: -60px;
+        }
+
+        #desktop-download {
+            display: none!important;
+        }
+
+        #mobile-download {
+            visibility: visible!important;
+        }
+    }
+
+    @media (max-width: 414px) {
+        #biyahe-container {
+            margin-top: -200px;
+        }
+
+        #desktop-download {
+            display: none!important;
+        }
+
+        #mobile-download {
+            visibility: visible!important;
         }
     }
 
@@ -140,12 +174,24 @@
                         <img id="biyahe" src="assets/img/biyahe.png" alt="..." width="700" data-aos="fade-right" data-aos-delay="100" style="margin-bottom: 40px">
                         <!-- <h1 class="display-1 lh-1 mb-3">Sarap ng Biyahe.</h1> -->
                         <h3 class="blue-font" data-aos="fade-right" data-aos-delay="150" style="margin-bottom: 40px">Let's make it about the journey too!</h3>
-                        <div class="d-flex flex-column flex-lg-row align-items-center">
+
+                        <div id="desktop-download" class="d-flex flex-column flex-lg-row align-items-center">
                             <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." data-aos="fade-up" data-aos-delay="100"></a>
                             <a href="#!"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." data-aos="fade-up" data-aos-delay="200"></a>
                         </div>
+
+                        <div id="mobile-download" class="row" style="visibility: hidden; margin-top: 80px">
+                            <div class="col-6">
+                                <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." data-aos="fade-up" data-aos-delay="100" style="width: 100%;"></a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#!"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." data-aos="fade-up" data-aos-delay="200" style="width: 100%;"></a>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
+
                 <div class="col-lg-6">
                     <!-- Masthead device mockup feature-->
                     <div class="masthead-device-mockup" data-aos="fade-left" data-aos-delay="100">
@@ -186,7 +232,7 @@
 
     <!-- Quote/testimonial aside-->
     <aside class="text-center bg-gradient-primary-to-secondary">
-        <div class="container px-5"data-aos="fade-up">
+        <div class="container px-5" data-aos="fade-up">
             <div class="row gx-5 justify-content-center">
                 <div class="col-xl-12">
                     <div class="h2 fs-1 text-white mb-4">DriveHub is a new, easy, and convenient travel companion app with valuable info, features, and services to help you while traveling through Metro Pacific tollways.</div>
