@@ -64,6 +64,26 @@
         }
     }
 
+    @media (max-width: 1284px) {
+        #biyahe-container {
+            margin-top: -600px;
+        }
+
+        .masthead {
+            margin-top: 10px;
+        }
+    }
+
+    @media (max-width: 1170px) {
+        #biyahe-container {
+            margin-top: -600px;
+        }
+
+        .masthead {
+            margin-top: 10px;
+        }
+    }
+
     @media (max-width: 1112px) {
         #biyahe-container {
             margin-top: -600px;
@@ -91,11 +111,11 @@
         }
 
         #desktop-download {
-            display: none!important;
+            display: none !important;
         }
 
         #mobile-download {
-            visibility: visible!important;
+            visibility: visible !important;
         }
     }
 
@@ -106,11 +126,11 @@
         }
 
         #desktop-download {
-            display: none!important;
+            display: none !important;
         }
 
         #mobile-download {
-            visibility: visible!important;
+            visibility: visible !important;
         }
     }
 
@@ -120,16 +140,32 @@
         }
 
         #desktop-download {
-            display: none!important;
+            display: none !important;
         }
 
         #mobile-download {
-            visibility: visible!important;
+            visibility: visible !important;
         }
     }
 
     .blue-font {
         color: #3177b9;
+    }
+
+    .bullet-point {
+        color: black;
+        font-weight: 200;
+        font-size: 18px;
+    }
+
+    .bullet-point-faq {
+        color: black;
+        font-weight: 200;
+        font-size: 20px;
+    }
+
+    .faq-content {
+        margin-bottom: 20px;
     }
 </style>
 
@@ -147,6 +183,8 @@
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Features</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Download</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#contact">Contact</a></li>
                 </ul>
                 <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal" style="display: none">
                     <span class="d-flex align-items-center">
@@ -173,7 +211,7 @@
                     <div class="mb-5 mb-lg-0 text-center text-lg-start">
                         <img id="biyahe" src="assets/img/biyahe.png" alt="..." width="700" data-aos="fade-right" data-aos-delay="100" style="margin-bottom: 40px">
                         <!-- <h1 class="display-1 lh-1 mb-3">Sarap ng Biyahe.</h1> -->
-                        <h3 class="blue-font" data-aos="fade-right" data-aos-delay="150" style="margin-bottom: 40px">Let's make it about the journey too!</h3>
+                        <h4 class="blue-font" data-aos="fade-right" data-aos-delay="150" style="margin-bottom: 40px">Make your journey as fun as your destination!</h4>
 
                         <div id="desktop-download" class="d-flex flex-column flex-lg-row align-items-center">
                             <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." data-aos="fade-up" data-aos-delay="100"></a>
@@ -230,12 +268,101 @@
         </div>
     </header>
 
-    <!-- Quote/testimonial aside-->
-    <aside class="text-center bg-gradient-primary-to-secondary">
+
+    <section id="first-content">
+        <div class="container px-12">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0">
+                    <div class="container-fluid">
+
+                        <h1 class="blue-font">DriveHub is your new travel companion</h1>
+                        <hr>
+                        <p class="justify">This free mobile app equips you with the tools you need to plan your trips, breeze through Metro Pacific's expressways, and make your journey safer and more enjoyable.</p>
+                        <p class="justify">DriveHub clears the hassles on the road so start your vacation even before you get to your destination!
+                        </p>
+
+                        <div class="row gx-5" style="display: none">
+                            <div class="col-md-6 mb-5">
+                                <!-- Feature item-->
+                                <div class="text-center">
+                                    <i class="bi-phone icon-feature text-gradient d-block mb-3"></i>
+                                    <h3 class="font-alt">Device Mockups</h3>
+                                    <p class="text-muted mb-0">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-5">
+                                <!-- Feature item-->
+                                <div class="text-center">
+                                    <i class="bi-camera icon-feature text-gradient d-block mb-3"></i>
+                                    <h3 class="font-alt">Flexible Use</h3>
+                                    <p class="text-muted mb-0">Put an image, video, animation, or anything else in the screen!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" style="display: none">
+                            <div class="col-md-6 mb-5 mb-md-0">
+                                <!-- Feature item-->
+                                <div class="text-center">
+                                    <i class="bi-gift icon-feature text-gradient d-block mb-3"></i>
+                                    <h3 class="font-alt">Free to Use</h3>
+                                    <p class="text-muted mb-0">As always, this theme is free to download and use for any purpose!</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <!-- Feature item-->
+                                <div class="text-center">
+                                    <i class="bi-patch-check icon-feature text-gradient d-block mb-3"></i>
+                                    <h3 class="font-alt">Open Source</h3>
+                                    <p class="text-muted mb-0">Since this theme is MIT licensed, you can use it commercially!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 order-lg-0" data-aos="fade-right" data-aos-delay="50">
+                    <!-- Features section device mockup-->
+                    <div class="features-device-mockup">
+                        <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="circleGradient" gradientTransform="rotate(45)">
+                                    <stop class="gradient-start-color" offset="0%"></stop>
+                                    <stop class="gradient-end-color" offset="100%"></stop>
+                                </linearGradient>
+                            </defs>
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg><svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(120.42 -49.88) rotate(45)"></rect>
+                            <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)"></rect>
+                        </svg><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <div class="device-wrapper">
+                            <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
+                                <div class="screen bg-black">
+                                    <!-- PUT CONTENTS HERE:-->
+                                    <!-- * * This can be a video, image, or just about anything else.-->
+                                    <!-- * * Set the max width of your media to 100% and the height to-->
+                                    <!-- * * 100% like the demo example below.-->
+                                    <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%">
+                                        <source src="assets/img/demo-screen.mp4" type="video/mp4" />
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="text-center" style="background-color: #3177b9">
         <div class="container px-5" data-aos="fade-up">
             <div class="row gx-5 justify-content-center">
                 <div class="col-xl-12">
-                    <div class="h2 fs-1 text-white mb-4">DriveHub is a new, easy, and convenient travel companion app with valuable info, features, and services to help you while traveling through Metro Pacific tollways.</div>
+                    <div class="h2 fs-1 text-white mb-4">How can DriveHub make my travels more convenient?</div>
                 </div>
             </div>
         </div>
@@ -245,24 +372,44 @@
     <section id="features">
         <div class="container px-12">
             <div class="row gx-5 align-items-center">
-                <div class="col-lg-8 order-lg-1 mb-5 mb-lg-0">
+                <div class="col-lg-8 order-lg-0 mb-5 mb-lg-0">
                     <div class="container-fluid">
 
                         <div class="h3 row" style="margin-bottom: 12px;">
                             <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="100"><i class="uil uil-calculator"></i></div>
-                            <div class="col-md-11 col-10 blue-font" data-aos="fade-left" data-aos-delay="100">Calculate toll fees</div>
+                            <div class="col-md-11 col-10 blue-font" data-aos="fade-left" data-aos-delay="100">Compute your Toll Fee</div>
+                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="100"></div>
+                            <div class="col-md-11 col-10 blue-font bullet-point" data-aos="fade-left" data-aos-delay="100"><i class="uil uil-check-circle"></i> No more counting couns</div>
+                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="100"></div>
+                            <div class="col-md-11 col-10 blue-font bullet-point" data-aos="fade-left" data-aos-delay="100"><i class="uil uil-check-circle"></i> Ready your money with our toll fee calculator.</div>
                             <div class="col-12"><br></div>
                             <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="150"><i class="uil uil-capture"></i></div>
-                            <div class="col-md-11 col-10 blue-font" data-aos="fade-left" data-aos-delay="150">Inquire for your RFID balance and easily reload</div>
+                            <div class="col-md-11 col-10 blue-font" data-aos="fade-left" data-aos-delay="150">Checks your RFID balance and reloads</div>
+                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="150"></div>
+                            <div class="col-md-11 col-10 blue-font bullet-point" data-aos="fade-left" data-aos-delay="150"><i class="uil uil-check-circle"></i> Last minute top-up? Yes, it's possible!</div>
+                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="150"></div>
+                            <div class="col-md-11 col-10 blue-font bullet-point" data-aos="fade-left" data-aos-delay="150"><i class="uil uil-check-circle"></i> Pull out your phone and buy RFID credits on the road.</div>
                             <div class="col-12"><br></div>
                             <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="200"><i class="uil uil-traffic-light"></i></div>
-                            <div class="col-md-11 col-10 blue-font" data-aos="fade-left" data-aos-delay="200">Take the best route with travel and traffic advisories</div>
+                            <div class="col-md-11 col-10 blue-font" data-aos="fade-left" data-aos-delay="200">Shows the fastest route with real-time traffic advisories</div>
+                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="200"></div>
+                            <div class="col-md-11 col-10 blue-font bullet-point" data-aos="fade-left" data-aos-delay="200"><i class="uil uil-check-circle"></i> Never be late again!</div>
+                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="200"></div>
+                            <div class="col-md-11 col-10 blue-font bullet-point" data-aos="fade-left" data-aos-delay="200"><i class="uil uil-check-circle"></i> Cut your travel time with our live traffic updates.</div>
                             <div class="col-12"><br></div>
                             <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="250"><i class="uil uil-no-entry"></i></div>
-                            <div class="col-md-11 col-10 blue-font" data-aos="fade-left" data-aos-delay="250">Request for Roadside Assistance</div>
+                            <div class="col-md-11 col-10 blue-font" data-aos="fade-left" data-aos-delay="250">Calls for roadside emergency assistance</div>
+                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="250"></div>
+                            <div class="col-md-11 col-10 blue-font bullet-point" data-aos="fade-left" data-aos-delay="250"><i class="uil uil-check-circle"></i> When in trouble, just tap our emergency button!</div>
+                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="250"></div>
+                            <div class="col-md-11 col-10 blue-font bullet-point" data-aos="fade-left" data-aos-delay="250"><i class="uil uil-check-circle"></i> Our 24/7 helpline is ready to rescue you whenever, wherever.</div>
                             <div class="col-12"><br></div>
                             <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="300"><i class="uil uil-location-arrow"></i></div>
-                            <div class="col-md-11 col-10 blue-font" data-aos="fade-left" data-aos-delay="300">Locate the nearest facilities en route to your destination</div>
+                            <div class="col-md-11 col-10 blue-font" data-aos="fade-left" data-aos-delay="300">Finds gas stations, restaurants, and toilets</div>
+                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="300"></div>
+                            <div class="col-md-11 col-10 blue-font bullet-point" data-aos="fade-left" data-aos-delay="300"><i class="uil uil-check-circle"></i> Gas empty? Hungry? Need a break?</div>
+                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="300"></div>
+                            <div class="col-md-11 col-10 blue-font bullet-point" data-aos="fade-left" data-aos-delay="300"><i class="uil uil-check-circle"></i> We will show you the way!</div>
                             <div class="col-12"><br></div>
                         </div>
 
@@ -305,7 +452,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 order-lg-0" data-aos="fade-right" data-aos-delay="50">
+                <div class="col-lg-4 order-lg-1" data-aos="fade-right" data-aos-delay="50">
                     <!-- Features section device mockup-->
                     <div class="features-device-mockup">
                         <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -346,7 +493,14 @@
             <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
                 <div class="col-12 col-lg-5" data-aos="fade-right">
                     <div class="h1 lh-1 mb-4 blue-font">About DriveHub</div>
-                    <p class="lead fw-normal text-muted mb-5 mb-lg-0">This section is perfect for featuring some information about your application, why it was built, the problem it solves, or anything else! There's plenty of space for text here, so don't worry about writing too much.</p>
+                    <p class="lead fw-normal text-muted mb-5 mb-lg-0">As the biggest tollway builder and operator in the Philippines, we at <strong>Metro Pacific Tollways Corp. </strong> that we have a huge role to play in setting the stage for the digital transformation of the transport sector.</p>
+                    <br>
+                    <p class="lead fw-normal text-muted mb-5 mb-lg-0">With innovation ingrained in our DNA, we are now transcending beyond our core expressway business to answer the growing demand for mobility solutions amid the pandemic.</p>
+                    <br>
+                    <p class="lead fw-normal text-muted mb-5 mb-lg-0">We are stepping up to the challenge and strengthening our commitment to upgrade your travel experience.</p>
+                    <br>
+                    <p class="lead fw-normal text-muted mb-5 mb-lg-0">With <strong>DriveHub</strong>, we give you the power of information so you'll say <i>"Sarap ng Biyahe!"</i></p>
+                    <br>
                 </div>
                 <div class="col-sm-8 col-md-6" data-aos="fade-left" data-aos-delay="150">
                     <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="https://source.unsplash.com/u8Jn2rzYIps/900x900" alt="..." /></div>
@@ -354,7 +508,103 @@
             </div>
         </div>
     </section>
+    <!-- App badge section-->
+    <section class="bg-gradient-primary-to-secondary" id="download">
+        <div class="container px-5">
+            <h2 class="text-center text-white font-alt mb-4">Get the app now!</h2>
+            <h5 class="text-center text-white">Get free P100 RFID load when you download the DriveHub app now</h5>
+            <br>
+            <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
+                <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>
+                <a href="#!"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
+            </div>
+        </div>
+        <hr>
+        <div class="wrapper row text-center" style="margin: 20px; color: white">
+            <div class="col-md-4 col-12">
+                “Solid app. 5 Star rating!"<br>By Juan Santos
+            </div>
+            <div class="col-md-4 col-12">
+                “Easy to use, very handy.”<br>By Juana Cruz
+            </div>
+            <div class="col-md-4 col-12">
+                “Easy to use, very handy. Amazing Application!!”<br>By Juan Dela Cruz
+            </div>
+        </div>
+    </section>
     <!-- Call to action section-->
+    <section id="faq" style="display:block">
+        <div class="container">
+            <h1 class="text-center blue-font">Frequently Asked Questions</h1>
+            <hr>
+            <div class="h3 container">
+                <div class="row faq-content">
+                    <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="100"><i class="uil uil-arrow-circle-right"></i></div>
+                    <div class="col-md-11 col-10 blue-font" data-aos="fade-left" data-aos-delay="100">Who can use DriveHub?</div>
+                    <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="100"></div>
+                    <div class="col-md-11 col-10 blue-font bullet-point-faq" data-aos="fade-left" data-aos-delay="100"><i class="uil uil-check-circle"></i> You can enjoy the app's features when you drive through Metro Pacific's expressways:
+                        <ul>
+                            <li>NLEX (North Luzon Expressway)</li>
+                            <li>SCTEX (Subic Clark Tarlac Expressway) o SFEX (Subic Freeport Expressway)</li>
+                            <li>CAVITEX (Cavite Expressway)</li>
+                            <li>CALAX (Calamba Laguna Expressway)</li>
+                            <li>CCLEX (Cebu Cordova Link Expressway) o NLEX Connector</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row faq-content">
+                    <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="100"><i class="uil uil-arrow-circle-right"></i></div>
+                    <div class="col-md-11 col-10 blue-font" data-aos="fade-left" data-aos-delay="100">What are the payment options for reloading my RFID account using DriveHub?</div>
+                    <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="100"></div>
+                    <div class="col-md-11 col-10 blue-font bullet-point-faq" data-aos="fade-left" data-aos-delay="100"><i class="uil uil-check-circle"></i> You can pay using the following below:
+                        <ul>
+                            <li>Express, Online, and E-wallet: GCash, PayMaya, Coins.ph, SmartMoney, Eon, JustPay.To, ECPay, and TouchPay</li>
+                            <li>Online Banking: BDO, UCPB, Metrobank, MasterCard, Visa, and BancNet</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row faq-content">
+                    <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="100"><i class="uil uil-arrow-circle-right"></i></div>
+                    <div class="col-md-11 col-10 blue-font" data-aos="fade-left" data-aos-delay="100">How long should I wait before my load is reflected on my RFID account?</div>
+                    <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="100"></div>
+                    <div class="col-md-11 col-10 blue-font bullet-point-faq" data-aos="fade-left" data-aos-delay="100"><i class="uil uil-check-circle"></i> Upon reloading, your RFID balance will be updated in real time.
+                    </div>
+                </div>
+
+                <div class="row faq-content">
+                    <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="100"><i class="uil uil-arrow-circle-right"></i></div>
+                    <div class="col-md-11 col-10 blue-font" data-aos="fade-left" data-aos-delay="100">Do I have to pay to use DriveHub?</div>
+                    <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="100"></div>
+                    <div class="col-md-11 col-10 blue-font bullet-point-faq" data-aos="fade-left" data-aos-delay="100"><i class="uil uil-check-circle"></i> No, DriveHub is free!
+                    </div>
+                </div>
+
+                <div class="row faq-content">
+                    <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="100"><i class="uil uil-arrow-circle-right"></i></div>
+                    <div class="col-md-11 col-10 blue-font" data-aos="fade-left" data-aos-delay="100">How can I create an account on DriveHub?</div>
+                    <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="100"></div>
+                    <div class="col-md-11 col-10 blue-font bullet-point-faq" data-aos="fade-left" data-aos-delay="100"><i class="uil uil-check-circle"></i>Just download the app on Google Play or App Store, fill in your details, and you're ready to go!
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="h5 bg-light text-center">
+        <h1 class="text-center blue-font">We're here to listen</h1>
+        <h4>You may reach us through the following</h4>
+        <br>
+        Hotline: +632-8888-0888<br>
+        Email: drivehub@mptc.com.ph<br>
+        Facebook: facebook.com/drivehub.mptc<br>
+        Twitter: twitter.com/drivehubmptc<br>
+        Instagram: instagram.com/drivehubmptc<br>
+
+    </section>
+
     <section class="cta" style="display:none">
         <div class="cta-content">
             <div class="container px-5">
@@ -364,16 +614,6 @@
                     Start building.
                 </h2>
                 <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Download for free</a>
-            </div>
-        </div>
-    </section>
-    <!-- App badge section-->
-    <section class="bg-gradient-primary-to-secondary" id="download">
-        <div class="container px-5">
-            <h2 class="text-center text-white font-alt mb-4">Get the app now!</h2>
-            <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
-                <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>
-                <a href="#!"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
             </div>
         </div>
     </section>
