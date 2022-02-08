@@ -493,7 +493,7 @@
             <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
                 <div class="col-12 col-lg-5" data-aos="fade-right">
                     <div class="h1 lh-1 mb-4 blue-font">About DriveHub</div>
-                    <p class="lead fw-normal text-muted mb-5 mb-lg-0">As the biggest tollway builder and operator in the Philippines, we at <strong>Metro Pacific Tollways Corp. </strong> that we have a huge role to play in setting the stage for the digital transformation of the transport sector.</p>
+                    <p class="lead fw-normal text-muted mb-5 mb-lg-0">As the biggest tollway builder and operator in the Philippines, we at <strong>Metro Pacific Tollways Corp. </strong> believe that we have a huge role to play in setting the stage for the digital transformation of the transport sector.</p>
                     <br>
                     <p class="lead fw-normal text-muted mb-5 mb-lg-0">With innovation ingrained in our DNA, we are now transcending beyond our core expressway business to answer the growing demand for mobility solutions amid the pandemic.</p>
                     <br>
@@ -542,13 +542,15 @@
                     <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="100"><i class="uil uil-arrow-circle-right"></i></div>
                     <div class="col-md-11 col-10 blue-font" data-aos="fade-left" data-aos-delay="100">Who can use DriveHub?</div>
                     <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="100"></div>
-                    <div class="col-md-11 col-10 blue-font bullet-point-faq" data-aos="fade-left" data-aos-delay="100"><i class="uil uil-check-circle"></i> You can enjoy the app's features when you drive through Metro Pacific's expressways:
+                    <div class="col-md-11 col-10 blue-font bullet-point-faq" data-aos="fade-left" data-aos-delay="100"><i class="uil uil-check-circle"></i> Motorists who use Metro Pacific's expressways:
                         <ul>
                             <li>NLEX (North Luzon Expressway)</li>
-                            <li>SCTEX (Subic Clark Tarlac Expressway) o SFEX (Subic Freeport Expressway)</li>
+                            <li>SCTEX (Subic Clark Tarlac Expressway)</li>
+                            <li>SFEX (Subic Freeport Expressway)</li>
                             <li>CAVITEX (Cavite Expressway)</li>
                             <li>CALAX (Calamba Laguna Expressway)</li>
-                            <li>CCLEX (Cebu Cordova Link Expressway) o NLEX Connector</li>
+                            <li>CCLEX (Cebu Cordova Link Expressway)</li>
+                            <li>NLEX Connector</li>
                         </ul>
                     </div>
                 </div>
@@ -557,7 +559,7 @@
                     <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="100"><i class="uil uil-arrow-circle-right"></i></div>
                     <div class="col-md-11 col-10 blue-font" data-aos="fade-left" data-aos-delay="100">What are the payment options for reloading my RFID account using DriveHub?</div>
                     <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="100"></div>
-                    <div class="col-md-11 col-10 blue-font bullet-point-faq" data-aos="fade-left" data-aos-delay="100"><i class="uil uil-check-circle"></i> You can pay using the following below:
+                    <div class="col-md-11 col-10 blue-font bullet-point-faq" data-aos="fade-left" data-aos-delay="100"><i class="uil uil-check-circle"></i> You can pay using the following:
                         <ul>
                             <li>Express, Online, and E-wallet: GCash, PayMaya, Coins.ph, SmartMoney, Eon, JustPay.To, ECPay, and TouchPay</li>
                             <li>Online Banking: BDO, UCPB, Metrobank, MasterCard, Visa, and BancNet</li>
