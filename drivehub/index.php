@@ -377,7 +377,7 @@
 
                         <div class="h3 row" style="margin-bottom: 12px;">
                             <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="100"><i class="uil uil-calculator"></i></div>
-                            <div class="col-md-11 col-10 blue-font" data-aos="fade-left" data-aos-delay="100">Compute your Toll Fee</div>
+                            <div class="col-md-11 col-10 blue-font" data-aos="fade-left" data-aos-delay="100">Computes your Toll Fee</div>
                             <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="100"></div>
                             <div class="col-md-11 col-10 blue-font bullet-point" data-aos="fade-left" data-aos-delay="100"><i class="uil uil-check-circle"></i> No more counting coins</div>
                             <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="100"></div>
