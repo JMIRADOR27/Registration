@@ -28,6 +28,14 @@
     body {
         font-family: 'Montserrat', sans-serif;
     }
+ 
+    .masthead {
+        padding-top: 2.5rem !important;
+    }
+
+    #features {
+        padding-top: 2.5rem !important;
+    }
 
     .blue-font {
         color: #0b4b88;
@@ -127,8 +135,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Features</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Features</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Download</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#faq">FAQ</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#contact">Contact</a></li>
@@ -167,7 +175,7 @@
         </div>
     </section>
 
-    <section class="masthead">
+    <section id="about" class="masthead">
         <div class="container header-content px-5">
             <div class="row gx-5 align-items-center">
                 <div class="col-lg-6">
@@ -227,7 +235,7 @@
     <section id="features">
         <div class="container">
             <h1 class="text-center">
-                <span data-aos="fade-up" data-aos-delay="150">What's new with <br></span>
+                <div data-aos="fade-up" data-aos-delay="100">What's new with <br></div>
                 <img id="mpt-logo" src="assets/img/logo_h1.png" alt="..." data-aos="fade-up" data-aos-delay="150" style="width: 100%; max-width: 350px">
             </h1>
             <hr>
