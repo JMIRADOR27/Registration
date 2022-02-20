@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>New Age - Start Bootstrap Theme</title>
+    <title>MPT DriveHub</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
@@ -34,23 +34,9 @@
     }
 
     @media (max-width: 415px) {
-        #biyahe-mobile {
-            display: block !important;
-        }
-
-        #myVideo {
-            display: none;
-        }
-
-        #biyahe-desktop {
-            display: none;
-        }
-    }
-
-    @media (max-width: 280px) {
-
-        .navbar-brand {
-            width: 120px !important;
+        #main_header {
+            background-image: url('assets/img/header_mobile.jpg') !important;
+            margin-top: 1rem !important;
         }
 
         #biyahe-mobile {
@@ -63,19 +49,12 @@
         }
     }
 
-    #myVideo {
-        position: absolute;
-        right: 50;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
-        overflow: hidden;
-        top: 2%;
-        /* margin: 0 auto; */
-        /* padding: 20px 0 !important; */
-        /* z-index: 0; */
-        /* width: 100%; */
+    @media (max-width: 280px) {
+        .navbar-brand {
+            width: 120px !important;
+        }
     }
+
 
     #main_header {
         /* border: 1px solid black; */
@@ -153,16 +132,18 @@
                 <div class="col-lg-12">
                     <!-- Mashead text and app badges-->
                     <div class="text-center text-lg-start">
-                        <center>
-                            <div id="biyahe-desktop" style="margin-bottom: 300px; padding-bottom: 40px">
-                                <img src="assets/img/biyahe.png" alt="..." data-aos="fade-up" data-aos-delay="100" style="width: 100%; max-width: 900px">
-                                <h2 class="blue-font text-center" data-aos="fade-up" data-aos-delay="150" style="margin-bottom: 40px">Make your trip as fun as your destination!</h2>
-                            </div>
-                            <div id="biyahe-mobile" style="display: none">
-                                <img id="biyahe-mobile" src="assets/img/biyahe-mobile.png" alt="..." data-aos="fade-right" data-aos-delay="100" style="margin-bottom: 40px; width: 35vh;">
-                                <h2 class="blue-font text-center" data-aos="fade-right" data-aos-delay="150" style="margin-bottom: 40px">Make your trip as fun as your destination!</h2>
-                            </div>
-                        </center>
+
+                        <div id="biyahe-desktop" style="margin-bottom: 300px; padding-bottom: 40px">
+                            <img src="assets/img/biyahe.png" alt="..." data-aos="fade-up" data-aos-delay="100" style="width: 100%; max-width: 900px">
+                            <h2 class="blue-font text-center" data-aos="fade-up" data-aos-delay="150" style="margin-bottom: 40px">Make your trip as fun as your destination!</h2>
+                        </div>
+                        <div id="biyahe-mobile" style="display: none">
+
+                            <img src="assets/img/biyahe-mobile.png" alt="..." data-aos="fade-right" data-aos-delay="100" style="margin-bottom: 40px; width: 35vh;">
+                            <h2 class="blue-font text-center" data-aos="fade-right" data-aos-delay="150" style="margin-bottom: 40px">Make your trip as fun as your destination!</h2>
+
+                        </div>
+
                         <!-- <h1 class="display-1 lh-1 mb-3">Sarap ng Biyahe.</h1> -->
                     </div>
                 </div>
@@ -178,9 +159,7 @@
                     <!-- Mashead text and app badges-->
                     <div class="mb-5 mb-lg-0 text-center text-lg-start">
                         <center>
-                            <img id="biyahe-desktop" src="assets/img/logo_h.png" alt="..." data-aos="fade-right" data-aos-delay="100" style="margin-bottom: 40px; width: 100%; max-width: 300px">
-
-                            <img id="biyahe-mobile" src="assets/img/biyahe-mobile.png" alt="..." data-aos="fade-right" data-aos-delay="100" style="margin-bottom: 40px; width: 35vh; display: none">
+                            <img src="assets/img/logo_h.png" alt="..." data-aos="fade-right" data-aos-delay="100" style="margin-bottom: 40px; width: 100%; max-width: 300px">
                         </center>
                         <!-- <h1 class="display-1 lh-1 mb-3">Sarap ng Biyahe.</h1> -->
                         <h4 class="blue-font text-center" data-aos="fade-right" data-aos-delay="150" style="margin-bottom: 40px">Meet MPT DriveHub - your new travel buddy!</h4>
