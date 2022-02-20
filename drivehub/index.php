@@ -33,7 +33,7 @@
         color: #0b4b88;
     }
 
-    @media (max-width: 415px) {
+    @media (max-width: 768px) {
         #main_header {
             background-image: url('assets/img/header_mobile.jpg') !important;
             margin-top: 1rem !important;
@@ -41,11 +41,24 @@
 
         #biyahe-mobile {
             display: block !important;
-            width: 28vh !important;
+            width: 30vh !important;
         }
 
         #biyahe-desktop {
             display: none;
+        }
+
+        #biyahe-mobile-image {
+            margin-bottom: 40px; 
+            width: 30vh;
+        }
+
+        .masthead {
+            padding-top: 3.5rem !important;
+        }
+
+        #mpt-logo {
+            width: 250px !important;
         }
     }
 
@@ -127,28 +140,22 @@
         <!-- <video id="myVideo" autoplay loop muted>
             <source type="video/mp4" src="assets/video/looping-video.mp4">
         </video> -->
-        <div class="container header-content px-5">
-            <div class="row gx-5 align-items-center">
-                <div class="col-lg-12">
-                    <!-- Mashead text and app badges-->
-                    <div class="text-center text-lg-start">
+        <center>
+            <div class="container">
 
-                        <div id="biyahe-desktop" style="margin-bottom: 300px; padding-bottom: 40px">
-                            <img src="assets/img/biyahe.png" alt="..." data-aos="fade-up" data-aos-delay="100" style="width: 100%; max-width: 900px">
-                            <h2 class="blue-font text-center" data-aos="fade-up" data-aos-delay="150" style="margin-bottom: 40px">Make your trip as fun as your destination!</h2>
-                        </div>
-                        <div id="biyahe-mobile" style="display: none">
-
-                            <img src="assets/img/biyahe-mobile.png" alt="..." data-aos="fade-right" data-aos-delay="100" style="margin-bottom: 40px; width: 35vh;">
-                            <h2 class="blue-font text-center" data-aos="fade-right" data-aos-delay="150" style="margin-bottom: 40px">Make your trip as fun as your destination!</h2>
-
-                        </div>
-
-                        <!-- <h1 class="display-1 lh-1 mb-3">Sarap ng Biyahe.</h1> -->
-                    </div>
+                <div id="biyahe-desktop" style="margin-bottom: 300px; padding-bottom: 40px;">
+                    <img src="assets/img/biyahe.png" alt="..." data-aos="fade-up" data-aos-delay="100" style="width: 100%; max-width: 900px">
+                    <h2 class="blue-font text-center" data-aos="fade-up" data-aos-delay="150" style="margin-bottom: 40px">Make your trip as fun as your destination!</h2>
+                </div>
+                <div id="biyahe-mobile" style="display: none; height: 450px; margin-top: 20px;">
+                    <img id="biyahe-mobile-image" src="assets/img/biyahe-mobile.png" alt="..." data-aos="fade-right" data-aos-delay="100" >
+                    <h3 class="blue-font" data-aos="fade-right" data-aos-delay="150" style="margin-bottom: 40px">Make your trip as fun as your destination!</h3>
                 </div>
 
             </div>
+        </center>
+
+
         </div>
     </section>
 
@@ -335,11 +342,11 @@
         <div class="container">
             <h1 class="text-center">
                 <span data-aos="fade-up" data-aos-delay="150">What's new with <br></span>
-                <img src="assets/img/logo_h1.png" alt="..." data-aos="fade-up" data-aos-delay="150" style="width: 100%; max-width: 350px">
+                <img id="mpt-logo" src="assets/img/logo_h1.png" alt="..." data-aos="fade-up" data-aos-delay="150" style="width: 100%; max-width: 350px">
             </h1>
             <hr>
             <div class="row">
-                <div class="col-md-4 col-6" style="margin-bottom: 40px;">
+                <div class="col-md-4 col-12" style="margin-bottom: 40px;">
                     <div class="text-center blue-font" style="font-size: 160px">
                         <i class="fa-solid fa-calculator"></i>
                     </div>
@@ -362,7 +369,7 @@
 
                     </div>
                 </div>
-                <div class="col-md-4 col-6" style="margin-bottom: 40px;">
+                <div class="col-md-4 col-12" style="margin-bottom: 40px;">
                     <div class="text-center blue-font" style="font-size: 160px">
                         <i class="fa-solid fa-car"></i>
                     </div>
@@ -385,7 +392,7 @@
 
                     </div>
                 </div>
-                <div class="col-md-4 col-6" style="margin-bottom: 40px;">
+                <div class="col-md-4 col-12" style="margin-bottom: 40px;">
                     <div class="text-center blue-font" style="font-size: 160px">
                         <i class="fa-solid fa-phone-volume"></i>
                     </div>
@@ -408,7 +415,7 @@
 
                     </div>
                 </div>
-                <div class="col-md-6 col-6" style="margin-bottom: 40px;">
+                <div class="col-md-6 col-12" style="margin-bottom: 40px;">
                     <div class="text-center blue-font" style="font-size: 160px">
                         <i class="fa-solid fa-map-location-dot"></i>
                     </div>
