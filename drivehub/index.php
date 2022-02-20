@@ -34,6 +34,10 @@
     }
 
     @media (max-width: 768px) {
+        #biyahe-desktop {
+            display: none;
+        }
+
         #main_header {
             background-image: url('assets/img/header_mobile.jpg') !important;
             margin-top: 1rem !important;
@@ -44,12 +48,8 @@
             width: 30vh !important;
         }
 
-        #biyahe-desktop {
-            display: none;
-        }
-
         #biyahe-mobile-image {
-            margin-bottom: 40px; 
+            margin-bottom: 40px;
             width: 30vh;
         }
 
@@ -59,6 +59,14 @@
 
         #mpt-logo {
             width: 250px !important;
+        }
+
+        .features-icon {
+            font-size: 120px !important;
+        }
+
+        .contact-us {
+            font-size: 17px
         }
     }
 
@@ -141,14 +149,14 @@
             <source type="video/mp4" src="assets/video/looping-video.mp4">
         </video> -->
         <center>
-            <div class="container">
+            <div class="container-fluid">
 
                 <div id="biyahe-desktop" style="margin-bottom: 300px; padding-bottom: 40px;">
                     <img src="assets/img/biyahe.png" alt="..." data-aos="fade-up" data-aos-delay="100" style="width: 100%; max-width: 900px">
                     <h2 class="blue-font text-center" data-aos="fade-up" data-aos-delay="150" style="margin-bottom: 40px">Make your trip as fun as your destination!</h2>
                 </div>
                 <div id="biyahe-mobile" style="display: none; height: 450px; margin-top: 20px;">
-                    <img id="biyahe-mobile-image" src="assets/img/biyahe-mobile.png" alt="..." data-aos="fade-right" data-aos-delay="100" >
+                    <img id="biyahe-mobile-image" src="assets/img/biyahe-mobile.png" alt="..." data-aos="fade-right" data-aos-delay="100">
                     <h3 class="blue-font" data-aos="fade-right" data-aos-delay="150" style="margin-bottom: 40px">Make your trip as fun as your destination!</h3>
                 </div>
 
@@ -216,128 +224,6 @@
     </section>
 
 
-    <!-- Quote/testimonial aside-->
-
-    <!-- App features section-->
-    <section id="features_old" style="display: none">
-        <div class="container px-12">
-            <div class="row gx-5 align-items-center">
-                <div class="col-lg-8 order-lg-0 mb-5 mb-lg-0">
-                    <div class="container-fluid">
-
-                        <div class="h3 row" style="margin-bottom: 12px;">
-                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="100"><i class="uil uil-calculator"></i></div>
-                            <div class="col-md-11 col-10 blue-font" data-aos="fade-left" data-aos-delay="100">Computes your Toll Fee</div>
-                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="100"></div>
-                            <div class="col-md-11 col-10 blue-font bullet-point" data-aos="fade-left" data-aos-delay="100"><i class="fa-solid fa-circle-check bullet-point-check"></i> No more counting coins</div>
-                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="100"></div>
-                            <div class="col-md-11 col-10 blue-font bullet-point" data-aos="fade-left" data-aos-delay="100"><i class="fa-solid fa-circle-check bullet-point-check"></i> Ready your money with our toll fee calculator.</div>
-                            <div class="col-12"><br></div>
-                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="150"><i class="uil uil-capture"></i></div>
-                            <div class="col-md-11 col-10 blue-font" data-aos="fade-left" data-aos-delay="150">Checks your RFID balance and reloads</div>
-                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="150"></div>
-                            <div class="col-md-11 col-10 blue-font bullet-point" data-aos="fade-left" data-aos-delay="150"><i class="fa-solid fa-circle-check bullet-point-check"></i> Last minute top-up? Yes, it's possible!</div>
-                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="150"></div>
-                            <div class="col-md-11 col-10 blue-font bullet-point" data-aos="fade-left" data-aos-delay="150"><i class="fa-solid fa-circle-check bullet-point-check"></i> Pull out your phone and buy RFID credits on the road.</div>
-                            <div class="col-12"><br></div>
-                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="200"><i class="uil uil-traffic-light"></i></div>
-                            <div class="col-md-11 col-10 blue-font" data-aos="fade-left" data-aos-delay="200">Shows the fastest route with real-time traffic advisories</div>
-                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="200"></div>
-                            <div class="col-md-11 col-10 blue-font bullet-point" data-aos="fade-left" data-aos-delay="200"><i class="fa-solid fa-circle-check bullet-point-check"></i> Never be late again!</div>
-                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="200"></div>
-                            <div class="col-md-11 col-10 blue-font bullet-point" data-aos="fade-left" data-aos-delay="200"><i class="fa-solid fa-circle-check bullet-point-check"></i> Cut your travel time with our live traffic updates.</div>
-                            <div class="col-12"><br></div>
-                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="250"><i class="uil uil-no-entry"></i></div>
-                            <div class="col-md-11 col-10 blue-font" data-aos="fade-left" data-aos-delay="250">Calls for roadside emergency assistance</div>
-                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="250"></div>
-                            <div class="col-md-11 col-10 blue-font bullet-point" data-aos="fade-left" data-aos-delay="250"><i class="fa-solid fa-circle-check bullet-point-check"></i> When in trouble, just tap our emergency button!</div>
-                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="250"></div>
-                            <div class="col-md-11 col-10 blue-font bullet-point" data-aos="fade-left" data-aos-delay="250"><i class="fa-solid fa-circle-check bullet-point-check"></i> Our 24/7 helpline is ready to rescue you whenever, wherever.</div>
-                            <div class="col-12"><br></div>
-                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="300"><i class="uil uil-location-arrow"></i></div>
-                            <div class="col-md-11 col-10 blue-font" data-aos="fade-left" data-aos-delay="300">Finds gas stations, restaurants, and toilets</div>
-                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="300"></div>
-                            <div class="col-md-11 col-10 blue-font bullet-point" data-aos="fade-left" data-aos-delay="300"><i class="fa-solid fa-circle-check bullet-point-check"></i> Gas empty? Hungry? Need a break?</div>
-                            <div class="col-md-1 col-2" data-aos="fade-left" data-aos-delay="300"></div>
-                            <div class="col-md-11 col-10 blue-font bullet-point" data-aos="fade-left" data-aos-delay="300"><i class="fa-solid fa-circle-check bullet-point-check"></i> We will show you the way!</div>
-                            <div class="col-12"><br></div>
-                        </div>
-
-                        <div class="row gx-5" style="display: none">
-                            <div class="col-md-6 mb-5">
-                                <!-- Feature item-->
-                                <div class="text-center">
-                                    <i class="bi-phone icon-feature text-gradient d-block mb-3"></i>
-                                    <h3 class="font-alt">Device Mockups</h3>
-                                    <p class="text-muted mb-0">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-5">
-                                <!-- Feature item-->
-                                <div class="text-center">
-                                    <i class="bi-camera icon-feature text-gradient d-block mb-3"></i>
-                                    <h3 class="font-alt">Flexible Use</h3>
-                                    <p class="text-muted mb-0">Put an image, video, animation, or anything else in the screen!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row" style="display: none">
-                            <div class="col-md-6 mb-5 mb-md-0">
-                                <!-- Feature item-->
-                                <div class="text-center">
-                                    <i class="bi-gift icon-feature text-gradient d-block mb-3"></i>
-                                    <h3 class="font-alt">Free to Use</h3>
-                                    <p class="text-muted mb-0">As always, this theme is free to download and use for any purpose!</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <!-- Feature item-->
-                                <div class="text-center">
-                                    <i class="bi-patch-check icon-feature text-gradient d-block mb-3"></i>
-                                    <h3 class="font-alt">Open Source</h3>
-                                    <p class="text-muted mb-0">Since this theme is MIT licensed, you can use it commercially!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 order-lg-1" data-aos="fade-right" data-aos-delay="50">
-                    <!-- Features section device mockup-->
-                    <div class="features-device-mockup">
-                        <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="circleGradient" gradientTransform="rotate(45)">
-                                    <stop class="gradient-start-color" offset="0%"></stop>
-                                    <stop class="gradient-end-color" offset="100%"></stop>
-                                </linearGradient>
-                            </defs>
-                            <circle cx="50" cy="50" r="50"></circle>
-                        </svg><svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(120.42 -49.88) rotate(45)"></rect>
-                            <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03" transform="translate(-49.88 120.42) rotate(-45)"></rect>
-                        </svg><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="50" cy="50" r="50"></circle>
-                        </svg>
-                        <div class="device-wrapper">
-                            <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
-                                <div class="screen bg-black">
-                                    <!-- PUT CONTENTS HERE:-->
-                                    <!-- * * This can be a video, image, or just about anything else.-->
-                                    <!-- * * Set the max width of your media to 100% and the height to-->
-                                    <!-- * * 100% like the demo example below.-->
-                                    <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%">
-                                        <source src="assets/img/demo-screen.mp4" type="video/mp4" />
-                                    </video>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="features">
         <div class="container">
             <h1 class="text-center">
@@ -347,7 +233,7 @@
             <hr>
             <div class="row">
                 <div class="col-md-4 col-12" style="margin-bottom: 40px;">
-                    <div class="text-center blue-font" style="font-size: 160px">
+                    <div class="text-center blue-font features-icon" style="font-size: 160px">
                         <i class="fa-solid fa-calculator"></i>
                     </div>
                     <h4 class="text-center blue-font">
@@ -370,7 +256,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-12" style="margin-bottom: 40px;">
-                    <div class="text-center blue-font" style="font-size: 160px">
+                    <div class="text-center blue-font features-icon" style="font-size: 160px">
                         <i class="fa-solid fa-car"></i>
                     </div>
                     <h4 class="text-center blue-font">
@@ -393,7 +279,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-12" style="margin-bottom: 40px;">
-                    <div class="text-center blue-font" style="font-size: 160px">
+                    <div class="text-center blue-font features-icon" style="font-size: 160px">
                         <i class="fa-solid fa-phone-volume"></i>
                     </div>
                     <h5 class="text-center blue-font">
@@ -416,7 +302,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-12" style="margin-bottom: 40px;">
-                    <div class="text-center blue-font" style="font-size: 160px">
+                    <div class="text-center blue-font features-icon" style="font-size: 160px">
                         <i class="fa-solid fa-map-location-dot"></i>
                     </div>
                     <h4 class="text-center blue-font">
@@ -439,7 +325,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-12" style="margin-bottom: 40px;">
-                    <div class="text-center blue-font" style="font-size: 160px">
+                    <div class="text-center blue-font features-icon" style="font-size: 160px">
                         <i class="fa-solid fa-coins"></i>
                     </div>
                     <h4 class="text-center blue-font">
@@ -562,11 +448,13 @@
     <section id="contact" class="h5 bg-light text-center">
         <h1 class="text-center blue-font"><i class="fa-solid fa-headset" style="color: #e1761a"></i> Let's talk! Drop us a line: </h1>
         <br>
-        Hotline: +632-8888-0888<br>
-        Email: drivehub@mptc.com.ph<br>
-        Facebook: facebook.com/drivehub.mptc<br>
-        Twitter: twitter.com/drivehubmptc<br>
-        Instagram: instagram.com/drivehubmptc<br>
+        <p class="contact-us">
+            Hotline: +632-8888-0888<br>
+            Email: drivehub@mptc.com.ph<br>
+            Facebook: facebook.com/drivehub.mptc<br>
+            Twitter: twitter.com/drivehubmptc<br>
+            Instagram: instagram.com/drivehubmptc<br>
+        </p>
 
     </section>
     <!-- Footer-->
