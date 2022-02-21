@@ -28,7 +28,7 @@
     body {
         font-family: 'Montserrat', sans-serif;
     }
- 
+
     .masthead {
         padding-top: 2.5rem !important;
     }
@@ -122,6 +122,13 @@
         color: white !important;
         background-color: #0b4b88 !important;
     }
+
+    .meet-content {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500 !important;
+        text-align: justify;
+        color: black;
+    }
 </style>
 
 <body id="page-top">
@@ -186,12 +193,14 @@
                         </center>
                         <!-- <h1 class="display-1 lh-1 mb-3">Sarap ng Biyahe.</h1> -->
                         <h4 class="blue-font text-center" data-aos="fade-right" data-aos-delay="150" style="margin-bottom: 40px">Meet MPT DriveHub - your new travel buddy!</h4>
-                        <h5 align="justify" data-aos="fade-right" data-aos-delay="100">
-                            From planning your trips to breezing through Metro Pacific Tollway Corporation's expressways, this road companion app will make your journey easier, safer, faster, and more fun.</h5>
-                        <br>
-                        <h5 align="justify" data-aos="fade-right" data-aos-delay="100">
-                            MPT DriveHub lessens the hassles on the road so start your vacation even before you reach your destination!
-                        </h5>
+                        <div class="meet-content">
+                            <p data-aos="fade-right" data-aos-delay="100">
+                                From planning your trips to breezing through Metro Pacific Tollway Corporation's expressways, this road companion app will make your journey easier, safer, faster, and more fun.
+                            </p>
+                            <p data-aos="fade-right" data-aos-delay="100">
+                                MPT DriveHub lessens the hassles on the road so start your vacation even before you reach your destination!
+                            </p>
+                        </div>
                         <br>
                     </div>
                 </div>
