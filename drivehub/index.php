@@ -62,7 +62,7 @@
 
         #download {
             background-image: url('assets/img/DH_GET_APP_NOW_MOBILE.png') !important;
-            margin-top: 1rem !important;
+            margin-top: 0rem !important;
         }
 
         #biyahe-mobile {
@@ -389,7 +389,7 @@
             </div>
         </div>
     </section>
-    <section id="faq" style="background-color: #e6f3ff; margin-top: -80px">
+    <section id="faq" style="background-color: white; margin-top: -80px">
         <div class="container">
             <h1 class="text-center blue-font">Frequently Asked Questions</h1>
             <br>
