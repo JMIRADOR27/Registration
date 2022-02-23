@@ -60,8 +60,8 @@
             display: block !important;
         }
 
-        #main_header {
-            background-image: url('assets/img/header_mobile.jpg') !important;
+        #download {
+            background-image: url('assets/img/DH_GET_APP_NOW_MOBILE.png') !important;
             margin-top: 1rem !important;
         }
 
@@ -116,7 +116,7 @@
     #download {
         /* border: 1px solid black; */
         height: 100%;
-        background-image: url('assets/img/DH_GET_APP_NOW.png') !important;
+        background-image: url('assets/img/DH_GET_APP_NOW.png');
         background-position: center;
         background-size: 100%;
         background-repeat: no-repeat;
