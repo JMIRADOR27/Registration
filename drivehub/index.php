@@ -47,7 +47,7 @@
         width: 150px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 769px) {
         #biyahe-desktop {
             display: none;
         }
@@ -164,7 +164,7 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
         <div class="container px-12">
             <a class="navbar-brand fw-bold" href="#page-top"><img src="assets/img/logo.png" alt="drivehub-logo" style="width: 100%; max-width: 200px"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="display: none !important;">
                 Menu
                 <i class="bi-list"></i>
             </button>
