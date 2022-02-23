@@ -41,6 +41,11 @@
         color: #0b4b88;
     }
 
+    .features-icon {
+        /* font-size: 120px !important; */
+        width: 150px;
+    }
+
     @media (max-width: 768px) {
         #biyahe-desktop {
             display: none;
@@ -70,7 +75,8 @@
         }
 
         .features-icon {
-            font-size: 120px !important;
+            /* font-size: 120px !important; */
+            width: 100px;
         }
 
         .contact-us {
@@ -249,13 +255,13 @@
             </h1>
             <hr>
             <div class="row">
-                <div class="col-md-4 col-12" style="margin-bottom: 40px;">
-                    <div class="text-center blue-font features-icon" style="font-size: 160px">
-                        <i class="fa-solid fa-calculator"></i>
+                <div class="col-md-6 col-12" style="margin-bottom: 40px;">
+                    <div class="text-center blue-font">
+                        <img class="features-icon" src="assets/img/feature-icons/car-charger.png">
                     </div>
-                    <h4 class="text-center blue-font">
+                    <h3 class="text-center blue-font">
                         Compute your Toll Fees
-                    </h4>
+                    </h3>
                     <div class="row" style="font-size: 16px">
                         <div class="col-1">
                             <i class="fa-solid fa-circle-check bullet-point-check"></i>
@@ -272,13 +278,13 @@
 
                     </div>
                 </div>
-                <div class="col-md-4 col-12" style="margin-bottom: 40px;">
-                    <div class="text-center blue-font features-icon" style="font-size: 160px">
-                        <i class="fa-solid fa-car"></i>
+                <div class="col-md-6 col-12" style="margin-bottom: 40px;">
+                    <div class="text-center blue-font">
+                        <img class="features-icon" src="assets/img/feature-icons/DH_Icons_Traffic_Alerts.png">
                     </div>
-                    <h4 class="text-center blue-font">
+                    <h3 class="text-center blue-font">
                         Updates with real-time traffic alerts
-                    </h4>
+                    </h3>
                     <div class="row" style="font-size: 16px">
                         <div class="col-1">
                             <i class="fa-solid fa-circle-check bullet-point-check"></i>
@@ -295,13 +301,13 @@
 
                     </div>
                 </div>
-                <div class="col-md-4 col-12" style="margin-bottom: 40px;">
-                    <div class="text-center blue-font features-icon" style="font-size: 160px">
-                        <i class="fa-solid fa-phone-volume"></i>
+                <div class="col-md-6 col-12" style="margin-bottom: 40px;">
+                    <div class="text-center blue-font">
+                        <img class="features-icon" src="assets/img/feature-icons/DH_Icons_Emergency_Call.png">
                     </div>
-                    <h5 class="text-center blue-font">
+                    <h3 class="text-center blue-font">
                         Calls for roadside emergency assistance
-                    </h5>
+                    </h3>
                     <div class="row" style="font-size: 16px">
                         <div class="col-1">
                             <i class="fa-solid fa-circle-check bullet-point-check"></i>
@@ -319,12 +325,12 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-12" style="margin-bottom: 40px;">
-                    <div class="text-center blue-font features-icon" style="font-size: 160px">
-                        <i class="fa-solid fa-map-location-dot"></i>
+                    <div class="text-center blue-font">
+                        <img class="features-icon" src="assets/img/feature-icons/DH_Icons_Find_Gas_Stations.png">
                     </div>
-                    <h4 class="text-center blue-font">
+                    <h3 class="text-center blue-font">
                         Finds gas stations, restos, and restrooms
-                    </h4>
+                    </h3>
                     <div class="row" style="font-size: 16px">
                         <div class="col-1">
                             <i class="fa-solid fa-circle-check bullet-point-check"></i>
@@ -342,12 +348,12 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-12" style="margin-bottom: 40px;">
-                    <div class="text-center blue-font features-icon" style="font-size: 160px">
-                        <i class="fa-solid fa-coins"></i>
+                    <div class="text-center blue-font">
+                        <img class="features-icon" src="assets/img/feature-icons/DH_Icons_Find Reload_RFID.png">
                     </div>
-                    <h4 class="text-center blue-font">
+                    <h3 class="text-center blue-font">
                         Checks and Reloads your RFID account
-                    </h4>
+                    </h3>
                     <div class="row" style="font-size: 16px">
                         <div class="col-1">
                             <i class="fa-solid fa-circle-check bullet-point-check"></i>
