@@ -35,6 +35,7 @@
 
     #features {
         padding-top: 2.5rem !important;
+        padding-bottom: 0rem !important;
     }
 
     .blue-font {
@@ -103,6 +104,19 @@
         /* border: 1px solid black; */
         height: 100%;
         /* background-image: url('assets/img/header.jpg'); */
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        /* background-attachment: absolute; */
+        background-color: #f8f9fa;
+        /* margin-top: 4rem; */
+
+    }
+
+    #download {
+        /* border: 1px solid black; */
+        height: 100%;
+        background-image: url('assets/img/DH_GET_APP_NOW.png') !important;
         background-position: center;
         background-size: 100%;
         background-repeat: no-repeat;
@@ -369,7 +383,14 @@
             </div>
         </div>
     </section>
-    <section id="faq" style="background-color: #e6f3ff">
+    <section id="download">
+        <div class="container" style="height: 500px">
+            <div class="row">
+                
+            </div>
+        </div>
+    </section>
+    <section id="faq" style="background-color: #e6f3ff; margin-top: -80px">
         <div class="container">
             <h1 class="text-center blue-font">Frequently Asked Questions</h1>
             <br>
