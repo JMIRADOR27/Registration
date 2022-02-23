@@ -195,7 +195,6 @@
         <video id="video_mobile" autoplay loop muted style="width: 100%; margin-top: -20px; display: none">
             <source type="video/mp4" src="assets/video/mobile-video.mp4">
         </video>
-        </div>
     </section>
 
     <section id="about" class="masthead">
@@ -386,7 +385,7 @@
     <section id="download">
         <div class="container" style="height: 500px">
             <div class="row">
-                
+
             </div>
         </div>
     </section>
