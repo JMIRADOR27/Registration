@@ -51,6 +51,14 @@
             display: none;
         }
 
+        #video_desktop {
+            display: none;
+        }
+
+        #video_mobile {
+            display: block !important;
+        }
+
         #main_header {
             background-image: url('assets/img/header_mobile.jpg') !important;
             margin-top: 1rem !important;
@@ -94,7 +102,7 @@
     #main_header {
         /* border: 1px solid black; */
         height: 100%;
-        background-image: url('assets/img/header.jpg');
+        /* background-image: url('assets/img/header.jpg'); */
         background-position: center;
         background-size: 100%;
         background-repeat: no-repeat;
@@ -165,26 +173,14 @@
     </nav>
     <!-- Mashead header-->
 
-    <section id="main_header">
-        <!-- <video id="myVideo" autoplay loop muted>
-            <source type="video/mp4" src="assets/video/looping-video.mp4">
-        </video> -->
-        <center>
-            <div class="container-fluid">
+    <section class="masthead">
+        <video id="video_desktop" autoplay loop muted style="width: 100%; margin-top: -40px">
+            <source type="video/mp4" src="assets/video/desktop-video.mp4">
+        </video>
 
-                <div id="biyahe-desktop" style="margin-bottom: 300px; padding-bottom: 40px;">
-                    <img src="assets/img/biyahe.png" alt="..." data-aos="fade-up" data-aos-delay="100" style="width: 100%; max-width: 900px">
-                    <h2 class="blue-font text-center" data-aos="fade-up" data-aos-delay="150" style="margin-bottom: 40px">Make your trip as fun as your destination!</h2>
-                </div>
-                <div id="biyahe-mobile" style="display: none; height: 450px; margin-top: 20px;">
-                    <img id="biyahe-mobile-image" src="assets/img/biyahe-mobile.png" alt="..." data-aos="fade-right" data-aos-delay="100">
-                    <h3 class="blue-font" data-aos="fade-right" data-aos-delay="150" style="margin-bottom: 40px">Make your trip as fun as your destination!</h3>
-                </div>
-
-            </div>
-        </center>
-
-
+        <video id="video_mobile" autoplay loop muted style="width: 100%; margin-top: -20px; display: none">
+            <source type="video/mp4" src="assets/video/mobile-video.mp4">
+        </video>
         </div>
     </section>
 
@@ -235,7 +231,7 @@
                                     <!-- * * Set the max width of your media to 100% and the height to-->
                                     <!-- * * 100% like the demo example below.-->
                                     <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%">
-                                        <source src="assets/img/demo-screen.mp4" type="video/mp4" />
+                                        <source src="assets/video/device-video.mp4" type="video/mp4" />
                                     </video>
                                 </div>
                             </div>
