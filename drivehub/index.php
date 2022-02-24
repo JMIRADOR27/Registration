@@ -1,3 +1,10 @@
+<?php
+
+//Set download variable to 1 to show app download links
+$download = 1;
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -91,6 +98,14 @@
         .contact-us {
             font-size: 17px
         }
+
+        .mobile-download {
+            display: block !important;
+        }
+
+        .desktop-download {
+            display: none !important;
+        }
     }
 
     @media (max-width: 280px) {
@@ -120,7 +135,7 @@
         background-position: center;
         background-size: 100%;
         background-repeat: no-repeat;
-        /* background-attachment: absolute; */
+        background-attachment: absolute;
         background-color: #f8f9fa;
         margin-top: 4rem;
 
@@ -383,11 +398,43 @@
         </div>
     </section>
     <section id="download">
-        <div class="container" style="height: 500px">
-            <div class="row">
 
-            </div>
+        <div class="container desktop-download" style="height: 500px;">
+            <?php if ($download == 1) { ?>
+                <div class="row" style="padding-top: 300px">
+                    <div class="row col-md-6">
+                        <div class="col-md-4">
+                            <a href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#!"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
+                        </div>
+                    </div>
+                </div>
+            <?php } ?>
         </div>
+
+        <div class="container mobile-download" style="height: 500px; display: none">
+            <?php if ($download == 1) { ?>
+                <div class="row" style="padding-top: 90px">
+                    <div class="col-2">
+                    </div>
+                    <div class="col-4">
+                        <a href="#!">
+                            <img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." style="width: 100%" />
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#!">
+                            <img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." style="width: 100%" />
+                        </a>
+                    </div>
+                    <div class="col-2">
+                    </div>
+                </div>
+            <?php } ?>
+        </div>
+
     </section>
     <section id="faq" style="background-color: white; margin-top: -80px">
         <div class="container">
@@ -581,11 +628,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
