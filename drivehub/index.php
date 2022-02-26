@@ -37,6 +37,10 @@ $download = 1;
     }
 
     .masthead {
+        padding-top: 6rem !important;
+    }
+
+    .about-us {
         padding-top: 2.5rem !important;
     }
 
@@ -88,7 +92,11 @@ $download = 1;
         }
 
         .masthead {
-            padding-top: 3.5rem !important;
+            padding-top: 6rem !important;
+        }
+
+        .about-us {
+            padding-top: 2.5rem !important;
         }
 
         .mpt-logo {
@@ -217,7 +225,7 @@ $download = 1;
         </video>
     </section>
 
-    <section id="brief-about" class="masthead">
+    <section id="brief-about" class="masthead about-us">
         <div class="container header-content px-5">
             <div class="row gx-5 align-items-center">
                 <div class="col-lg-6">
@@ -406,7 +414,9 @@ $download = 1;
         <div class="container px-5">
             <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
                 <div class="col-sm-8 col-md-6">
-                    <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="https://source.unsplash.com/u8Jn2rzYIps/900x900" alt="..." /></div>
+                    <div class="px-5 px-sm-0">
+                        <img class="img-fluid rounded-circle" src="assets/img/DH_About_Image 800x800.png" alt="..." />
+                    </div>
                 </div>
                 <div class="col-12 col-lg-5 text-center">
                     <img class="mpt-logo" src="assets/img/logo_h1.png" alt="..." style="width: 100%; max-width: 250px; margin-bottom: 0px">
@@ -434,7 +444,7 @@ $download = 1;
 
         <div class="container desktop-download" style="height: 500px;">
             <?php if ($download == 1) { ?>
-                <div class="row" style="padding-top: 300px">
+                <div class="row" style="padding-top: 340px; padding-left: 40px">
                     <div class="row col-md-6">
                         <div class="col-md-4">
                             <a href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>
@@ -449,7 +459,7 @@ $download = 1;
 
         <div class="container mobile-download" style="height: 500px; display: none">
             <?php if ($download == 1) { ?>
-                <div class="row" style="padding-top: 90px">
+                <div class="row" style="padding-top: 120px">
                     <div class="col-2">
                     </div>
                     <div class="col-4">
