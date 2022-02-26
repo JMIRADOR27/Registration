@@ -49,6 +49,11 @@ $download = 1;
         color: #0b4b88;
     }
 
+    .blue-font-strong {
+        color: #0b4b88;
+        font-weight: bolder;
+    }
+
     .features-icon {
         /* font-size: 120px !important; */
         width: 150px;
@@ -86,7 +91,7 @@ $download = 1;
             padding-top: 3.5rem !important;
         }
 
-        #mpt-logo {
+        .mpt-logo {
             width: 250px !important;
         }
 
@@ -185,8 +190,8 @@ $download = 1;
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item"><a class="nav-link me-lg-3" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link me-lg-3" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Download</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#faq">FAQ</a></li>
                     <li class="nav-item"><a class="nav-link me-lg-3" href="#contact">Contact</a></li>
@@ -212,7 +217,7 @@ $download = 1;
         </video>
     </section>
 
-    <section id="about" class="masthead">
+    <section id="brief-about" class="masthead">
         <div class="container header-content px-5">
             <div class="row gx-5 align-items-center">
                 <div class="col-lg-6">
@@ -222,7 +227,7 @@ $download = 1;
                             <img src="assets/img/logo_h.png" alt="..." data-aos="fade-right" data-aos-delay="100" style="margin-bottom: 40px; width: 100%; max-width: 300px">
                         </center>
                         <!-- <h1 class="display-1 lh-1 mb-3">Sarap ng Biyahe.</h1> -->
-                        <h4 class="blue-font text-center" data-aos="fade-right" data-aos-delay="150" style="margin-bottom: 40px">Meet MPT DriveHub - your new travel buddy!</h4>
+                        <h4 class="blue-font text-center" data-aos="fade-right" data-aos-delay="150" style="margin-bottom: 40px">Meet MPT DriveHub - your new road travel companion app!</h4>
                         <div class="meet-content">
                             <p data-aos="fade-right" data-aos-delay="100">
                                 From planning your trips to breezing through Metro Pacific Tollway Corporation's expressways, this road companion app will make your journey easier, safer, faster, and more fun.
@@ -275,7 +280,7 @@ $download = 1;
         <div class="container">
             <h1 class="text-center">
                 <div data-aos="fade-up" data-aos-delay="100">What's new with <br></div>
-                <img id="mpt-logo" src="assets/img/logo_h1.png" alt="..." data-aos="fade-up" data-aos-delay="150" style="width: 100%; max-width: 350px">
+                <img class="mpt-logo" src="assets/img/logo_h1.png" alt="..." data-aos="fade-up" data-aos-delay="150" style="width: 100%; max-width: 350px">
             </h1>
             <hr>
             <div class="row">
@@ -291,13 +296,13 @@ $download = 1;
                             <i class="fa-solid fa-circle-check bullet-point-check"></i>
                         </div>
                         <div class="col-11">
-                            No more counting coins
+                            Know how much load you have to have hitting the road.
                         </div>
                         <div class="col-1">
                             <i class="fa-solid fa-circle-check bullet-point-check"></i>
                         </div>
                         <div class="col-11">
-                            Ready your money with our toll fee calculator.
+                            The only app that can compute your toll fee from the toll plaza you’re coming from, to where you’re exiting.
                         </div>
 
                     </div>
@@ -314,14 +319,14 @@ $download = 1;
                             <i class="fa-solid fa-circle-check bullet-point-check"></i>
                         </div>
                         <div class="col-11">
-                            Running late?
+                            Anticipate traffic conditions on your way
                         </div>
-                        <div class="col-1">
+                        <!-- <div class="col-1">
                             <i class="fa-solid fa-circle-check bullet-point-check"></i>
                         </div>
                         <div class="col-11">
                             Cut your travel time with our live traffic advisory
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>
@@ -360,7 +365,7 @@ $download = 1;
                             <i class="fa-solid fa-circle-check bullet-point-check"></i>
                         </div>
                         <div class="col-11">
-                            Gas empty? Hungry? Need a break?
+                            Gas empty? Hungry? Wiwi break? Or just need to stretch?
                         </div>
                         <div class="col-1">
                             <i class="fa-solid fa-circle-check bullet-point-check"></i>
@@ -376,23 +381,51 @@ $download = 1;
                         <img class="features-icon" src="assets/img/feature-icons/DH_Icons_Find Reload_RFID.png">
                     </div>
                     <h3 class="text-center blue-font">
-                        Checks and Reloads your RFID account
+                        Check your balance and reload your RFID account
                     </h3>
                     <div class="row" style="font-size: 16px">
                         <div class="col-1">
                             <i class="fa-solid fa-circle-check bullet-point-check"></i>
                         </div>
                         <div class="col-11">
-                            Last minute top-up? Yes, it's possible!
+                            Know how much load is left in your RFID account. No surprises there!
                         </div>
                         <div class="col-1">
                             <i class="fa-solid fa-circle-check bullet-point-check"></i>
                         </div>
                         <div class="col-11">
-                            Pull out your phone and buy RFID credits on the road.
+                            Reload anytime, and it gets credited almost instantly.
                         </div>
 
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="bg-light">
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+                <div class="col-sm-8 col-md-6">
+                    <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="https://source.unsplash.com/u8Jn2rzYIps/900x900" alt="..." /></div>
+                </div>
+                <div class="col-12 col-lg-5 text-center">
+                    <img class="mpt-logo" src="assets/img/logo_h1.png" alt="..." style="width: 100%; max-width: 250px; margin-bottom: 0px">
+                    <hr>
+                    <p align="justify">
+                        Heavy traffic? Tired of the daily hassles?
+                    </p>
+                    <p align="justify">
+                        We feel you.
+                    </p>
+                    <p align="justify">
+                        It’s so stressful to travel in the Philippines, and as the biggest toll road operator here, we believe we can do more to improve mobility in the country and so we’re here to create better travel and road experiences for you!
+                    </p>
+                    <p align="justify">
+                        We at <strong>Metro Pacific Tollways Corp.</strong> are going beyond tollways. We’re innovating to bring you <strong class="blue-font-strong">MPT DriveHub, your new travel companion app.</strong>
+                    </p>
+                    <p align="justify">
+                        With <strong class="blue-font-strong">MPT DriveHub</strong>, get rid of the hassles on the road so you can happily hustle in life!
+                    </p>
                 </div>
             </div>
         </div>
@@ -438,18 +471,32 @@ $download = 1;
     </section>
     <section id="faq" style="background-color: white; margin-top: -80px">
         <div class="container">
-            <h1 class="text-center blue-font">Frequently Asked Questions</h1>
+            <h1 class="text-center blue-font">Ask Away! </h1>
             <br>
             <div class="accordion" id="faq_accordion">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             <h5>
-                                Where can I use DriveHub?
+                                Why should I use MPT DriveHub?
                             </h5>
                         </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faq_accordion">
+                        <div class="accordion-body">
+                            MPT DriveHub will allow you to happily hustle in life by removing the hassles on the road. The app empowers users to smartly plan their trips, transact with our expressways with ease, and get necessary roadside assistance, making their trips safer, more enjoyable, and more convenient. It’s an all-in-one app that gives you the power of mobility at your fingertips.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            <h5>
+                                Where can I use DriveHub?
+                            </h5>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faq_accordion">
                         <div class="accordion-body">
                             Enjoy MPT DriveHub’s features when you use Metro Pacific's expressways:
                             <br><br>
@@ -466,36 +513,22 @@ $download = 1;
                     </div>
                 </div>
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             <h5>
                                 How can I reload my RFID account using MPT DriveHub?
                             </h5>
                         </button>
                     </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faq_accordion">
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faq_accordion">
                         <div class="accordion-body">
-                            Just choose from the several payment options below:
-                            <br><br>
-                            <ul>
+                            You can buy RFID credits online with PayMaya or GCash.
+                            <!-- Just choose from the several payment options below: -->
+                            <!-- <ul>
                                 <li>E-wallet: GCash, PayMaya, Coins.ph, SmartMoney, Eon, JustPay, ECPay, and TouchPay</li>
                                 <li>Online Banking: BDO, UCPB, Metrobank, MasterCard, Visa, and BancNet</li>
 
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            <h5>
-                                How long should I wait before I receive my RFID load?
-                            </h5>
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faq_accordion">
-                        <div class="accordion-body">
-                            No more waiting! When you reload, we’ll update your RFID balance in real time.
+                            </ul> -->
                         </div>
                     </div>
                 </div>
@@ -503,13 +536,13 @@ $download = 1;
                     <h2 class="accordion-header" id="headingFour">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                             <h5>
-                                Is MPT DriveHub free?
+                                How long should I wait before I receive my RFID load?
                             </h5>
                         </button>
                     </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="collapseFour" data-bs-parent="#faq_accordion">
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faq_accordion">
                         <div class="accordion-body">
-                            Yes, it’s free and always will be!
+                            No more waiting! When you reload, we’ll update your RFID balance in real time.
                         </div>
                     </div>
                 </div>
@@ -517,13 +550,41 @@ $download = 1;
                     <h2 class="accordion-header" id="headingFive">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                             <h5>
-                                I’m in! How can I start?
+                                How is MPT DriveHub related or different from the Easytrip app?
                             </h5>
                         </button>
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="collapseFive" data-bs-parent="#faq_accordion">
                         <div class="accordion-body">
-                            Great! Just download the app on Google Play or App Store, fill in your details, and you're ready to go!
+                            Easytrip is part of the MPT Mobility organization. MPT DriveHub has more features and a more robust digital backbone than the myeasytrip app. Don't worry about transferring from myeasytrip app to MPT DriveHub– we’re closely taking our customers through a hassle-free transfer.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            <h5>
+                                How do you address security concerns given that there are a lot of hackers out there?
+                            </h5>
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="collapseSix" data-bs-parent="#faq_accordion">
+                        <div class="accordion-body">
+                            We invested heavily in developing the app and this includes investments in security. We have deployed the necessary infrastructure to keep MPT DriveHub secure. We are also compliant with all necessary laws and regulations pertaining to data protection and privacy.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            <h5>
+                                What will be the future features of MPT DriveHub?
+                            </h5>
+                        </button>
+                    </h2>
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="collapseSeven" data-bs-parent="#faq_accordion">
+                        <div class="accordion-body">
+                            In the future, MPT DriveHub will house other travel and motoring digital solutions such as advanced parking services, towing and roadside services, a motorists’ market, insurance availment, electric vehicle charging locator map, and a native e-wallet, among others.
                         </div>
                     </div>
                 </div>
@@ -547,12 +608,12 @@ $download = 1;
     <footer class="bg-black text-center py-5">
         <div class="container px-5">
             <div class="text-white-50 small">
-                <div class="mb-2">&copy; Your Website 2021. All Rights Reserved.</div>
-                <a href="#!">Privacy</a>
+                <div class="mb-2">&copy; Metro Pacific Tollways Corporation 2022. All Rights Reserved.</div>
+                <!-- <a href="#!">Privacy</a>
                 <span class="mx-1">&middot;</span>
                 <a href="#!">Terms</a>
                 <span class="mx-1">&middot;</span>
-                <a href="#!">FAQ</a>
+                <a href="#!">FAQ</a> -->
             </div>
         </div>
     </footer>
