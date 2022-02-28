@@ -447,10 +447,10 @@ $download = 1;
                 <div class="row" style="padding-top: 340px; padding-left: 40px">
                     <div class="row col-md-6">
                         <div class="col-md-4">
-                            <a href="#!"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>
+                            <a href="https://play.google.com/store/apps/details?id=com.outsystemsenterprise.mptc.DriveHubProd" target="_blank"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>
                         </div>
                         <div class="col-md-4">
-                            <a href="#!"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
+                            <a href="https://apps.apple.com/us/app/mpt-drivehub/id1600499395" target="_blank"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
                         </div>
                     </div>
                 </div>
@@ -513,12 +513,27 @@ $download = 1;
                             <ul>
                                 <li>NLEX (North Luzon Expressway)</li>
                                 <li>SCTEX (Subic Clark Tarlac Expressway)</li>
-                                <li>SFEX (Subic Freeport Expressway)</li>
+                                <!-- <li>SFEX (Subic Freeport Expressway)</li> -->
                                 <li>CAVITEX (Cavite Expressway)</li>
                                 <li>CALAX (Calamba Laguna Expressway)</li>
-                                <li>CCLEX (Cebu Cordova Link Expressway)</li>
-                                <li>NLEX Connector</li>
+                                <!-- <li>CCLEX (Cebu Cordova Link Expressway)</li> -->
+                                <!-- <li>NLEX Connector</li> -->
                             </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwoOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoOne≈" aria-expanded="true" aria-controls="collapseTwo">
+                            <h5>
+                                Will other non-MPTC expressways be a part of DriveHub?
+                            </h5>
+                        </button>
+                    </h2>
+                    <div id="collapseTwoOne" class="accordion-collapse collapse" aria-labelledby="headingTwoOne" data-bs-parent="#faq_accordion">
+                        <div class="accordion-body">
+                            Yes! We plan to add other expressways and roads into MPT DriveHub. This is part of our goal to become the all-in-one travel companion app for motorists and travellers.
+
                         </div>
                     </div>
                 </div>
@@ -560,13 +575,13 @@ $download = 1;
                     <h2 class="accordion-header" id="headingFive">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                             <h5>
-                                How is MPT DriveHub related or different from the Easytrip app?
+                                How safe and secure is MPT DriveHub from hackers?
                             </h5>
                         </button>
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="collapseFive" data-bs-parent="#faq_accordion">
                         <div class="accordion-body">
-                            Easytrip is part of the MPT Mobility organization. MPT DriveHub has more features and a more robust digital backbone than the myeasytrip app. Don't worry about transferring from myeasytrip app to MPT DriveHub– we’re closely taking our customers through a hassle-free transfer.
+                            Yes! Don't worry because we invested a lot on this app, especially on security. Our data is stored in a protected facility that's being checked and tested by internal and external experts on information security. We also comply with all laws and regulations on data protection and privacy.
                         </div>
                     </div>
                 </div>
@@ -574,17 +589,17 @@ $download = 1;
                     <h2 class="accordion-header" id="headingSix">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                             <h5>
-                                How do you address security concerns given that there are a lot of hackers out there?
+                                Why does the app ask for log-in credentials every time I open it?
                             </h5>
                         </button>
                     </h2>
                     <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="collapseSix" data-bs-parent="#faq_accordion">
                         <div class="accordion-body">
-                            We invested heavily in developing the app and this includes investments in security. We have deployed the necessary infrastructure to keep MPT DriveHub secure. We are also compliant with all necessary laws and regulations pertaining to data protection and privacy.
+                            This is an added layer of security to protect your data and prevent phishing scams. Try using biometrics to log in -- it's so fast and convenient!
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item" style="display: none;">
                     <h2 class="accordion-header" id="headingSeven">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                             <h5>
