@@ -415,7 +415,7 @@ $download = 1;
             <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
                 <div class="col-sm-8 col-md-6">
                     <div class="px-5 px-sm-0">
-                        <img class="img-fluid rounded-circle" src="assets/img/DH_About_Image 800x800.png" alt="..." />
+                        <img class="img-fluid" src="assets/img/DH_About_Image 800x800.png" alt="..." />
                     </div>
                 </div>
                 <div class="col-12 col-lg-5 text-center">
@@ -621,8 +621,8 @@ $download = 1;
         <h1 class="text-center blue-font"><i class="fa-solid fa-headset" style="color: #e1761a"></i> Let's talk! Drop us a line: </h1>
         <br>
         <p class="contact-us">
-            Hotline: +632-8888-0888<br>
-            Email: drivehub@mptc.com.ph<br>
+            Hotline: 1-35000<br>
+            Email: customercare@mptdrivehub.com.ph<br>
             Facebook: facebook.com/drivehub.mptc<br>
             Twitter: twitter.com/drivehubmptc<br>
             Instagram: instagram.com/drivehubmptc<br>
