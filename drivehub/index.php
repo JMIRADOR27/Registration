@@ -216,12 +216,12 @@ $download = 1;
     <!-- Mashead header-->
 
     <section class="masthead">
-        <video id="video_desktop" autoplay loop muted style="width: 100%; margin-top: -40px">
-            <source type="video/mp4" src="assets/video/desktop-video.mp4">
+        <video autoplay loop muted id="video_desktop" style="width: 100%; margin-top: -40px">
+            <source type="video/mp4" src="assets/video/desktop-video.mp4" />
         </video>
 
-        <video id="video_mobile" autoplay loop muted style="width: 100%; margin-top: -20px; display: none">
-            <source type="video/mp4" src="assets/video/mobile-video.mp4">
+        <video autoplay loop muted id="video_mobile" style="width: 100%; margin-top: -20px; display: none">
+            <source type="video/mp4" src="assets/video/mobile-video.mp4" />
         </video>
     </section>
 
