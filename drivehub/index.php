@@ -411,36 +411,7 @@ $download = 1;
             </div>
         </div>
     </section>
-    <section id="about" class="bg-light">
-        <div class="container px-5">
-            <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                <div class="col-sm-8 col-md-6">
-                    <div class="px-5 px-sm-0">
-                        <img class="img-fluid" src="assets/img/DH_About_Image 800x800.png" alt="..." />
-                    </div>
-                </div>
-                <div class="col-12 col-lg-5 text-center">
-                    <img class="mpt-logo" src="assets/img/logo_h1.png" alt="..." style="width: 100%; max-width: 250px; margin-bottom: 0px">
-                    <hr>
-                    <p align="justify">
-                        Heavy traffic? Tired of the daily hassles?
-                    </p>
-                    <p align="justify">
-                        We feel you.
-                    </p>
-                    <p align="justify">
-                        It’s so stressful to travel in the Philippines, and as the biggest toll road operator here, we believe we can do more to improve mobility in the country and so we’re here to create better travel and road experiences for you!
-                    </p>
-                    <p align="justify">
-                        We at <strong>Metro Pacific Tollways Corp.</strong> are going beyond tollways. We’re innovating to bring you <strong class="blue-font-strong">MPT DriveHub, your new travel companion app.</strong>
-                    </p>
-                    <p align="justify">
-                        With <strong class="blue-font-strong">MPT DriveHub</strong>, get rid of the hassles on the road so you can happily hustle in life!
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+
     <section id="download">
 
         <div class="container desktop-download" style="height: 500px;">
@@ -482,6 +453,38 @@ $download = 1;
         </div>
 
     </section>
+
+    <section id="about" class="bg-light">
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+                <div class="col-sm-8 col-md-6">
+                    <div class="px-5 px-sm-0">
+                        <img class="img-fluid" src="assets/img/DH_About_Image 800x800.png" alt="..." />
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 text-center">
+                    <img class="mpt-logo" src="assets/img/logo_h1.png" alt="..." style="width: 100%; max-width: 250px; margin-bottom: 0px">
+                    <hr>
+                    <p align="justify">
+                        Heavy traffic? Tired of the daily hassles?
+                    </p>
+                    <p align="justify">
+                        We feel you.
+                    </p>
+                    <p align="justify">
+                        It’s so stressful to travel in the Philippines, and as the biggest toll road operator here, we believe we can do more to improve mobility in the country and so we’re here to create better travel and road experiences for you!
+                    </p>
+                    <p align="justify">
+                        We at <strong>Metro Pacific Tollways Corp.</strong> are going beyond tollways. We’re innovating to bring you <strong class="blue-font-strong">MPT DriveHub, your new travel companion app.</strong>
+                    </p>
+                    <p align="justify">
+                        With <strong class="blue-font-strong">MPT DriveHub</strong>, get rid of the hassles on the road so you can happily hustle in life!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="faq" style="background-color: white; margin-top: -80px">
         <div class="container">
             <h1 class="text-center blue-font">Ask Away! </h1>
