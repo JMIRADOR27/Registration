@@ -63,7 +63,38 @@ $download = 1;
         width: 150px;
     }
 
+    .media-image {
+        width: 100%
+    }
+
+    .media-heading {
+        margin-top: 10px;
+        text-align: center;
+        color: #0b4b88;
+    }
+
+    .card {
+        height: 400px;
+    }
+
     @media (max-width: 769px) {
+
+        #media-heading-desktop {
+            display: none;
+        }
+
+        #media-heading-mobile {
+            display: block !important;
+        }
+
+        #carousel-desktop {
+            display: none;
+        }
+
+        #carousel-mobile {
+            display: block !important;
+        }
+
         #biyahe-desktop {
             display: none;
         }
@@ -486,6 +517,164 @@ $download = 1;
         </div>
     </section>
 
+    <section id="media_posts" style="background-color: white; margin-top: -80px">
+        <div class="container">
+            <div id="media-heading-desktop">
+                <h1 class="text-center blue-font"><img class="mpt-logo" src="assets/img/logo_h1.png" alt="..." style="width: 100%; max-width: 200px; padding-bottom: 10px"> on the media </h1>
+            </div>
+            <div id="media-heading-mobile" style="display: none;">
+                <h1 class="text-center blue-font"><img class="mpt-logo" src="assets/img/logo_h1.png" alt="..." style="width: 100%; max-width: 200px; "><br>on the media </h1>
+            </div>
+            <br>
+
+            <div id="carousel-desktop" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <div class="card">
+                                    <img class="media-image" src="assets/posts/header_1.jpg" alt="..." style="width: 100%" />
+                                    <div class="card-body">
+                                        <h5 class="media-heading">Metro Pacific Tollways launches mobility app</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="card">
+                                    <img class="media-image" src="assets/posts/header_1.jpg" alt="..." style="width: 100%" />
+                                    <div class="card-body">
+                                        <h5 class="media-heading">Metro Pacific Tollways invests in mobility app for customers</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="card">
+                                    <img class="media-image" src="assets/posts/header_1.jpg" alt="..." style="width: 100%" />
+                                    <div class="card-body">
+                                        <h5 class="media-heading">MPTC sees traffic volume returning to pre-COVID-19 levels</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mb-3">
+                                <div class="card">
+                                    <img class="media-image" src="assets/posts/header_1.jpg" alt="..." style="width: 100%" />
+                                    <div class="card-body">
+                                        <h5 class="media-heading">Expressway traffic back to pre-pandemic levels—MPTC</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-3 mb-3">
+                                <div class="card">
+                                    <img class="media-image" src="assets/posts/header_1.jpg" alt="..." style="width: 100%" />
+                                    <div class="card-body">
+                                        <h5 class="media-heading">Metro Pacific Tollways launches mobility app</h5>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="card">
+                                    <img class="media-image" src="assets/posts/header_1.jpg" alt="..." style="width: 100%" />
+                                    <div class="card-body">
+                                        <h5 class="media-heading">Metro Pacific Tollways invests in mobility app for customers</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <div class="card">
+                                    <img class="media-image" src="assets/posts/header_1.jpg" alt="..." style="width: 100%" />
+                                    <div class="card-body">
+                                        <h5 class="media-heading">MPTC sees traffic volume returning to pre-COVID-19 levels</h5>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 mb-3">
+                                <div class="card">
+                                    <img class="media-image" src="assets/posts/header_1.jpg" alt="..." style="width: 100%" />
+                                    <div class="card-body">
+                                        <h5 class="media-heading">Expressway traffic back to pre-pandemic levels—MPTC</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-desktop" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-desktop" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div id="carousel-mobile" class="carousel slide" data-bs-ride="carousel" style="display: none">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <img class="media-image" src="assets/posts/header_1.jpg" alt="..." style="width: 100%" />
+                            <div class="card-body">
+                                <h5 class="media-heading">Metro Pacific Tollways launches mobility app</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img class="media-image" src="assets/posts/header_1.jpg" alt="..." style="width: 100%" />
+                            <div class="card-body">
+                                <h5 class="media-heading">Metro Pacific Tollways invests in mobility app for customers</h5>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img class="media-image" src="assets/posts/header_1.jpg" alt="..." style="width: 100%" />
+                            <div class="card-body">
+                                <h5 class="media-heading">MPTC sees traffic volume returning to pre-COVID-19 levels</h5>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img class="media-image" src="assets/posts/header_1.jpg" alt="..." style="width: 100%" />
+                            <div class="card-body">
+                                <h5 class="media-heading">Expressway traffic back to pre-pandemic levels—MPTC</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-mobile" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-mobile" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+
+
     <section id="faq" style="background-color: white; margin-top: -80px">
         <div class="container">
             <h1 class="text-center blue-font">Ask Away! </h1>
@@ -520,11 +709,9 @@ $download = 1;
                             <ul>
                                 <li>NLEX (North Luzon Expressway)</li>
                                 <li>SCTEX (Subic Clark Tarlac Expressway)</li>
-                                <!-- <li>SFEX (Subic Freeport Expressway)</li> -->
                                 <li>CAVITEX (Cavite Expressway)</li>
                                 <li>CALAX (Cavite-Laguna Expressway)</li>
                                 <li>CCLEX (Cebu-Cordova Link Expressway) - available soon</li>
-                                <!-- <li>NLEX Connector</li> -->
                             </ul>
                         </div>
                     </div>
@@ -554,7 +741,7 @@ $download = 1;
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faq_accordion">
                         <div class="accordion-body">
-                        You can reload your RFID account using your credit card, debit card, PayMaya, and GCash.
+                            You can reload your RFID account using your credit card, debit card, PayMaya, and GCash.
                             <!-- Just choose from the several payment options below: -->
                             <!-- <ul>
                                 <li>E-wallet: GCash, PayMaya, Coins.ph, SmartMoney, Eon, JustPay, ECPay, and TouchPay</li>
@@ -588,7 +775,7 @@ $download = 1;
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="collapseFive" data-bs-parent="#faq_accordion">
                         <div class="accordion-body">
-                        Don't worry because we invested a lot on this app, especially on security. Our data is stored in a protected facility that's being checked and tested by internal and external experts on information security. We also comply with all laws and regulations on data protection and privacy.
+                            Don't worry because we invested a lot on this app, especially on security. Our data is stored in a protected facility that's being checked and tested by internal and external experts on information security. We also comply with all laws and regulations on data protection and privacy.
                         </div>
                     </div>
                 </div>
@@ -696,8 +883,10 @@ $download = 1;
     </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <!-- <script src="js/scripts.js"></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
