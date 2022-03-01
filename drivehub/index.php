@@ -464,12 +464,12 @@ $download = 1;
                     <div class="col-2">
                     </div>
                     <div class="col-4">
-                        <a href="#!">
+                        <a href="https://play.google.com/store/apps/details?id=com.outsystemsenterprise.mptc.DriveHubProd">
                             <img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." style="width: 100%" />
                         </a>
                     </div>
                     <div class="col-4">
-                        <a href="#!">
+                        <a href="https://apps.apple.com/us/app/mpt-drivehub/id1600499395">
                             <img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." style="width: 100%" />
                         </a>
                     </div>
