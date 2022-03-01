@@ -530,7 +530,7 @@ $download = 1;
                 </div>
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwoOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoOne≈" aria-expanded="true" aria-controls="collapseTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoOne" aria-expanded="true" aria-controls="collapseTwo">
                             <h5>
                                 Will other non-MPTC expressways be a part of MPT DriveHub?
                             </h5>
