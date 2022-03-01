@@ -421,11 +421,11 @@ $download = 1;
                         
                         <div class="col-md-4">
                             <img src="assets/img/qr_android.png" alt="..." style="width: 100%; margin-bottom: 10px; margin-left: 5px" />
-                            <a href="https://play.google.com/store/apps/details?id=com.outsystemsenterprise.mptc.DriveHubProd" target="_blank"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." style="margin-left: 15px;"/></a>
+                            <a href="https://play.google.com/store/apps/details?id=com.outsystemsenterprise.mptc.DriveHubProd" target="_blank"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>
                         </div>
                         <div class="col-md-4">
                             <img src="assets/img/qr_ios.png" alt="..." style="width: 100%; margin-bottom: 10px; margin-left: 5px" />
-                            <a href="https://apps.apple.com/us/app/mpt-drivehub/id1600499395" target="_blank"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." style="margin-left: 15px;"/></a>
+                            <a href="https://apps.apple.com/us/app/mpt-drivehub/id1600499395" target="_blank"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
                         </div>
                     </div>
                 </div>
