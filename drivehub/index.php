@@ -445,12 +445,14 @@ $download = 1;
 
         <div class="container desktop-download" style="height: 500px;">
             <?php if ($download == 1) { ?>
-                <div class="row" style="padding-top: 340px; padding-left: 40px">
+                <div class="row" style="padding-top: 250px; padding-left: 40px">
                     <div class="row col-md-6">
                         <div class="col-md-4">
+                            <img src="assets/img/qr_android.png" alt="..." style="width: 100%; margin-bottom: 10px; margin-left: 5px" />
                             <a href="https://play.google.com/store/apps/details?id=com.outsystemsenterprise.mptc.DriveHubProd" target="_blank"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>
                         </div>
                         <div class="col-md-4">
+                            <img src="assets/img/qr_ios.png" alt="..." style="width: 100%; margin-bottom: 10px; margin-left: 5px" />
                             <a href="https://apps.apple.com/us/app/mpt-drivehub/id1600499395" target="_blank"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
                         </div>
                     </div>
@@ -460,20 +462,20 @@ $download = 1;
 
         <div class="container mobile-download" style="height: 500px; display: none">
             <?php if ($download == 1) { ?>
-                <div class="row" style="padding-top: 120px">
-                    <div class="col-2">
+                <div class="row" style="padding-top: 100px">
+                    <div class="col-1">
                     </div>
-                    <div class="col-4">
+                    <div class="col-5">
                         <a href="https://play.google.com/store/apps/details?id=com.outsystemsenterprise.mptc.DriveHubProd">
                             <img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." style="width: 100%" />
                         </a>
                     </div>
-                    <div class="col-4">
+                    <div class="col-5">
                         <a href="https://apps.apple.com/us/app/mpt-drivehub/id1600499395">
                             <img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." style="width: 100%" />
                         </a>
                     </div>
-                    <div class="col-2">
+                    <div class="col-1">
                     </div>
                 </div>
             <?php } ?>
