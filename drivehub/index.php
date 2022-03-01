@@ -418,14 +418,14 @@ $download = 1;
             <?php if ($download == 1) { ?>
                 <div class="row" style="padding-top: 250px; padding-left: 40px">
                     <div class="row col-md-6">
-                        
-                        <div class="col-md-4">
-                            <img src="assets/img/qr_android.png" alt="..." style="width: 100%; margin-bottom: 10px; margin-left: 5px" />
-                            <a href="https://play.google.com/store/apps/details?id=com.outsystemsenterprise.mptc.DriveHubProd" target="_blank"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." /></a>
+
+                        <div class="col-md-4" style="text-align: center;">
+                            <img src="assets/img/qr_android.png" alt="..." style="width: 100%; margin-bottom: 10px; " />
+                            <a href="https://play.google.com/store/apps/details?id=com.outsystemsenterprise.mptc.DriveHubProd" target="_blank"><img class="app-badge" src="assets/img/google-play-badge.svg" alt="..." style="width: 100%;" /></a>
                         </div>
-                        <div class="col-md-4">
-                            <img src="assets/img/qr_ios.png" alt="..." style="width: 100%; margin-bottom: 10px; margin-left: 5px" />
-                            <a href="https://apps.apple.com/us/app/mpt-drivehub/id1600499395" target="_blank"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." /></a>
+                        <div class="col-md-4" style="text-align: center;">
+                            <img src="assets/img/qr_ios.png" alt="..." style="width: 100%; margin-bottom: 10px;" />
+                            <a href="https://apps.apple.com/us/app/mpt-drivehub/id1600499395" target="_blank"><img class="app-badge" src="assets/img/app-store-badge.svg" alt="..." style="width: 100%;" /></a>
                         </div>
                     </div>
                 </div>
