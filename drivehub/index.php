@@ -523,7 +523,7 @@ $download = 1;
                                 <!-- <li>SFEX (Subic Freeport Expressway)</li> -->
                                 <li>CAVITEX (Cavite Expressway)</li>
                                 <li>CALAX (Cavite-Laguna Expressway)</li>
-                                <!-- <li>CCLEX (Cebu Cordova Link Expressway)</li> -->
+                                <li>CCLEX (Cebu-Cordova Link Expressway) - available soon</li>
                                 <!-- <li>NLEX Connector</li> -->
                             </ul>
                         </div>
@@ -554,7 +554,7 @@ $download = 1;
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faq_accordion">
                         <div class="accordion-body">
-                            You can buy RFID account online with your Credit Card, Debit Card, PayMaya, or GCash.
+                        You can reload your RFID account using your credit card, debit card, PayMaya, and GCash.
                             <!-- Just choose from the several payment options below: -->
                             <!-- <ul>
                                 <li>E-wallet: GCash, PayMaya, Coins.ph, SmartMoney, Eon, JustPay, ECPay, and TouchPay</li>
@@ -588,7 +588,7 @@ $download = 1;
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="collapseFive" data-bs-parent="#faq_accordion">
                         <div class="accordion-body">
-                            Yes! Don't worry because we invested a lot on this app, especially on security. Our data is stored in a protected facility that's being checked and tested by internal and external experts on information security. We also comply with all laws and regulations on data protection and privacy.
+                        Don't worry because we invested a lot on this app, especially on security. Our data is stored in a protected facility that's being checked and tested by internal and external experts on information security. We also comply with all laws and regulations on data protection and privacy.
                         </div>
                     </div>
                 </div>
