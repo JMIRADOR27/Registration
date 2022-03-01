@@ -294,6 +294,29 @@ $download = 1;
             <div class="row">
                 <div class="col-md-6 col-12" style="margin-bottom: 40px;">
                     <div class="text-center blue-font">
+                        <img class="features-icon" src="assets/img/feature-icons/DH_Icons_Find Reload_RFID.png">
+                    </div>
+                    <h4 class="text-center blue-font">
+                        Check your balance and reload your RFID account
+                    </h4>
+                    <div class="row" style="font-size: 16px">
+                        <div class="col-1">
+                            <i class="fa-solid fa-circle-check bullet-point-check"></i>
+                        </div>
+                        <div class="col-11">
+                            Know how much load is left in your RFID account. No surprises there!
+                        </div>
+                        <div class="col-1">
+                            <i class="fa-solid fa-circle-check bullet-point-check"></i>
+                        </div>
+                        <div class="col-11">
+                            Reload anytime, and it gets credited almost instantly.
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-12" style="margin-bottom: 40px;">
+                    <div class="text-center blue-font">
                         <img class="features-icon" src="assets/img/feature-icons/car-charger.png">
                     </div>
                     <h3 class="text-center blue-font">
@@ -384,29 +407,7 @@ $download = 1;
 
                     </div>
                 </div>
-                <div class="col-md-6 col-12" style="margin-bottom: 40px;">
-                    <div class="text-center blue-font">
-                        <img class="features-icon" src="assets/img/feature-icons/DH_Icons_Find Reload_RFID.png">
-                    </div>
-                    <h3 class="text-center blue-font">
-                        Check your balance and reload your RFID account
-                    </h3>
-                    <div class="row" style="font-size: 16px">
-                        <div class="col-1">
-                            <i class="fa-solid fa-circle-check bullet-point-check"></i>
-                        </div>
-                        <div class="col-11">
-                            Know how much load is left in your RFID account. No surprises there!
-                        </div>
-                        <div class="col-1">
-                            <i class="fa-solid fa-circle-check bullet-point-check"></i>
-                        </div>
-                        <div class="col-11">
-                            Reload anytime, and it gets credited almost instantly.
-                        </div>
 
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -515,7 +516,7 @@ $download = 1;
                                 <li>SCTEX (Subic Clark Tarlac Expressway)</li>
                                 <!-- <li>SFEX (Subic Freeport Expressway)</li> -->
                                 <li>CAVITEX (Cavite Expressway)</li>
-                                <li>CALAX (Calamba Laguna Expressway)</li>
+                                <li>CALAX (Cavite-Laguna Expressway)</li>
                                 <!-- <li>CCLEX (Cebu Cordova Link Expressway)</li> -->
                                 <!-- <li>NLEX Connector</li> -->
                             </ul>
@@ -526,7 +527,7 @@ $download = 1;
                     <h2 class="accordion-header" id="headingTwoOne">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoOne≈" aria-expanded="true" aria-controls="collapseTwo">
                             <h5>
-                                Will other non-MPTC expressways be a part of DriveHub?
+                                Will other non-MPTC expressways be a part of MPT DriveHub?
                             </h5>
                         </button>
                     </h2>
@@ -547,7 +548,7 @@ $download = 1;
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faq_accordion">
                         <div class="accordion-body">
-                            You can buy RFID credits online with PayMaya or GCash.
+                            You can buy RFID account online with your Credit Card, Debit Card, PayMaya, or GCash.
                             <!-- Just choose from the several payment options below: -->
                             <!-- <ul>
                                 <li>E-wallet: GCash, PayMaya, Coins.ph, SmartMoney, Eon, JustPay, ECPay, and TouchPay</li>
