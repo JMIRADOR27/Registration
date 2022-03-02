@@ -2,13 +2,13 @@
 
 $serverip = "localhost";
 
-// $username = "mkadmin";
-// $password = "M@int@N@nc3";
-// $dbname = "register_db";
+$username = "mkadmin";
+$password = "M@int@N@nc3";
+$dbname = "register_db";
 
-$username = "root";
-$password = "root";
-$dbname = "registration";
+// $username = "root";
+// $password = "root";
+// $dbname = "registration";
 
 // Create connection
 global $conn;
@@ -16,8 +16,9 @@ $conn = new mysqli($serverip, $username, $password, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+  die("Connection failed: " . $conn->connect_error);
 }
+
 
 
 //Set download variable to 1 to show app download links
