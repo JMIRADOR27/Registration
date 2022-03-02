@@ -1,5 +1,25 @@
 <?php
 
+$serverip = "localhost";
+
+// $username = "mkadmin";
+// $password = "M@int@N@nc3";
+// $dbname = "register_db";
+
+$username = "root";
+$password = "root";
+$dbname = "registration";
+
+// Create connection
+global $conn;
+$conn = new mysqli($serverip, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+
 //Set download variable to 1 to show app download links
 $download = 1;
 
@@ -34,6 +54,10 @@ $download = 1;
 <style>
     body {
         font-family: 'Montserrat', sans-serif;
+    }
+
+    a {
+        text-decoration: none;
     }
 
     .masthead {
@@ -162,7 +186,7 @@ $download = 1;
     #main_header {
         /* border: 1px solid black; */
         height: 100%;
-        /* background-image: url('assets/img/header.jpg'); */
+        /* background-image: url('assets/img/header.png'); */
         background-position: center;
         background-size: 100%;
         background-repeat: no-repeat;
@@ -517,7 +541,16 @@ $download = 1;
         </div>
     </section>
 
-    <section id="media_posts" style="background-color: white; margin-top: -80px; display: none">
+    <?php
+
+    $query1 = "select * from posts where p_hide is null;";
+    $exec1 = mysqli_query($conn, $query1);
+    $exec2 = mysqli_query($conn, $query1);
+
+    ?>
+
+
+    <section id="media_posts" style="background-color: white; margin-top: -80px; display: block">
         <div class="container">
             <div id="media-heading-desktop">
                 <h1 class="text-center blue-font"><img class="mpt-logo" src="assets/img/logo_h1.png" alt="..." style="width: 100%; max-width: 200px; padding-bottom: 10px"> on the media </h1>
@@ -529,87 +562,50 @@ $download = 1;
 
             <div id="carousel-desktop" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col-md-3 mb-3">
-                                <div class="card">
-                                    <img class="media-image" src="assets/posts/header_1.jpg" alt="..." style="width: 100%" />
-                                    <div class="card-body">
-                                        <h5 class="media-heading">Metro Pacific Tollways launches mobility app</h5>
-                                    </div>
+
+                    <?php
+
+                    $ctr = 0;
+                    $i = 0;
+
+                    while ($i1 = mysqli_fetch_object($exec1)) { ?>
+                        <?php if ($i == 0) {
+                            $active = "active";
+                        } else {
+                            $active = "";
+                        }
+                        $i++; ?>
+                        <?php if ($ctr == 0) { ?>
+                            <div class="carousel-item <?php echo $active ?>">
+                                <div class="row">
+                                <?php }
+
+                            $ctr++;
+
+                                ?>
+
+                                <div class="col-md-3 mb-3">
+                                    <a href="<?php echo $i1->p_link ?>" target="_blank">
+                                        <div class="card">
+                                            <img class="media-image" src="assets/posts/<?php echo $i1->p_image ?>" alt="..." style="width: 100%" />
+                                            <div class="card-body">
+                                                <h5 class="media-heading"><?php echo $i1->p_title ?></h5>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <?php
+                                if ($ctr == 4 || $i == mysqli_num_rows($exec1)) { ?>
                                 </div>
                             </div>
-                            <div class="col-md-3 mb-3">
-                                <div class="card">
-                                    <img class="media-image" src="assets/posts/header_1.jpg" alt="..." style="width: 100%" />
-                                    <div class="card-body">
-                                        <h5 class="media-heading">Metro Pacific Tollways invests in mobility app for customers</h5>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 mb-3">
-                                <div class="card">
-                                    <img class="media-image" src="assets/posts/header_1.jpg" alt="..." style="width: 100%" />
-                                    <div class="card-body">
-                                        <h5 class="media-heading">MPTC sees traffic volume returning to pre-COVID-19 levels</h5>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 mb-3">
-                                <div class="card">
-                                    <img class="media-image" src="assets/posts/header_1.jpg" alt="..." style="width: 100%" />
-                                    <div class="card-body">
-                                        <h5 class="media-heading">Expressway traffic back to pre-pandemic levels—MPTC</h5>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-3 mb-3">
-                                <div class="card">
-                                    <img class="media-image" src="assets/posts/header_1.jpg" alt="..." style="width: 100%" />
-                                    <div class="card-body">
-                                        <h5 class="media-heading">Metro Pacific Tollways launches mobility app</h5>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="col-md-3 mb-3">
-                                <div class="card">
-                                    <img class="media-image" src="assets/posts/header_1.jpg" alt="..." style="width: 100%" />
-                                    <div class="card-body">
-                                        <h5 class="media-heading">Metro Pacific Tollways invests in mobility app for customers</h5>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 mb-3">
-                                <div class="card">
-                                    <img class="media-image" src="assets/posts/header_1.jpg" alt="..." style="width: 100%" />
-                                    <div class="card-body">
-                                        <h5 class="media-heading">MPTC sees traffic volume returning to pre-COVID-19 levels</h5>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 mb-3">
-                                <div class="card">
-                                    <img class="media-image" src="assets/posts/header_1.jpg" alt="..." style="width: 100%" />
-                                    <div class="card-body">
-                                        <h5 class="media-heading">Expressway traffic back to pre-pandemic levels—MPTC</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        <?php $ctr = 0;
+                                } ?>
+                    <?php
+                    } ?>
                 </div>
+
+
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel-desktop" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -622,44 +618,37 @@ $download = 1;
 
             <div id="carousel-mobile" class="carousel slide" data-bs-ride="carousel" style="display: none">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="card">
-                            <img class="media-image" src="assets/posts/header_1.jpg" alt="..." style="width: 100%" />
-                            <div class="card-body">
-                                <h5 class="media-heading">Metro Pacific Tollways launches mobility app</h5>
+
+                    <?php
+
+                    $i = 0;
+
+                    while ($i2 = mysqli_fetch_object($exec2)) {
+
+                        if ($i == 0) {
+                            $active = "active";
+                        } else {
+                            $active = "";
+                        }
+
+                    ?>
+                        <div class="carousel-item <?php echo $active ?>">
+                            <div class="card">
+                                <img class="media-image" src="assets/posts/<?php echo $i2->p_image ?>" alt="..." style="width: 100%" />
+                                <div class="card-body">
+                                    <h5 class="media-heading"><?php echo $i2->p_title ?></h5>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    <?php
 
-                    <div class="carousel-item">
-                        <div class="card">
-                            <img class="media-image" src="assets/posts/header_1.jpg" alt="..." style="width: 100%" />
-                            <div class="card-body">
-                                <h5 class="media-heading">Metro Pacific Tollways invests in mobility app for customers</h5>
+                    $i++;
 
-                            </div>
-                        </div>
-                    </div>
+                    }
 
-                    <div class="carousel-item">
-                        <div class="card">
-                            <img class="media-image" src="assets/posts/header_1.jpg" alt="..." style="width: 100%" />
-                            <div class="card-body">
-                                <h5 class="media-heading">MPTC sees traffic volume returning to pre-COVID-19 levels</h5>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="card">
-                            <img class="media-image" src="assets/posts/header_1.jpg" alt="..." style="width: 100%" />
-                            <div class="card-body">
-                                <h5 class="media-heading">Expressway traffic back to pre-pandemic levels—MPTC</h5>
-                            </div>
-                        </div>
-                    </div>
+                    ?>
                 </div>
+
                 <button class="carousel-control-prev" type="button" data-bs-target="#carousel-mobile" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
