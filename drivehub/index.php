@@ -445,9 +445,9 @@ $download = 1;
 
     <section id="download">
 
-        <div class="container desktop-download" style="height: 500px;">
+        <div class="desktop-download" style="height: 70vh; padding-left: 15vh">
             <?php if ($download == 1) { ?>
-                <div class="row" style="padding-top: 250px; padding-left: 40px">
+                <div class="row" style="padding-top: 35vh; ">
                     <div class="row col-md-6">
 
                         <div class="col-md-4" style="text-align: center;">
@@ -517,7 +517,7 @@ $download = 1;
         </div>
     </section>
 
-    <section id="media_posts" style="background-color: white; margin-top: -80px">
+    <section id="media_posts" style="background-color: white; margin-top: -80px; display: none">
         <div class="container">
             <div id="media-heading-desktop">
                 <h1 class="text-center blue-font"><img class="mpt-logo" src="assets/img/logo_h1.png" alt="..." style="width: 100%; max-width: 200px; padding-bottom: 10px"> on the media </h1>
