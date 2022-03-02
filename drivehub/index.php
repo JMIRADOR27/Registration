@@ -445,9 +445,9 @@ $download = 1;
 
     <section id="download">
 
-        <div class="desktop-download" style="height: 70vh; padding-left: 15vh">
+        <div class="desktop-download" style="height: 35vw; padding-left: 7vw">
             <?php if ($download == 1) { ?>
-                <div class="row" style="padding-top: 35vh; ">
+                <div class="row" style="padding-top: 17vw; ">
                     <div class="row col-md-6">
 
                         <div class="col-md-4" style="text-align: center;">
