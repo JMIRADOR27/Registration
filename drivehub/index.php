@@ -19,8 +19,6 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-
-
 //Set download variable to 1 to show app download links
 $download = 1;
 
