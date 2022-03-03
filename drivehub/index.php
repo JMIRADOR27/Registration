@@ -552,7 +552,7 @@ $download = 1;
     <section id="media_posts" style="background-color: white; margin-top: -80px; display: block">
         <div class="container">
             <div id="media-heading-desktop">
-                <h1 class="text-center blue-font"><img class="mpt-logo" src="assets/img/logo_h1.png" alt="..." style="width: 100%; max-width: 200px; padding-bottom: 10px"> on the media </h1>
+                <h1 class="text-center blue-font"><img class="mpt-logo" src="assets/img/logo_h1.png" alt="..." style="width: 100%; max-width: 200px; padding-bottom: 10px"> on the media! </h1>
             </div>
             <div id="media-heading-mobile" style="display: none;">
                 <h1 class="text-center blue-font"><img class="mpt-logo" src="assets/img/logo_h1.png" alt="..." style="width: 100%; max-width: 200px; "><br>on the media </h1>
@@ -586,7 +586,7 @@ $download = 1;
                                 <div class="col-md-3 mb-3">
                                     <a href="<?php echo $i1->p_link ?>" target="_blank">
                                         <div class="card">
-                                            <img class="media-image" src="assets/posts/<?php echo $i1->p_image ?>" alt="..." style="width: 100%" />
+                                            <img class="media-image" src="assets/post/<?php echo $i1->p_image ?>" alt="..." style="width: 100%" />
                                             <div class="card-body">
                                                 <h5 class="media-heading"><?php echo $i1->p_title ?></h5>
                                             </div>
@@ -805,7 +805,7 @@ $download = 1;
         <p class="contact-us">
             Hotline: 1-35000<br>
             Email: customercare@mptdrivehub.com.ph<br>
-            Facebook: facebook.com/drivehub.mptc<br>
+            Facebook: facebook.com/MPTDriveHubPH<br>
             Twitter: twitter.com/drivehubmptc<br>
             Instagram: instagram.com/drivehubmptc<br>
         </p>
