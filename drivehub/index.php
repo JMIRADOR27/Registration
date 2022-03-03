@@ -806,8 +806,8 @@ $download = 1;
             Hotline: 1-35000<br>
             Email: customercare@mptdrivehub.com.ph<br>
             Facebook: facebook.com/MPTDriveHubPH<br>
-            Twitter: twitter.com/drivehubmptc<br>
-            Instagram: instagram.com/drivehubmptc<br>
+            Twitter: twitter.com/MPTDriveHub<br>
+            Instagram: instagram.com/mptdrivehub<br>
         </p>
 
     </section>
