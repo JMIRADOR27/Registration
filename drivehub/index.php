@@ -97,7 +97,7 @@ $download = 1;
     }
 
     .card {
-        height: 400px;
+        height: 350px;
     }
 
     @media (max-width: 769px) {
