@@ -633,7 +633,7 @@ $download = 1;
                     ?>
                         <div class="carousel-item <?php echo $active ?>">
                             <div class="card">
-                                <img class="media-image" src="assets/posts/<?php echo $i2->p_image ?>" alt="..." style="width: 100%" />
+                                <img class="media-image" src="assets/post/<?php echo $i2->p_image ?>" alt="..." style="width: 100%" />
                                 <div class="card-body">
                                     <h5 class="media-heading"><?php echo $i2->p_title ?></h5>
                                 </div>
