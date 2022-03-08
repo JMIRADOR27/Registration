@@ -660,15 +660,17 @@ $download = 1;
             <hr>
 
             <div class="row">
-                <div class="col-md-6">
-                    <video playsinline controls id="video_desktop" style="width: 100%;">
-                        <source type="video/mp4" src="assets/video/desktop-video.mp4" />
+                <div class="col-md-6 text-center">
+                    <video playsinline controls poster="assets/img/MPTProduct.png" style="width: 100%;">
+                        <source type="video/mp4" src="assets/video/MPT_DriveHub_Product_AVP.mp4" />
                     </video>
+                    Whait is MPT DriveHub
                 </div>
-                <div class="col-md-6">
-                    <video playsinline controls id="video_desktop" style="width: 100%;">
-                        <source type="video/mp4" src="assets/video/desktop-video.mp4" />
+                <div class="col-md-6 text-center">
+                    <video playsinline controls style="width: 100%;">
+                        <source type="video/mp4" src="assets/video/MPTC_Lifestyle.mp4" />
                     </video>
+                    Lifestyle with NLEX Road Warriors
                 </div>
             </div>
             <div class="col-12">
