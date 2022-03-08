@@ -16,7 +16,7 @@ $conn = new mysqli($serverip, $username, $password, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+    die("Connection failed: " . $conn->connect_error);
 }
 
 //Set download variable to 1 to show app download links
@@ -641,8 +641,7 @@ $download = 1;
                         </div>
                     <?php
 
-                    $i++;
-
+                        $i++;
                     }
 
                     ?>
@@ -656,6 +655,27 @@ $download = 1;
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <video playsinline controls id="video_desktop" style="width: 100%;">
+                        <source type="video/mp4" src="assets/video/desktop-video.mp4" />
+                    </video>
+                </div>
+                <div class="col-md-6">
+                    <video playsinline controls id="video_desktop" style="width: 100%;">
+                        <source type="video/mp4" src="assets/video/desktop-video.mp4" />
+                    </video>
+                </div>
+            </div>
+            <div class="col-12">
+                <br>
+                <h5 class="text-center">
+                    <a href="#" class="btn btn-primary">See more videos...</a>
+                </h5>
             </div>
         </div>
 
