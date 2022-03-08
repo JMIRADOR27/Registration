@@ -681,6 +681,27 @@ $download = 1;
 
     </section>
 
+    <section id="pressrelease" class="bg-light">
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+                <div class="col-md-4">
+                    <img src="assets/post/DH_Press_release.png" style="width: 100%;">
+                </div>
+                <div class="col-md-8">
+                    <p>PRESS RELEASE</p>
+                    <h4 class="blue-font">MPTC steps up on the digital expressway experience with MPT DriveHub</h4>
+                    <hr>
+                    <p align="justify">
+                        Metro Pacific Tollways Corp. (MPTC), the largest expressway builder and operator in the Philippines, is transcending its core business, foraying into the digital space with the introduction of MPT DriveHub, a travel companion app, offering a variety of mobility solutions that create better user travel experience.
+                        <br><br>
+                        Read More...
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
+
 
 
     <section id="faq" style="background-color: white; margin-top: -80px">
