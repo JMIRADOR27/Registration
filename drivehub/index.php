@@ -2,6 +2,7 @@
 
 $serverip = "localhost";
 
+//Live Connection Credentials
 $username = "mkadmin";
 $password = "M@int@N@nc3";
 $dbname = "register_db";
@@ -696,7 +697,7 @@ $download = 1;
                     <p align="justify">
                         Metro Pacific Tollways Corp. (MPTC), the largest expressway builder and operator in the Philippines, is transcending its core business, foraying into the digital space with the introduction of MPT DriveHub, a travel companion app, offering a variety of mobility solutions that create better user travel experience.
                         <br><br>
-                        Read More...
+                        <a href="#!" data-bs-toggle="modal" data-bs-target="#press_release">Read More...</a>
                     </p>
                 </div>
             </div>
@@ -867,6 +868,63 @@ $download = 1;
             </div>
         </div>
     </footer>
+
+    <div id="press_release" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                    <h4 class="modal-title">Press Release</h4>
+                </div>
+                <div class="modal-body">
+
+                    <h5 class="text-center blue-font">MPTC steps up on the digital expressway experience with MPT DriveHub</h5>
+                    <hr>
+                    <div class="container" style="height: 400px; overflow-y: auto">
+                        <p align="justify">
+                            Metro Pacific Tollways Corp. (MPTC), the largest expressway builder and operator in the Philippines, is transcending its core business, foraying into the digital space with the introduction of MPT DriveHub, a travel companion app, offering a variety of mobility solutions that create better user travel experience.
+                        </p>
+                        <p align="justify">
+                            MPT DriveHub is a crucial component in actualizing MPTC’s revitalized vision of becoming a premier mobility enabler. Integrating motoring and travel services in one digital platform, MPT DriveHub elevates customer experience, allowing expressway users to enjoy not just the destination, but the journey itself.
+                        </p>
+                        <p align="justify">
+                            “With the growing demand for mobility solutions amid an accelerated digital transformation in the Philippines, we found it necessary to strengthen our pursuit for innovation. MPT DriveHub is part of our business diversification initiatives that will help realize our goal of providing the ultimate mobility experience to our motorists,” MPTC President and CEO Rodrigo Franco said.
+                        </p>
+                        <p align="justify">
+                            Available for both iOS and Android devices, MPT DriveHub empowers motorists to smartly and conveniently plan their trips – from ensuring that they have ample load on their RFID accounts to navigating through the expressway with ease. An all-in-one app, MPT DriveHub’s features can be categorized into three key functions: RFID Transactions, Trip Planning, and Roadside Assistance.
+                        </p>
+                        <p align="justify">
+                            MPT DriveHub enables its users to easily manage their RFID accounts. Whether to check their balances or reload their accounts, it ensures a smoother and more efficient journey. It also allows users to easily calculate their toll fees to prepare payments ahead.
+                        </p>
+                        <p align="justify">
+                            Moreover, MPT DriveHub gives its users the power of information, providing them with the necessary data to plan and schedule their journey. With this feature, users will be able to know where the nearest pit stops are for dining, bathroom breaks, gas-ups, or even shopping for last-minute pasalubong. MPT DriveHub also provides users with relevant traffic advisory and updates.
+                        </p>
+                        <p align="justify">
+                            Lastly, MPT DriveHub allows users to immediately request for roadside assistance by readily having the expressway hotline number in the app, so help is one call away wherever you are in NLEX, SCTEX, CAVITEX or CALAX.
+                        </p>
+                        <p align="justify">
+                            “This is just the beginning for MPT DriveHub. We are actively developing the app to introduce more services in the future such as e-wallets, motorists’ marketplace, and electric vehicle charging locator map to equip our motorists with more solutions that will further enhance and delight their journeys,” MPT Mobility Vice President for Business Development Mark Richmund M. De Leon said. “We’re open to partnerships and app integrations to accelerate the MPT DriveHub’s service offerings,” he added.
+                        </p>
+                        <p align="justify">
+                            “As the largest tollway builder and operator in the Philippines, we recognize that we have a huge role to play in improving mobility in the country, which can be addressed through digital innovations like MPT DriveHub. Innovation is ingrained in the DNA of MPTC and we are committed to continuous progress and transformation in order to provide easier, safer, and better travels for everyone,” MPTC Chief Digital and Information Officer Carlo L. Cagalingan said.
+                        </p>
+                        <p align="justify">
+                            MPT DriveHub will be available for RFID users of MPTC’s network of expressway, namely: North Luzon Expressway (NLEX), Subic-Clark-Tarlac Expressway (SCTEX), Manila-Cavite Toll Expressway (CAVITEX), and the Cavite-Laguna Expressway (CALAX) on March 1. Soon, MPT DriveHub will also be available for use in the Cebu-Cordova Link Expressway (CCLEX)
+                        </p>
+
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <div id="privacy_policy" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg">
