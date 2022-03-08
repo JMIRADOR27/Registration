@@ -101,6 +101,16 @@ $download = 1;
         height: 350px;
     }
 
+    .carousel-control-prev-icon {
+        background-image: url('assets/img/prev.png') !important;
+        margin-right: 160px;
+    }
+
+    .carousel-control-next-icon {
+        background-image: url('assets/img/next.png') !important;
+        margin-left: 160px;
+    }
+
     @media (max-width: 769px) {
 
         #media-heading-desktop {
@@ -549,8 +559,29 @@ $download = 1;
 
     ?>
 
+    <section id="pressrelease" style="background-color: white;">
+        <div class="container px-5">
+            <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+                <div class="col-md-4">
+                    <img src="assets/post/DH_Press_release.png" style="width: 100%;">
+                </div>
+                <div class="col-md-8">
+                    <p>PRESS RELEASE</p>
+                    <h4 class="blue-font">MPTC steps up on the digital expressway experience with MPT DriveHub</h4>
+                    <hr>
+                    <p align="justify">
+                        Metro Pacific Tollways Corp. (MPTC), the largest expressway builder and operator in the Philippines, is transcending its core business, foraying into the digital space with the introduction of MPT DriveHub, a travel companion app, offering a variety of mobility solutions that create better user travel experience.
+                        <br><br>
+                        <a href="#!" data-bs-toggle="modal" data-bs-target="#press_release">Read More...</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+    </section>
 
-    <section id="media_posts" style="background-color: white; margin-top: -80px; display: block">
+
+    <section id="media_posts" class="bg-light" style="margin-top: -80px; display: block">
         <div class="container">
             <div id="media-heading-desktop">
                 <h1 class="text-center blue-font"><img class="mpt-logo" src="assets/img/logo_h1.png" alt="..." style="width: 100%; max-width: 200px; padding-bottom: 10px"> on the media! </h1>
@@ -684,26 +715,7 @@ $download = 1;
 
     </section>
 
-    <section id="pressrelease" class="bg-light">
-        <div class="container px-5">
-            <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                <div class="col-md-4">
-                    <img src="assets/post/DH_Press_release.png" style="width: 100%;">
-                </div>
-                <div class="col-md-8">
-                    <p>PRESS RELEASE</p>
-                    <h4 class="blue-font">MPTC steps up on the digital expressway experience with MPT DriveHub</h4>
-                    <hr>
-                    <p align="justify">
-                        Metro Pacific Tollways Corp. (MPTC), the largest expressway builder and operator in the Philippines, is transcending its core business, foraying into the digital space with the introduction of MPT DriveHub, a travel companion app, offering a variety of mobility solutions that create better user travel experience.
-                        <br><br>
-                        <a href="#!" data-bs-toggle="modal" data-bs-target="#press_release">Read More...</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <br>
-    </section>
+
 
 
 
