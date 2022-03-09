@@ -11,6 +11,10 @@ $dbname = "register_db";
 // $password = "root";
 // $dbname = "registration";
 
+// $username = "root";
+// $password = "";
+// $dbname = "register_db";
+
 // Create connection
 global $conn;
 $conn = new mysqli($serverip, $username, $password, $dbname);
