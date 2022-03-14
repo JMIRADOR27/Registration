@@ -697,13 +697,13 @@ $download = 1;
 
             <div class="row">
                 <div class="col-md-6 text-center">
-                    <video playsinline controls poster="assets/img/MPTProduct.png" style="width: 100%;">
+                    <video playsinline controls poster="assets/img/video/MPT_DH_Logo_with_the_mobile_phone_597x315.png" style="width: 100%;">
                         <source type="video/mp4" src="assets/video/MPT_DriveHub_Product_AVP.mp4" />
                     </video>
                     Whait is MPT DriveHub
                 </div>
                 <div class="col-md-6 text-center">
-                    <video playsinline controls style="width: 100%;">
+                    <video playsinline controls poster="assets/img/video/MPT_DH_logo_NRW_logo_597x315.png" style="width: 100%;">
                         <source type="video/mp4" src="assets/video/MPTC_Lifestyle.mp4" />
                     </video>
                     Lifestyle with NLEX Road Warriors
@@ -712,7 +712,7 @@ $download = 1;
             <div class="col-12">
                 <br>
                 <h5 class="text-center">
-                    <a href="#" class="btn btn-primary">See more videos...</a>
+                    <!-- <a href="#" class="btn btn-primary">See more videos...</a> -->
                 </h5>
             </div>
         </div>
