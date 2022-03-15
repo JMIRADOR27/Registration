@@ -579,7 +579,8 @@ $download = 1;
 
     <?php
 
-    $query1 = "select * from posts where p_hide is null;";
+    $query1 = "select * from posts where p_hide is null
+    order by p_order, p_id;";
     $exec1 = mysqli_query($conn, $query1);
     $exec2 = mysqli_query($conn, $query1);
 
