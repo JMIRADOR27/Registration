@@ -3,13 +3,13 @@
 $serverip = "localhost";
 
 //Live Connection Credentials
-// $username = "mkadmin";
-// $password = "M@int@N@nc3";
-// $dbname = "register_db";
+$username = "mkadmin";
+$password = "M@int@N@nc3";
+$dbname = "register_db";
 
-$username = "root";
-$password = "root";
-$dbname = "registration";
+// $username = "root";
+// $password = "root";
+// $dbname = "registration";
 
 // $username = "root";
 // $password = "";
@@ -598,7 +598,7 @@ $download = 1;
                     <p align="justify">
                         Metro Pacific Tollways Corp. (MPTC), the largest expressway builder and operator in the Philippines, is transcending its core business, foraying into the digital space with the introduction of MPT DriveHub, a travel companion app, offering a variety of mobility solutions that create better user travel experience.
                         <br><br>
-                        <a href="#!" data-bs-toggle="modal" data-bs-target="#press_release">Read More...</a>
+                        <a href="pressrelease.php">Read More...</a>
                     </p>
                 </div>
             </div>
