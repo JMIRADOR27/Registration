@@ -3,13 +3,13 @@
 $serverip = "localhost";
 
 //Live Connection Credentials
-$username = "mkadmin";
-$password = "M@int@N@nc3";
-$dbname = "register_db";
+// $username = "mkadmin";
+// $password = "M@int@N@nc3";
+// $dbname = "register_db";
 
-// $username = "root";
-// $password = "root";
-// $dbname = "registration";
+$username = "root";
+$password = "root";
+$dbname = "registration";
 
 // $username = "root";
 // $password = "";
@@ -56,6 +56,11 @@ $download = 1;
 </head>
 
 <style>
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: block !important;
+    }
+
     body {
         font-family: 'Montserrat', sans-serif;
     }
@@ -115,7 +120,24 @@ $download = 1;
         margin-left: 160px;
     }
 
+    @media (max-width: 1301px) {
+        .carousel-control-next {
+            right: 30px !important;
+        }
+    }
+
+    @media (max-width: 1201px) {
+        .carousel-control-next {
+            right: 50px !important;
+        }
+    }
+
     @media (max-width: 769px) {
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            display: none !important;
+        }
 
         #media-heading-desktop {
             display: none;
