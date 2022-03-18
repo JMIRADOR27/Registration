@@ -733,7 +733,7 @@ $download = 1;
                 </div>
                 <div class="col-md-4 text-center" style="margin-bottom: 20px">
                     <video playsinline controls poster="assets/img/video/MPT_DH_logo_James_Deakin.png" style="width: 100%;">
-                        <source type="video/mp4" src="assets/video/MPTC_Lifestyle.mp4" />
+                        <source type="video/mp4" src="assets/video/DH_James_Deakin.mp4" />
                     </video>
                     Why MPT DriveHub is James Deakin's perfect partner on the road
                 </div>
