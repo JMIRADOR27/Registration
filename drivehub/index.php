@@ -718,17 +718,23 @@ $download = 1;
             <hr>
 
             <div class="row">
-                <div class="col-md-6 text-center">
+                <div class="col-md-4 text-center" style="margin-bottom: 20px">
                     <video playsinline controls poster="assets/img/video/MPT_DH_Logo_with_the_mobile_phone_597x315.png" style="width: 100%;">
                         <source type="video/mp4" src="assets/video/MPT_DriveHub_Product_AVP.mp4" />
                     </video>
-                    Whait is MPT DriveHub
+                    Say hello to MPT DriveHub, your new road travel companion app!
                 </div>
-                <div class="col-md-6 text-center">
+                <div class="col-md-4 text-center" style="margin-bottom: 20px">
                     <video playsinline controls poster="assets/img/video/MPT_DH_logo_NRW_logo_597x315.png" style="width: 100%;">
                         <source type="video/mp4" src="assets/video/MPTC_Lifestyle.mp4" />
                     </video>
-                    Lifestyle with NLEX Road Warriors
+                    The NLEX Road Warriors went on a trip with MPT DriveHub!
+                </div>
+                <div class="col-md-4 text-center" style="margin-bottom: 20px">
+                    <video playsinline controls poster="assets/img/video/MPT_DH_logo_James_Deakin.png" style="width: 100%;">
+                        <source type="video/mp4" src="assets/video/MPTC_Lifestyle.mp4" />
+                    </video>
+                    Why MPT DriveHub is James Deakin's perfect partner on the road
                 </div>
             </div>
             <div class="col-12">
