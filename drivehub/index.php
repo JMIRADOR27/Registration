@@ -1027,6 +1027,11 @@ $download = 1;
     <script>
         AOS.init();
     </script>
+    <?php
+
+    include "assets/include.php";
+
+    ?>
 </body>
 
 
